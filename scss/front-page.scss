@@ -1,0 +1,139 @@
+@import 'settings/colors';
+
+.l-siteContent {
+  display: grid;
+  grid-template-rows: 885px auto;
+  grid-template-columns: auto 300px;
+  grid-template-areas:
+    "recom recom"
+    "main side";
+  
+  .l-aboveSection {
+    grid-row: 1/2;
+    grid-column: 1/-1;
+  }
+  .l-mainSection {
+    grid-row: 2/-1;
+    grid-column: 1/2;
+    margin-bottom: 150px;
+  }
+  .l-sidebarArea {
+    grid-row: 2/-1;
+    grid-column: 2/-1;
+  }
+
+  &.isPaged {
+    display: flex;
+    
+    .l-mainSection {
+      margin-top: 20px;
+    }
+  }
+}
+
+
+.p-recomPosts {
+  margin: 60px 0;
+  height: 765px;
+}
+.p-mostRecomPost {
+  width: 1120px;
+  height: 378px;
+  display: flex;
+  border-radius: 0 30px 0 30px;
+  background: #fff;
+
+  img {
+    width: 570px;
+    border-radius: 0 0 0 30px;
+  }
+
+  .l-mostRecomText {
+    width: 553px;
+    padding: 40px;
+
+    .p-mostRecomTitle {
+      color: #202124;
+      font-weight: bold;
+      font-size: 24px;
+      width: 473px;
+      margin: auto;
+      text-align: center;
+      line-height: 38px;
+    }
+
+    .p-mostRecomDescription {
+      width: 473px;
+      margin-top: 18px;
+      color: #3c4043;
+    }
+
+    .p-toMostRecomPost {
+      a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 20px;
+        font-weight: bold;
+        width: 194px;
+        margin: 20px auto 0;
+        background: #094C93;
+        color: #fff;
+        border-radius: 30px;
+        text-align: center;
+        padding: 7px 20px 7px 60px;
+
+        &:hover {
+          opacity: .7;
+        }
+      }
+    }
+  }
+}
+
+.p-subRecomPosts {
+  display: flex;
+  gap: 38px;
+  margin-top: 50px;
+  height: 274px;
+
+  .a-subRecomPost {
+    width: 348px;
+
+    img {
+      height: 235.35px;
+    }
+
+    .p-subRecomTitle {
+      font-weight: bold;
+      font-size: 17rem/16;
+      line-height: 30rem/16;
+
+      a {
+        color: #202124;
+      }
+    }
+  }
+}
+
+.l-mainSection {
+  padding: 0 22px;
+
+  .p-newPostsHeader {
+    margin: 24px auto;
+    width: 268px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 20px 0 20px 0;
+    font-weight: bold;
+    color: #fff;
+    background: #094C93;
+    text-align: center;
+    font-size: 26px;
+  }
+
+  .p-postDate {
+    font-size: 1rem;
+    color: #777;
+  }
+}

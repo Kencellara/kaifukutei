@@ -1,0 +1,32 @@
+06/22/22 2:10:12: header.scss - parse error: failed at `@use "colors" as cl;` C:\Users\barbe\Local Sites\kencetheme\app\public\wp-content\themes\kence-theme\scss\header.scss on line 1, at column 0
+06/22/22 2:11:13: header.scss - parse error: failed at `@use "colors" as cl;` C:\Users\barbe\Local Sites\kencetheme\app\public\wp-content\themes\kence-theme\scss\header.scss on line 1, at column 0
+06/22/22 2:11:17: header.scss - parse error: failed at `@use "colors" as cl;` C:\Users\barbe\Local Sites\kencetheme\app\public\wp-content\themes\kence-theme\scss\header.scss on line 1, at column 0
+06/22/22 2:11:20: header.scss - parse error: failed at `@use "colors" as cl;` C:\Users\barbe\Local Sites\kencetheme\app\public\wp-content\themes\kence-theme\scss\header.scss on line 1, at column 0
+06/22/22 2:11:49: header.scss - parse error: failed at `@use "colors" as cl;` C:\Users\barbe\Local Sites\kencetheme\app\public\wp-content\themes\kence-theme\scss\header.scss on line 1, at column 0
+06/22/22 2:11:53: header.scss - parse error: failed at `@use "colors" as cl;` C:\Users\barbe\Local Sites\kencetheme\app\public\wp-content\themes\kence-theme\scss\header.scss on line 1, at column 0
+06/22/22 2:12:25: header.scss - parse error: failed at `@use "colors" as cl;` C:\Users\barbe\Local Sites\kencetheme\app\public\wp-content\themes\kence-theme\scss\header.scss on line 1, at column 0
+06/22/22 2:13:25: header.scss - parse error: failed at `@use 'colors' as cl;` C:\Users\barbe\Local Sites\kencetheme\app\public\wp-content\themes\kence-theme\scss\header.scss on line 1, at column 0
+06/22/22 2:13:43: header.scss - parse error: failed at `@use 'colors' as cl;` C:\Users\barbe\Local Sites\kencetheme\app\public\wp-content\themes\kence-theme\scss\header.scss on line 1, at column 0
+06/22/22 2:13:47: header.scss - parse error: failed at `@use 'colors' as cl;` C:\Users\barbe\Local Sites\kencetheme\app\public\wp-content\themes\kence-theme\scss\header.scss on line 1, at column 0
+06/22/22 2:14:26: header.scss - parse error: failed at `@use 'colors' as cl;` C:\Users\barbe\Local Sites\kencetheme\app\public\wp-content\themes\kence-theme\scss\header.scss on line 1, at column 0
+06/22/22 2:16:27: header.scss - parse error: failed at `@use 'colors' as cl;` C:\Users\barbe\Local Sites\kencetheme\app\public\wp-content\themes\kence-theme\scss\header.scss on line 1, at column 0
+06/22/22 2:18:28: header.scss - parse error: failed at `@use 'colors' as cl;` C:\Users\barbe\Local Sites\kencetheme\app\public\wp-content\themes\kence-theme\scss\header.scss on line 1, at column 0
+06/22/22 2:20:29: header.scss - parse error: failed at `@use 'colors' as cl;` C:\Users\barbe\Local Sites\kencetheme\app\public\wp-content\themes\kence-theme\scss\header.scss on line 1, at column 0
+06/22/22 2:22:30: header.scss - parse error: failed at `@use 'colors' as cl;` C:\Users\barbe\Local Sites\kencetheme\app\public\wp-content\themes\kence-theme\scss\header.scss on line 1, at column 0
+06/22/22 2:24:31: header.scss - parse error: failed at `@use 'colors' as cl;` C:\Users\barbe\Local Sites\kencetheme\app\public\wp-content\themes\kence-theme\scss\header.scss on line 1, at column 0
+06/22/22 2:58:07: header.scss - parse error: failed at `@use 'colors' as cl;` C:\Users\barbe\Local Sites\kencetheme\app\public\wp-content\themes\kence-theme\scss\header.scss on line 1, at column 0
+06/22/22 3:00:07: header.scss - parse error: failed at `@use 'colors' as cl;` C:\Users\barbe\Local Sites\kencetheme\app\public\wp-content\themes\kence-theme\scss\header.scss on line 1, at column 0
+06/22/22 3:02:08: header.scss - parse error: failed at `@use 'colors' as cl;` C:\Users\barbe\Local Sites\kencetheme\app\public\wp-content\themes\kence-theme\scss\header.scss on line 1, at column 0
+06/22/22 3:02:12: header.scss - parse error: failed at `@use 'colors' as cl;` C:\Users\barbe\Local Sites\kencetheme\app\public\wp-content\themes\kence-theme\scss\header.scss on line 1, at column 0
+06/22/22 3:03:31: header.scss - parse error: failed at `@use 'colors' as cl;` C:\Users\barbe\Local Sites\kencetheme\app\public\wp-content\themes\kence-theme\scss\header.scss on line 1, at column 0
+06/22/22 3:03:35: header.scss - parse error: failed at `@use 'colors' as cl;` C:\Users\barbe\Local Sites\kencetheme\app\public\wp-content\themes\kence-theme\scss\header.scss on line 1, at column 0
+06/22/22 3:03:51: header.scss - parse error: failed at `@use 'colors' as cl;` C:\Users\barbe\Local Sites\kencetheme\app\public\wp-content\themes\kence-theme\scss\header.scss on line 1, at column 0
+06/22/22 3:03:54: header.scss - parse error: failed at `@use 'colors' as cl;` C:\Users\barbe\Local Sites\kencetheme\app\public\wp-content\themes\kence-theme\scss\header.scss on line 1, at column 0
+06/22/22 3:03:58: header.scss - parse error: failed at `@use 'colors' as cl;` C:\Users\barbe\Local Sites\kencetheme\app\public\wp-content\themes\kence-theme\scss\header.scss on line 1, at column 0
+06/22/22 3:04:08: header.scss - parse error: failed at `@use 'colors' as cl;` C:\Users\barbe\Local Sites\kencetheme\app\public\wp-content\themes\kence-theme\scss\header.scss on line 1, at column 0
+06/22/22 3:04:12: header.scss - parse error: failed at `@use 'colors' as cl;` C:\Users\barbe\Local Sites\kencetheme\app\public\wp-content\themes\kence-theme\scss\header.scss on line 1, at column 0
+06/22/22 3:04:16: header.scss - parse error: failed at `@use 'colors' as cl;` C:\Users\barbe\Local Sites\kencetheme\app\public\wp-content\themes\kence-theme\scss\header.scss on line 1, at column 0
+06/22/22 3:04:20: header.scss - parse error: failed at `@use 'colors' as cl;` C:\Users\barbe\Local Sites\kencetheme\app\public\wp-content\themes\kence-theme\scss\header.scss on line 1, at column 0
+06/22/22 3:04:24: header.scss - parse error: failed at `@use 'colors' as cl;` C:\Users\barbe\Local Sites\kencetheme\app\public\wp-content\themes\kence-theme\scss\header.scss on line 1, at column 0
+06/22/22 3:04:28: header.scss - parse error: failed at `@use 'colors' as cl;` C:\Users\barbe\Local Sites\kencetheme\app\public\wp-content\themes\kence-theme\scss\header.scss on line 1, at column 0
+06/22/22 3:06:29: header.scss - parse error: failed at `@use 'colors' as cl;` C:\Users\barbe\Local Sites\kencetheme\app\public\wp-content\themes\kence-theme\scss\header.scss on line 1, at column 0

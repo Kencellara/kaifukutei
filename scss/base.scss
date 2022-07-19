@@ -1,0 +1,20 @@
+@import 'settings/colors';
+
+body {
+  background-color: $bg-color;
+}
+.main-header-clone {
+  display: none;
+}
+
+.l-siteContent {
+  padding: 0;
+}
+.l-mainSection {
+  box-sizing: border-box;
+  width: 820px;
+}
+.l-sidebarArea {
+  box-sizing: border-box;
+  width: 300px;
+}

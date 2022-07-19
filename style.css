@@ -36,10 +36,11 @@ Tags: one-column, two-columns, right-sidebar, custom-colors, custom-header, cust
 /* Root
    This values are used for adjusting headings size (not for body size) */
 html {
-	font-size: 85%;
+	/* font-size: 85%; */
+	font-size: 16px;
 	overflow-x: hidden;
 }
-html:lang(ja) {
+/* html:lang(ja) {
 	font-size: 68%;
 }
 @media screen and (min-width: 782px) {
@@ -57,18 +58,18 @@ html:lang(ja) {
 	html:lang(ja) {
 		font-size: 80%;
 	}
-}
+} */
 
 /* Base */
 body {
 	color: #444;
-	font-family: "Helvetica", "Arial", sans-serif;
+	font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 	font-size: 18px;
 	line-height: 1.6;
 	word-wrap: break-word;
 }
 body:lang(ja) {
-	font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+	font-family: "Noto Sans JP", "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
 	font-size: 15px;
 	font-weight: 500;
 	line-height: 1.8;
@@ -134,7 +135,7 @@ h6 {
 /* Link */
 a {
 	color: #4693f5;
-	text-decoration: underline;
+	text-decoration: none;
 	transition: all .15s ease-in-out;
 }
 a:hover {
@@ -499,10 +500,9 @@ body {
 	padding-left: 30px;
 	padding-right: 30px;
 }
-.site-header {
-	border-bottom: solid 1px #eee;
+/* .site-header {
 	margin-bottom: 5rem;
-}
+} */
 .main-header {
 	padding-bottom: 15px;
 	padding-top: 15px;
@@ -524,7 +524,8 @@ body {
 	margin-bottom: 5rem;
 }
 .hentry {
-	margin-bottom: 7rem;
+	height: 100%;
+	/* margin-bottom: 7rem; */
 }
 .single .hentry {
 	margin-bottom: 5rem;
@@ -590,17 +591,12 @@ body {
 	.main-header-content {
 		flex-wrap: wrap;
 	}
-	.has-sidebar .site-content {
-		display: flex;
-		justify-content: space-between;
-	}
-	.has-sidebar .content-area {
+	/* .has-sidebar .content-area {
 		width: 64.28%;
-	}
+	} */
 	.has-sidebar .sidebar-area {
 		border-top: none;
 		padding-top: 0;
-		width: 26.78%;
 	}
 	.sticky-sidebar {
 		position: -webkit-sticky;
@@ -1584,7 +1580,7 @@ a.home-header-button-sub:hover {
 	margin-top: 0;
 }
 .entry-title a {
-	color: inherit;
+	color: #202124;
 	text-decoration: none;
 }
 @media screen and (min-width: 782px) {
@@ -1624,7 +1620,7 @@ a.home-header-button-sub:hover {
 	margin-right: -20px;
 }
 .post-thumbnail img {
-	width: 100%;
+	height: 100%;
 	transition: 0.5s ease-in-out;
 }
 .post-thumbnail a:hover img {
@@ -1684,40 +1680,42 @@ a.continue-reading {
 .three-column .loop-wrapper {
 	display: flex;
 	flex-wrap: wrap;
+	column-gap: 20px;
 }
 .post-grid .entry-header {
-	margin-bottom: 2rem;
+	margin-bottom: 0;
 	text-align: left;
 }
 .post-grid .post-thumbnail {
-	margin-top: 0;
-	margin-left: 0;
-	margin-right: 0;
+	height: 252px;
+	margin: 0 0 .5rem 0;
 }
 .post-grid .entry-title {
 	font-size: 1.75rem;
 }
 .post-grid .entry-summary {
-	color: #666;
-	font-size: 90%;
+	color: #3c4043;
+	font-size: 0.9375rem;
 }
 .post-grid .entry-summary p {
 	margin-bottom: 0;
 }
 @media screen and (min-width: 540px) {
 	.post-grid .entry-title {
-		font-size: 1.5rem;
+		font-size: 1.125rem;
+		line-height: 30px;
 	}
 	.post-grid .cat-links,
 	.post-grid .entry-meta {
 		font-size: 85%;
 	}
 	.post-grid .entry-summary {
-		font-size: 90%;
+		font-size: 0.9375rem;
 	}
 	.post-grid {
-		width: 46%;
-		padding-right: 8%;
+		width: 378px;
+		height: 473px;
+		margin-bottom: 40px;
 	}
 	.post-grid:nth-child(even) {
 		padding-right: 0;
@@ -1759,6 +1757,7 @@ a.continue-reading {
 @media screen and (min-width: 540px) {
 	.post-list .hentry {
 		display: flex;
+		flex-flow: column;
 	}
 	.post-list .post-thumbnail {
 		flex-shrink: 0;
@@ -2137,7 +2136,7 @@ a.continue-reading {
 .pagination {
 	color: #777;
 	font-size: 90%;
-	margin-bottom: 3rem;
+	text-align: center;
 }
 .pagination a {
 	color: inherit;
@@ -2155,18 +2154,20 @@ a.continue-reading {
 .pagination .dots {
 	padding-left: 10px;
 	padding-right: 10px;
+	color: #094C93;
 }
 .pagination a.page-numbers {
-	border: solid 1px #eee;
+	border: solid 1px #fff;
+	background: #094C93;
+	color: #fff;
 }
 .pagination a.page-numbers:hover {
-	border-color: #ddd;
-	color: #333;
+	background: #fff;
+	color: #094C93;
 }
 .pagination .current {
-	background-color: #f4f5f6;
-	border: solid 1px #ddd;
-	color: #333;
+	background-color: #fff;
+	color: #094C93;
 	font-weight: 700;
 }
 @media screen and (min-width: 640px) {

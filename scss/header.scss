@@ -1,0 +1,48 @@
+@import 'settings/colors';
+
+.main-header {
+  background-color: $main-color;
+  h1.blogTitle {
+    color: #fff;
+    margin: 1rem 0;
+  }
+  .main-header-content {
+    .site-branding {
+      padding: 0;
+    }
+    justify-content: center;
+  }
+}
+
+.l-globalMenuArea {
+  .p-globalMenu {
+    background: #fff;
+    max-width: 1120px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+
+    ul {
+      margin: 0;
+      display: flex;
+      list-style: none;
+      border-bottom: 1px solid;
+
+      li {
+        width: 20%;
+        border-right: 1px solid;
+        font-size: 22px;
+        padding: 10.2px 0;
+        color: #094C93;
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        &:last-child {
+          border: none;
+        }
+      }
+    }
+  }
+}
