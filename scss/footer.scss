@@ -1,0 +1,36 @@
+.l-siteFooter {
+  background: #fff;
+  box-sizing: border-box;
+  height: 190px;
+  padding: 38px 0 37px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+
+  .p-footerLinkList {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0 0 32px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+
+    li {
+      padding: .2rem 1.5rem;
+      border-left: 2px solid #202124;
+
+      a {
+        color: #202124;
+      }
+
+      &:last-child {
+        border-right: 2px solid #202124;
+      }
+    }
+  }
+
+  .p-allRightsReserved {
+    font-size: 14px;
+    text-align: center;
+    color: #777;
+  }
+}

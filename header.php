@@ -9,39 +9,31 @@
 
 <body <?php body_class(); ?>>
 	<div id="page" class="site">
-		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'businesspress'); ?></a>
-
 		<header id="masthead" class="site-header">
-
-			<?php if (get_theme_mod('businesspress_enable_top_bar')) : ?>
-				<div class="top-bar">
-					<div class="top-bar-content">
-						<?php businesspress_top_bar_main(); ?>
-						<?php businesspress_header_social_link(); ?>
-					</div><!-- .top-bar-content -->
-				</div><!-- .top-bar -->
-			<?php endif; ?>
 
 			<div class="main-header main-header-original">
 				<div class="main-header-content">
 					<div class="site-branding">
-						<h1 class="blogTitle">
-							きょうの料理日記
-						</h1>
+						<div class="p-siteHeaderImg">
+							<a href="<?= home_url() ?>">
+								<img src="<?= wp_upload_dir()['baseurl'] . '/header/header_0.png' ?>">
+							</a>
+						</div>
 					</div><!-- .site-branding -->
+
 					<!-- スマホのみ -->
 					<button class="drawer-hamburger">
 						<span class="screen-reader-text"><?php esc_html_e('Menu', 'businesspress'); ?></span>
 						<span class="drawer-hamburger-icon"></span>
 					</button>
+
 				</div><!-- .main-header-content -->
+
+				<!-- スマホのみ -->
 				<div class="drawer-overlay"></div>
 				<div class="drawer-navigation">
 					<div class="drawer-navigation-content">
 						<?php businesspress_main_navigation(); ?>
-						<?php if (get_theme_mod('businesspress_enable_top_bar')) : ?>
-							<?php businesspress_header_social_link(); ?>
-						<?php endif; ?>
 					</div><!-- .drawer-navigation-content -->
 				</div><!-- .drawer-navigation -->
 			</div><!-- .main-header -->

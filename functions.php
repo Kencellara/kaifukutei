@@ -192,6 +192,7 @@ function kence_scripts() {
 	// Additional styles for kence_theme
 	wp_enqueue_style('base-style', get_theme_file_uri('/css/base.css'), array(), '1.0.0');
 	wp_enqueue_style('header-style', get_theme_file_uri('/css/header.css'), array(), '1.0.0');
+	wp_enqueue_style('footer-style', get_theme_file_uri('/css/footer.css'), array(), '1.0.0');
 	if ( is_home() ) {
 		wp_enqueue_style('front-page-style', get_theme_file_uri('/css/front-page.css'), array(), '1.0.0');
 	}
