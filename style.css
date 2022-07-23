@@ -64,13 +64,13 @@ html {
 body {
 	color: #444;
 	font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-	font-size: 18px;
+	/* font-size: 18px; */
 	line-height: 1.6;
 	word-wrap: break-word;
 }
 body:lang(ja) {
 	font-family: "Noto Sans JP", "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
-	font-size: 15px;
+	/* font-size: 15px; */
 	font-weight: 500;
 	line-height: 1.8;
 }
@@ -2592,7 +2592,7 @@ a.comment-edit-link:hover {
 }
 
 /* RSS */
-.widget_rss li {
+/* .widget_rss li {
 	margin-bottom: 2em;
 }
 .widget_rss li a {
@@ -2612,7 +2612,7 @@ a.comment-edit-link:hover {
 }
 .widget_rss .rssSummary {
 	margin-bottom: 6px;
-}
+} */
 
 /* BusinessPress Recent Posts */
 .widget_businesspress_recent_posts li {

@@ -28,6 +28,9 @@
     .l-mainSection {
       margin-top: 20px;
     }
+    .l-sidebarArea {
+      margin-top: 40px;
+    }
   }
 }
 
@@ -42,6 +45,7 @@
   display: flex;
   border-radius: 0 30px 0 30px;
   background: #fff;
+  box-shadow: 2px 4px 2px 0px $main-color;
 
   img {
     width: 570px;
@@ -53,7 +57,7 @@
     padding: 40px;
 
     .p-mostRecomTitle {
-      color: #202124;
+      color: $title-black;
       font-weight: bold;
       font-size: 24px;
       width: 473px;
@@ -65,7 +69,7 @@
     .p-mostRecomDescription {
       width: 473px;
       margin-top: 18px;
-      color: #3c4043;
+      color: $paragraph-black;
     }
 
     .p-toMostRecomPost {
@@ -77,7 +81,7 @@
         font-weight: bold;
         width: 194px;
         margin: 20px auto 0;
-        background: #094C93;
+        background: $main-color;
         color: #fff;
         border-radius: 30px;
         text-align: center;
@@ -110,7 +114,7 @@
       line-height: 30rem/16;
 
       a {
-        color: #202124;
+        color: $title-black;
       }
     }
   }
@@ -127,13 +131,13 @@
     border-radius: 20px 0 20px 0;
     font-weight: bold;
     color: #fff;
-    background: #094C93;
+    background: $main-color;
     text-align: center;
     font-size: 26px;
   }
 
   .p-postDate {
     font-size: 1rem;
-    color: #777;
+    color: $sub-black;
   }
 }

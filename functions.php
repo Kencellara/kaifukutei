@@ -92,95 +92,100 @@ add_action( 'after_setup_theme', 'businesspress_setup' );
  *
  * @link http://codex.wordpress.org/Function_Reference/register_sidebar
  */
-// function businesspress_widgets_init() {
-// 	register_sidebar( array(
-// 		'name'          => esc_html__( 'Blog Sidebar', 'businesspress' ),
-// 		'id'            => 'sidebar-1',
-// 		'description'   => esc_html__( 'This is the normal sidebar for blog pages. If you do not use this sidebar or Blog Sticky Sidebar, blog pages will be a one-column design.', 'businesspress' ),
-// 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-// 		'after_widget'  => '</aside>',
-// 		'before_title'  => '<h2 class="widget-title">',
-// 		'after_title'   => '</h2>',
-// 	) );
-// 	register_sidebar( array(
-// 		'name'          => esc_html__( 'Blog Sticky Sidebar', 'businesspress' ),
-// 		'id'            => 'sidebar-1-s',
-// 		'description'   => esc_html__( 'Displays while following the PC\'s scrolling.', 'businesspress' ),
-// 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-// 		'after_widget'  => '</aside>',
-// 		'before_title'  => '<h2 class="widget-title">',
-// 		'after_title'   => '</h2>',
-// 	) );
-// 	register_sidebar( array(
-// 		'name'          => esc_html__( 'Page Sidebar', 'businesspress' ),
-// 		'id'            => 'sidebar-page',
-// 		'description'   => esc_html__( 'This is the normal sidebar for static pages. If you do not use this sidebar or Page Sticky Sidebar, static pages will be a one-column design.', 'businesspress' ),
-// 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-// 		'after_widget'  => '</aside>',
-// 		'before_title'  => '<h2 class="widget-title">',
-// 		'after_title'   => '</h2>',
-// 	) );
-// 	register_sidebar( array(
-// 		'name'          => esc_html__( 'Page Sticky Sidebar', 'businesspress' ),
-// 		'id'            => 'sidebar-page-s',
-// 		'description'   => esc_html__( 'Displays while following the PC\'s scrolling.', 'businesspress' ),
-// 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-// 		'after_widget'  => '</aside>',
-// 		'before_title'  => '<h2 class="widget-title">',
-// 		'after_title'   => '</h2>',
-// 	) );
+function businesspress_widgets_init() {
+	// register_sidebar(array(
+	// 	'name'          => 'アーカイブ',
+	// 	'id'            => 'kt-archives',
+	// 	'description'   => 'アーカイブ表示用',
+	// ));
+	// register_sidebar( array(
+	// 	'name'          => esc_html__( 'Blog Sidebar', 'businesspress' ),
+	// 	'id'            => 'sidebar-1',
+	// 	'description'   => esc_html__( 'This is the normal sidebar for blog pages. If you do not use this sidebar or Blog Sticky Sidebar, blog pages will be a one-column design.', 'businesspress' ),
+	// 	'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+	// 	'after_widget'  => '</aside>',
+	// 	'before_title'  => '<h2 class="widget-title">',
+	// 	'after_title'   => '</h2>',
+	// ) );
+	// register_sidebar( array(
+	// 	'name'          => esc_html__( 'Blog Sticky Sidebar', 'businesspress' ),
+	// 	'id'            => 'sidebar-1-s',
+	// 	'description'   => esc_html__( 'Displays while following the PC\'s scrolling.', 'businesspress' ),
+	// 	'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+	// 	'after_widget'  => '</aside>',
+	// 	'before_title'  => '<h2 class="widget-title">',
+	// 	'after_title'   => '</h2>',
+	// ) );
+	// register_sidebar( array(
+	// 	'name'          => esc_html__( 'Page Sidebar', 'businesspress' ),
+	// 	'id'            => 'sidebar-page',
+	// 	'description'   => esc_html__( 'This is the normal sidebar for static pages. If you do not use this sidebar or Page Sticky Sidebar, static pages will be a one-column design.', 'businesspress' ),
+	// 	'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+	// 	'after_widget'  => '</aside>',
+	// 	'before_title'  => '<h2 class="widget-title">',
+	// 	'after_title'   => '</h2>',
+	// ) );
+	// register_sidebar( array(
+	// 	'name'          => esc_html__( 'Page Sticky Sidebar', 'businesspress' ),
+	// 	'id'            => 'sidebar-page-s',
+	// 	'description'   => esc_html__( 'Displays while following the PC\'s scrolling.', 'businesspress' ),
+	// 	'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+	// 	'after_widget'  => '</aside>',
+	// 	'before_title'  => '<h2 class="widget-title">',
+	// 	'after_title'   => '</h2>',
+	// ) );
 
-// 	register_sidebar( array(
-// 		'name'          => esc_html__( 'Footer 1', 'businesspress' ),
-// 		'id'            => 'footer-1',
-// 		'description'   => __( 'You can set the width of footers from Customize. If you do not use a footer widget, nothing will be displayed.', 'businesspress' ),
-// 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-// 		'after_widget'  => '</aside>',
-// 		'before_title'  => '<h2 class="widget-title">',
-// 		'after_title'   => '</h2>',
-// 	) );
-// 	register_sidebar( array(
-// 		'name'          => esc_html__( 'Footer 2', 'businesspress' ),
-// 		'id'            => 'footer-2',
-// 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-// 		'after_widget'  => '</aside>',
-// 		'before_title'  => '<h2 class="widget-title">',
-// 		'after_title'   => '</h2>',
-// 	) );
-// 	register_sidebar( array(
-// 		'name'          => esc_html__( 'Footer 3', 'businesspress' ),
-// 		'id'            => 'footer-3',
-// 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-// 		'after_widget'  => '</aside>',
-// 		'before_title'  => '<h2 class="widget-title">',
-// 		'after_title'   => '</h2>',
-// 	) );
-// 	register_sidebar( array(
-// 		'name'          => esc_html__( 'Footer 4', 'businesspress' ),
-// 		'id'            => 'footer-4',
-// 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-// 		'after_widget'  => '</aside>',
-// 		'before_title'  => '<h2 class="widget-title">',
-// 		'after_title'   => '</h2>',
-// 	) );
-// 	register_sidebar( array(
-// 		'name'          => esc_html__( 'Footer 5', 'businesspress' ),
-// 		'id'            => 'footer-5',
-// 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-// 		'after_widget'  => '</aside>',
-// 		'before_title'  => '<h2 class="widget-title">',
-// 		'after_title'   => '</h2>',
-// 	) );
-// 	register_sidebar( array(
-// 		'name'          => esc_html__( 'Footer 6', 'businesspress' ),
-// 		'id'            => 'footer-6',
-// 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-// 		'after_widget'  => '</aside>',
-// 		'before_title'  => '<h2 class="widget-title">',
-// 		'after_title'   => '</h2>',
-// 	) );
-// }
-// add_action( 'widgets_init', 'businesspress_widgets_init' );
+	// register_sidebar( array(
+	// 	'name'          => esc_html__( 'Footer 1', 'businesspress' ),
+	// 	'id'            => 'footer-1',
+	// 	'description'   => __( 'You can set the width of footers from Customize. If you do not use a footer widget, nothing will be displayed.', 'businesspress' ),
+	// 	'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+	// 	'after_widget'  => '</aside>',
+	// 	'before_title'  => '<h2 class="widget-title">',
+	// 	'after_title'   => '</h2>',
+	// ) );
+	// register_sidebar( array(
+	// 	'name'          => esc_html__( 'Footer 2', 'businesspress' ),
+	// 	'id'            => 'footer-2',
+	// 	'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+	// 	'after_widget'  => '</aside>',
+	// 	'before_title'  => '<h2 class="widget-title">',
+	// 	'after_title'   => '</h2>',
+	// ) );
+	// register_sidebar( array(
+	// 	'name'          => esc_html__( 'Footer 3', 'businesspress' ),
+	// 	'id'            => 'footer-3',
+	// 	'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+	// 	'after_widget'  => '</aside>',
+	// 	'before_title'  => '<h2 class="widget-title">',
+	// 	'after_title'   => '</h2>',
+	// ) );
+	// register_sidebar( array(
+	// 	'name'          => esc_html__( 'Footer 4', 'businesspress' ),
+	// 	'id'            => 'footer-4',
+	// 	'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+	// 	'after_widget'  => '</aside>',
+	// 	'before_title'  => '<h2 class="widget-title">',
+	// 	'after_title'   => '</h2>',
+	// ) );
+	// register_sidebar( array(
+	// 	'name'          => esc_html__( 'Footer 5', 'businesspress' ),
+	// 	'id'            => 'footer-5',
+	// 	'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+	// 	'after_widget'  => '</aside>',
+	// 	'before_title'  => '<h2 class="widget-title">',
+	// 	'after_title'   => '</h2>',
+	// ) );
+	// register_sidebar( array(
+	// 	'name'          => esc_html__( 'Footer 6', 'businesspress' ),
+	// 	'id'            => 'footer-6',
+	// 	'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+	// 	'after_widget'  => '</aside>',
+	// 	'before_title'  => '<h2 class="widget-title">',
+	// 	'after_title'   => '</h2>',
+	// ) );
+}
+add_action( 'widgets_init', 'businesspress_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
@@ -193,6 +198,7 @@ function kence_scripts() {
 	wp_enqueue_style('base-style', get_theme_file_uri('/css/base.css'), array(), '1.0.0');
 	wp_enqueue_style('header-style', get_theme_file_uri('/css/header.css'), array(), '1.0.0');
 	wp_enqueue_style('footer-style', get_theme_file_uri('/css/footer.css'), array(), '1.0.0');
+	wp_enqueue_style('sidebar-style', get_theme_file_uri('/css/sidebar.css'), array(), '1.0.0');
 	if ( is_home() ) {
 		wp_enqueue_style('front-page-style', get_theme_file_uri('/css/front-page.css'), array(), '1.0.0');
 	}
@@ -273,7 +279,7 @@ require get_theme_file_path( '/inc/template-tags.php' );
 /**
  * Custom widgets for this theme.
  */
-// require get_theme_file_path( '/inc/widgets.php' );
+require get_theme_file_path( '/inc/widgets.php' );
 
 /**
  * Custom functions that act independently of the theme templates.
