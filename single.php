@@ -1,14 +1,7 @@
-<?php
-/**
- * The template for displaying all single posts.
- *
- * @package BusinessPress
- */
+<?php get_header(); ?>
 
-get_header(); ?>
-
-<div id="primary" class="content-area">
-	<main id="main" class="site-main">
+<div id="primary" class="content-area l-postContentArea">
+	<main id="main" class="site-main l-siteMain">
 
 	<?php while ( have_posts() ) : the_post(); ?>
 
@@ -16,12 +9,12 @@ get_header(); ?>
 
 		<?php
 			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
+			// if ( comments_open() || get_comments_number() ) :
+			// 	comments_template();
+			// endif;
 		?>
 
-	<?php endwhile; // End of the loop. ?>
+	<?php endwhile; ?>
 
 	</main><!-- #main -->
 </div><!-- #primary -->

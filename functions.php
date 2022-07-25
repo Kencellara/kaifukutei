@@ -1,11 +1,6 @@
 <?php
-/**
- * BusinessPress functions and definitions
- *
- * @package BusinessPress
- */
 
-if ( ! function_exists( 'businesspress_setup' ) ) :
+// if ( ! function_exists( 'businesspress_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  */
@@ -84,7 +79,7 @@ function businesspress_setup() {
 	add_editor_style( array( 'css/editor-style.css' ) );
 	
 }
-endif; // businesspress_setup
+// endif; // businesspress_setup
 add_action( 'after_setup_theme', 'businesspress_setup' );
 
 /**
@@ -194,6 +189,7 @@ function kence_scripts() {
 	wp_enqueue_style( 'fontawesome', get_theme_file_uri( '/inc/font-awesome_6/css/all.min.css' ), array(), '6.1.1' );
 	wp_enqueue_style( 'normalize', get_theme_file_uri( '/css/normalize.css' ),  array(), '8.0.0' );
 	wp_enqueue_style( 'businesspress-style', get_stylesheet_uri(), array(), '1.0.0' );
+
 	// Additional styles for kence_theme
 	wp_enqueue_style('base-style', get_theme_file_uri('/css/base.css'), array(), '1.0.0');
 	wp_enqueue_style('header-style', get_theme_file_uri('/css/header.css'), array(), '1.0.0');
@@ -201,6 +197,9 @@ function kence_scripts() {
 	wp_enqueue_style('sidebar-style', get_theme_file_uri('/css/sidebar.css'), array(), '1.0.0');
 	if ( is_home() ) {
 		wp_enqueue_style('front-page-style', get_theme_file_uri('/css/front-page.css'), array(), '1.0.0');
+	}
+	if ( is_singular() ) {
+		wp_enqueue_style('single-style', get_theme_file_uri('/css/single.css'), array(), '1.0.0');
 	}
 
 	wp_enqueue_script( 'fitvids', get_theme_file_uri( '/js/jquery.fitvids.js' ), array(), '1.1', true );
@@ -270,6 +269,30 @@ function businesspress_body_classes( $classes ) {
 }
 add_filter( 'body_class', 'businesspress_body_classes' );
 
+/**
+ * 関連記事取得
+ */
+function fetchRelatedPosts(int $postCount): array
+{
+	global $post;
+	
+	$cats = get_the_category();
+	$catsChildren = array_filter($cats, function($cat) {
+		return $cat->parent !== 1;
+	});
+
+	$randNum = mt_rand(0, count($catsChildren) - 1);
+	$catId = $catsChildren[$randNum]->term_id;
+
+	$relatedPosts = get_posts([
+		'posts_per_page' => $postCount,
+		'category' => $catId,
+		'orderby' => 'rand'
+	]);
+
+	return $relatedPosts;
+}
+
 
 /**
  * Custom template tags for this theme.
@@ -289,4 +312,4 @@ require get_theme_file_path( '/inc/extras.php' );
 /**
  * Load Jetpack compatibility file.
  */
-require get_theme_file_path( '/inc/jetpack.php' );
+// require get_theme_file_path( '/inc/jetpack.php' );

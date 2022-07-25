@@ -30,7 +30,7 @@ $twURL = 'https://twitter.com/Joemaru_fishing';
 		</div>
 
 		<div class="p-sidebarIg c-sidebarElement">
-			<div class="p-igHeader c-sidebarHeader"><i class="fa-solid fa-photo-film"></i>最近の投稿</div>
+			<div class="p-igHeader c-sidebarHeader"><i class="fa-solid fa-photo-film"></i>Instagram</div>
 			<div class="p-igContent c-sidebarContent">
 				<div class="p-igAccount">
 					<img class="a-igAccountImg" src="<?= $sidebarImgPath . 'ig-icon.png' ?>">

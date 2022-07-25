@@ -1,0 +1,169 @@
+@import 'settings/colors';
+
+body.single {
+  .l-siteContent {
+    display: flex;
+    margin-top: 40px;
+
+    .l-postContentArea {
+      margin-right: 43px;
+
+      .l-siteMain {
+        width: 775px;
+        background: #fff;
+        border: 1px solid #aaa;
+        border-radius: 10px;
+      }
+    }
+  }
+  
+  article {
+    padding: 30px 17px;
+  }
+
+  .p-postTitleArea {
+    display: flex;
+    height: 100px;
+    background: $bg-gray;
+    border-radius: 50px 0 0 50px;
+    box-shadow: 3px 6px 1px 0 $main-color;
+
+    .a-postTitleBefore {
+      background: $main-color;
+      color: #fff;
+      border-radius: 50px;
+      position: relative;
+      
+      i {
+        font-size: 100px;
+        transform: scale(.65);
+        height: 100px;
+        width: 100px;
+      }
+    }
+
+    h1.a-postTitle {
+      display: inline-block;
+      margin: auto;
+      padding-left: .8rem;
+    }
+  }
+
+  .p-postDate {
+    margin: 7px 0;
+    text-align: right;
+  }
+
+  .a-postEyecatch {
+    margin: 0 auto;
+    width: 741px;
+    height: 494px;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  // 目次プラグイン上書き
+  div#toc_container {
+    box-sizing: border-box;
+    border-left: none;
+    border-right: none;
+    padding: 25px 46px;
+    margin: 40px 0;
+
+    p.toc_title {
+      color: $title-black;
+      text-align: left;
+      font-size: 22rem/16;
+    }
+
+    li {
+      font-size: 18rem/16;
+      font-weight: 500;
+
+      li {
+        font-size: 17rem/16;
+      }
+
+      .toc_number {
+        margin-right: .5rem;
+      }
+    }
+
+
+    a {
+      color: $paragraph-black;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  h2 {
+    margin: 40px 0 20px;
+    font-size: 23rem/16;
+    background: $bg-gray;
+    border-left: 25px solid $main-color;
+    padding: .3rem 1rem;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  h3 {
+    margin: 30px 0 20px;
+    font-size: 22rem/16;
+    border-left: 15px solid $main-color;
+    padding: .2rem 1rem;
+  }
+
+  p {
+    font-size: 17rem/16;
+    color: $paragraph-black;
+    margin-bottom: 17rem/16;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  // 関連記事
+  .p-relatedPostsHeader {
+    font-size: 24rem/16;
+    color: $title-black;
+    font-weight: bold;
+
+    i.fa-paperclip {
+      margin-left: .3rem;
+      margin-right: .7rem;
+    }
+  }
+
+  .l-relatedPostsArea {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 21px;
+    row-gap: 30px;
+    padding: 15px 0;
+    box-sizing: border-box;
+    border-width: 1px 0px;
+    border-style: solid;
+    border-color: #888888;
+
+    .p-relatedPost {
+      width: 360px;
+
+      .p-relatedPostText {
+        margin-top: .5rem;
+      }
+
+      .p-relatedPostTitle a {
+        color: $title-black;
+        font-size: 19rem/16;
+        font-weight: bold;
+        line-height: 28rem/16;
+      }
+    }
+  }
+}

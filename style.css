@@ -97,12 +97,12 @@ body:lang(ja) {
 /* Heading */
 h1, h2, h3, h4, h5, h6, .site-title {
 	clear: both;
-	color: #111;
+	color: #202124;
 	font-weight: 700;
 	line-height: 1.5;
 }
 h1 {
-	font-size: 2.5rem;
+	font-size: calc(25rem/16);
 	margin-bottom: 1em;
 	margin-top: 2em;
 }
@@ -1574,7 +1574,6 @@ a.home-header-button-sub:hover {
 	text-align: center;
 }
 .entry-title {
-	font-size: 2.25rem;
 	letter-spacing: -0.03em;
 	margin-bottom: 0;
 	margin-top: 0;
@@ -1582,11 +1581,6 @@ a.home-header-button-sub:hover {
 .entry-title a {
 	color: #202124;
 	text-decoration: none;
-}
-@media screen and (min-width: 782px) {
-	.entry-title {
-		font-size: 2.5rem;
-	}
 }
 
 /* Entry Meta */

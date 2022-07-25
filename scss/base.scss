@@ -7,6 +7,7 @@ body {
   display: none;
 }
 
+// layout
 .l-siteContent {
   padding: 0;
 }
@@ -19,6 +20,13 @@ body {
   width: 300px;
 }
 
+// global parts
+.g-postDate {
+  color: $sub-black;
+  font-size: 1rem;
+}
+
+// font-awesome
 .fa-instagram {
   color: $ig-color;
 }
