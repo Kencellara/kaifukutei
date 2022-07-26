@@ -1,0 +1,22 @@
+@import 'settings/colors';
+
+.l-siteContent {
+  display: flex;
+  margin-top: 50px;
+
+  .l-mainSection {
+    box-sizing: border-box;
+    width: 777px;
+    margin-right: 43px;
+  }
+
+  h1.page-title {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+
+  // .l-archiveLoopWrapper {
+  //   .post-grid {
+  //   }
+  // }
+}

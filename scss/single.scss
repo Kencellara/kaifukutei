@@ -133,6 +133,7 @@ body.single {
     font-size: 24rem/16;
     color: $title-black;
     font-weight: bold;
+    margin-top: 70px;
 
     i.fa-paperclip {
       margin-left: .3rem;
@@ -153,6 +154,10 @@ body.single {
 
     .p-relatedPost {
       width: 360px;
+
+      .p-relatedPostImg img {
+        height: 240px;
+      }
 
       .p-relatedPostText {
         margin-top: .5rem;

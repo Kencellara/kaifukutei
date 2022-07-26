@@ -201,6 +201,9 @@ function kence_scripts() {
 	if ( is_singular() ) {
 		wp_enqueue_style('single-style', get_theme_file_uri('/css/single.css'), array(), '1.0.0');
 	}
+	if ( is_archive() ) {
+		wp_enqueue_style('archive-style', get_theme_file_uri('/css/archive.css'), array(), '1.0.0');
+	}
 
 	wp_enqueue_script( 'fitvids', get_theme_file_uri( '/js/jquery.fitvids.js' ), array(), '1.1', true );
 	if ( is_home() && ! is_paged() && get_theme_mod( 'businesspress_enable_featured_slider' ) ) {
@@ -292,6 +295,42 @@ function fetchRelatedPosts(int $postCount): array
 
 	return $relatedPosts;
 }
+
+// カテゴリー取得
+function fetchCategories(array $slugList): array
+{
+	$catsArr = [];
+
+	foreach($slugList as $slug) {
+		$cat = get_category_by_slug($slug);
+		array_push($catsArr, $cat);
+	}
+
+	return $catsArr;
+}
+
+/* the_archive_title の余計な文字を削除 */
+function removePrefixOfArchiveTitle(): string
+{
+	if (is_category()) {
+		$title = single_cat_title('', false);
+	} elseif (is_tag()) {
+		$title = single_tag_title('', false);
+	} elseif (is_tax()) {
+		$title = single_term_title('', false);
+	} elseif (is_post_type_archive()) {
+		$title = post_type_archive_title('', false);
+	} elseif (is_date()) {
+		$title = get_the_time('Y年n月');
+	// } elseif (is_search()) {
+	// 	$title = '検索結果：' . esc_html(get_search_query(false));
+	// } elseif (is_404()) {
+	// 	$title = '「404」ページが見つかりません';
+	} else {
+	}
+	return $title;
+}
+add_filter( 'get_the_archive_title', 'removePrefixOfArchiveTitle' );
 
 
 /**

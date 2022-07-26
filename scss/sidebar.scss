@@ -107,15 +107,31 @@
 
   .p-archiveContent {
     padding: 25px;
-    
+
     .a-archiveList {
-      margin: 0;
       list-style-type: none;
-      font-size: 1rem;
-      
-      a {
-        color: $paragraph-black;
+    }
+  }
+
+  .p-categoryContent {
+    padding: 25px;
+
+    .a-categoryList {
+      list-style-type: disclosure-closed;
+      margin-left: 1.5rem;
+
+      li {
+        margin-bottom: .5rem;
       }
+    }
+  }
+
+  .c-sidebarList {
+    margin: 0;
+    font-size: 1rem;
+
+    a {
+      color: $paragraph-black;
     }
   }
 }

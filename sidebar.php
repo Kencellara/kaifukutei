@@ -47,7 +47,7 @@ $twURL = 'https://twitter.com/Joemaru_fishing';
 		<div class="p-sidebarArchive c-sidebarElement">
 			<div class="p-archiveHeader c-sidebarHeader"><i class="fa-solid fa-box-archive"></i>アーカイブ</div>
 			<div class="p-archiveContent c-sidebarContent">
-				<ul class="a-archiveList">
+				<ul class="a-archiveList c-sidebarList">
 					<?php
 					$string = wp_get_archives(
 						array(
@@ -61,5 +61,19 @@ $twURL = 'https://twitter.com/Joemaru_fishing';
 			</div>
 		</div>
 
-		</div><!-- .normal-sidebar -->
-	</div><!-- #secondary -->
+		<?php if (false): ?>
+			<div class="p-sidebarCategory c-sidebarElement">
+				<div class="p-categoryHeader c-sidebarHeader"><i class="fa-solid fa-cube"></i>カテゴリー</div>
+				<div class="p-categoryContent c-sidebarContent">
+					<ul class="a-categoryList c-sidebarList">
+						<?php $catsArr = fetchCategories(['fish_kind', 'cuisine', 'seasoning', 'cookware']) ?>
+						<?php foreach ($catsArr as $cat) : ?>
+							<li><a href="<?= get_term_link($cat) ?>"><?= $cat->name ?></a></li>
+						<?php endforeach ?>
+					</ul>
+				</div>
+			</div>
+		<?php endif ?>
+
+	</div><!-- .normal-sidebar -->
+</div><!-- #secondary -->

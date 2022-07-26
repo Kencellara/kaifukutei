@@ -16,7 +16,7 @@
 					<div class="site-branding">
 						<div class="p-siteHeaderImg">
 							<a href="<?= home_url() ?>">
-								<img src="<?= wp_upload_dir()['baseurl'] . '/header/header_0.png' ?>">
+								<img src="<?= wp_upload_dir()['baseurl'] . '/header/header_1.png' ?>">
 							</a>
 						</div>
 					</div><!-- .site-branding -->
