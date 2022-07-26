@@ -1,7 +1,11 @@
 @import 'settings/colors';
 
 .l-siteContent {
-  display: grid;
+  // 10記事で解放
+  // display: grid;
+  display: flex;
+  margin-top: 40px;
+
   grid-template-rows: 885px auto;
   grid-template-columns: auto 300px;
   grid-template-areas:
@@ -9,6 +13,9 @@
     "main side";
   
   .l-aboveSection {
+    // 10記事で解放
+    display: none;
+    
     grid-row: 1/2;
     grid-column: 1/-1;
   }
@@ -122,7 +129,7 @@
 
 .l-mainSection {
   .p-newPostsHeader {
-    margin: 24px auto;
+    margin: 0 auto 24px;
     width: 268px;
     height: 60px;
     line-height: 60px;
