@@ -2802,26 +2802,23 @@ a.featured-widget-entry:hover .featured-title {
 
 /* Back to Top */
 .back-to-top {
-	background: rgba( 0, 0, 0, 0.1 );
-	border-radius: 8px;
-	bottom: 20px;
+	background: #094C93;
+	border-radius: 50%;
 	cursor: pointer;
 	display: none;
-	height: 45px;
 	position: fixed;
 	right: 20px;
-	width: 45px;
+	bottom: 20px;
+	height: 50px;
+	width: 50px;
 	z-index: 2;
 	transition: .15s ease-in-out;
 }
-.back-to-top:hover {
-	background: #111;
-}
 .back-to-top:before {
-	color: #999;
+	color: #fff;
 	content: "\f106";
 	display: block;
-	font: normal 22px/42px FontAwesome;
+	font: normal 22px/50px FontAwesome;
 	text-align: center;
 }
 
