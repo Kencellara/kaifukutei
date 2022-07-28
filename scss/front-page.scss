@@ -1,81 +1,163 @@
 @import 'settings/colors';
 
-.l-siteContent {
-  // 10記事で解放
-  // display: grid;
-  display: flex;
-  margin-top: 40px;
+@media screen and (min-width: 1120px) {
+  .l-siteContent {
+    // 10記事で解放
+    // display: grid;
+    display: flex;
+    margin-top: 40px;
 
-  grid-template-rows: 885px auto;
-  grid-template-columns: auto 300px;
-  grid-template-areas:
-    "recom recom"
-    "main side";
+    grid-template-rows: 885px auto;
+    grid-template-columns: auto 300px;
+    grid-template-areas:
+      "recom recom"
+      "main side";
+
+    .l-aboveSection {
+      grid-row: 1/2;
+      grid-column: 1/-1;
+    }
+
+    .l-mainSection {
+      grid-row: 2/-1;
+      grid-column: 1/2;
+      margin-bottom: 150px;
+    }
+
+    .l-sidebarArea {
+      grid-row: 2/-1;
+      grid-column: 2/-1;
+    }
+
+    &.isPaged {
+      display: flex;
+
+      .l-mainSection {
+        margin-top: 20px;
+      }
+
+      .l-sidebarArea {
+        margin-top: 40px;
+      }
+    }
+  }
+
+  .p-recomPosts {
+    margin: 60px 0;
+    height: 765px;
+  }
+
+  .p-mostRecomPost {
+    width: 1120px;
+    height: 378px;
+    display: flex;
+
+    img {
+      width: 570px;
+    }
+
+    .l-mostRecomText {
+      width: 553px;
+      padding: 40px;
+
+      .p-mostRecomTitle {
+        width: 473px;
+        font-size: 24px;
+        line-height: 38px;
+      }
+
+      .p-mostRecomDescription {
+        margin-top: 18px;
+        width: 473px;
+      }
+
+      .p-toMostRecomPost {
+        a {
+          font-size: 20px;
+          width: 194px;
+        }
+      }
+    }
+  }
+
+  .p-subRecomPosts {
+    gap: 38px;
+    margin-top: 50px;
+    height: 274px;
+
+    .a-subRecomPost {
+      width: 348px;
+
+      img {
+        height: 235.35px;
+      }
+    }
+  }
+
+  .l-mainSection {
+    .p-newPostsHeader {
+      width: 268px;
+      height: 60px;
+      line-height: 60px;
+      font-size: 26px;
+      margin: 0 auto 24px;
+    }
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .l-mainSection {
+    margin-bottom: 4rem;
+  }
   
+  .p-newPostsHeader {
+    width: 156px;
+    font-size: 18rem/16;
+    padding: 11px 0;
+    line-height: 1;
+    margin: 20px auto 10px;
+  }
+
+  .p-newPosts {
+    padding: 0 15px;
+
+    article.post {
+      margin-bottom: 1.5rem;
+    }
+
+    .p-entryTitle {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+
+
+.l-siteContent {
   .l-aboveSection {
     // 10記事で解放
     display: none;
-    
-    grid-row: 1/2;
-    grid-column: 1/-1;
-  }
-  .l-mainSection {
-    grid-row: 2/-1;
-    grid-column: 1/2;
-    margin-bottom: 150px;
-  }
-  .l-sidebarArea {
-    grid-row: 2/-1;
-    grid-column: 2/-1;
-  }
-
-  &.isPaged {
-    display: flex;
-    
-    .l-mainSection {
-      margin-top: 20px;
-    }
-    .l-sidebarArea {
-      margin-top: 40px;
-    }
   }
 }
 
-
-.p-recomPosts {
-  margin: 60px 0;
-  height: 765px;
-}
 .p-mostRecomPost {
-  width: 1120px;
-  height: 378px;
-  display: flex;
   border-radius: 0 30px 0 30px;
   background: #fff;
   box-shadow: 2px 4px 2px 0px $main-color;
 
   img {
-    width: 570px;
     border-radius: 0 0 0 30px;
   }
 
   .l-mostRecomText {
-    width: 553px;
-    padding: 40px;
-
     .p-mostRecomTitle {
       color: $title-black;
       font-weight: bold;
-      font-size: 24px;
-      width: 473px;
       margin: auto;
       text-align: center;
-      line-height: 38px;
     }
 
     .p-mostRecomDescription {
-      width: 473px;
-      margin-top: 18px;
       color: $paragraph-black;
     }
 
@@ -84,9 +166,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        font-size: 20px;
         font-weight: bold;
-        width: 194px;
         margin: 20px auto 0;
         background: $main-color;
         color: #fff;
@@ -104,17 +184,8 @@
 
 .p-subRecomPosts {
   display: flex;
-  gap: 38px;
-  margin-top: 50px;
-  height: 274px;
 
   .a-subRecomPost {
-    width: 348px;
-
-    img {
-      height: 235.35px;
-    }
-
     .p-subRecomTitle {
       font-weight: bold;
       font-size: 17rem/16;
@@ -129,15 +200,10 @@
 
 .l-mainSection {
   .p-newPostsHeader {
-    margin: 0 auto 24px;
-    width: 268px;
-    height: 60px;
-    line-height: 60px;
     border-radius: 20px 0 20px 0;
     font-weight: bold;
     color: #fff;
     background: $main-color;
     text-align: center;
-    font-size: 26px;
   }
 }

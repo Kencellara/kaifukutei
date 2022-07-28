@@ -516,7 +516,6 @@ body {
 	margin-bottom: 6rem;
 }
 .sidebar-area {
-	border-top: solid 1px #eee;
 	padding-bottom: 1rem;
 	padding-top: 6rem;
 }
@@ -811,9 +810,11 @@ body {
 
 /* Drawer Button */
 .drawer-hamburger {
+	/* display: block; */
+	display: none;
+
 	background-color: transparent;
 	box-sizing: content-box;
-	display: block;
 	margin-right: -5px;
 	outline: 0;
 	padding: 12px 5px;

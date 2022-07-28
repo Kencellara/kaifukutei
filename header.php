@@ -11,7 +11,7 @@
 	<div id="page" class="site">
 		<header id="masthead" class="site-header">
 
-			<div class="main-header main-header-original">
+			<div class="main-header main-header-original l-mainHeader">
 				<div class="main-header-content">
 					<div class="site-branding">
 						<div class="p-siteHeaderImg">

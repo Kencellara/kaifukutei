@@ -13,23 +13,32 @@ body {
 }
 
 // layout
+@media screen and (min-width: 1120px) {
+  .l-mainSection {
+    width: 777px;
+    margin-right: 43px;
+  }
+}
 .l-siteContent {
   padding: 0;
 }
 .l-mainSection {
   box-sizing: border-box;
-  width: 777px;
-  margin-right: 43px;
-}
-.l-sidebarArea {
-  box-sizing: border-box;
-  width: 300px;
 }
 
 // global parts
+@media screen and (min-width: 1120px) {
+  .g-postDate {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 1120px) {
+  .g-postDate {
+    font-size: .9rem;
+  }
+}
 .g-postDate {
   color: $sub-black;
-  font-size: 1rem;
 }
 
 // font-awesome

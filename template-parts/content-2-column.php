@@ -3,17 +3,16 @@
 
 		<header class="entry-header">
 
-			<?php if ( has_post_thumbnail() && ! get_theme_mod( 'businesspress_hide_featured_image_on_grid' ) ): ?>
+			<?php if ( has_post_thumbnail() ): ?>
 			<div class="post-thumbnail">
 				<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('businesspress-post-thumbnail-eyecatch'); ?></a>
 			</div><!-- .post-thumbnail -->
 			<?php endif; ?>
 
-			<?php if ( is_sticky() && is_home() && ! is_paged() ): ?>
-			<div class="featured"><?php esc_html_e( 'Featured', 'businesspress' ); ?></div>
-			<?php endif; ?>
-
-			<h2 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+			<h2 class="entry-title p-entryTitle">
+				<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
+			</h2>
+			
 			<div class="p-postDate g-postDate"><?= get_the_date(); ?></div>
 
 		</header><!-- .entry-header -->

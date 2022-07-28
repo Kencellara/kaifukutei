@@ -1,5 +1,13 @@
 @import 'settings/colors';
 
+
+@media screen and (max-width: 1120px) {
+  .l-mainHeader {
+    box-shadow: 0 1px 3px 1px $main-color;
+  }
+}
+
+
 .main-header {
   background-color: $main-color;
   h1.blogTitle {

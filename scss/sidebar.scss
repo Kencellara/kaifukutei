@@ -1,5 +1,21 @@
 @import 'settings/colors';
 
+
+@media screen and (min-width: 1120px) {
+  .l-sidebarArea {
+    width: 300px;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .l-sidebarArea {
+    padding: 0 1rem;
+  }
+}
+
+
+
 .c-sidebarElement {
   margin-bottom: 30px;
   border: 1px inset #9F9F9F;
