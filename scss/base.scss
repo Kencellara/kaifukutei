@@ -13,6 +13,11 @@ body {
 }
 
 // layout
+@media screen and (max-width: 1120px) {
+  .l-siteContent {
+    max-width: 500px; 
+  }
+}
 @media screen and (min-width: 1120px) {
   .l-mainSection {
     width: 777px;

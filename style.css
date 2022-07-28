@@ -1614,6 +1614,11 @@ a.home-header-button-sub:hover {
 	margin-left: -20px;
 	margin-right: -20px;
 }
+@media screen and (min-width: 1120px) {
+	.post-thumbnail img {
+		height: 100%;
+	}
+}
 .post-thumbnail img {
 	height: 100%;
 	transition: 0.5s ease-in-out;
@@ -1681,8 +1686,12 @@ a.continue-reading {
 	margin-bottom: 0;
 	text-align: left;
 }
+@media screen and (min-width: 1120px) {
+	.post-grid .post-thumbnail {
+		height: 252px;
+	}
+} 
 .post-grid .post-thumbnail {
-	height: 252px;
 	margin: 0 0 .5rem 0;
 }
 .post-grid .entry-title {
@@ -1695,7 +1704,7 @@ a.continue-reading {
 .post-grid .entry-summary p {
 	margin-bottom: 0;
 }
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 1120px) {
 	.post-grid .entry-title {
 		font-size: 1.125rem;
 		line-height: 30px;
