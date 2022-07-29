@@ -13,11 +13,13 @@ body {
 }
 
 // layout
+// sp
 @media screen and (max-width: 1120px) {
   .l-siteContent {
     max-width: 500px; 
   }
 }
+// pc
 @media screen and (min-width: 1120px) {
   .l-mainSection {
     width: 777px;
@@ -32,14 +34,16 @@ body {
 }
 
 // global parts
-@media screen and (min-width: 1120px) {
-  .g-postDate {
-    font-size: 1rem;
-  }
-}
+// sp
 @media screen and (max-width: 1120px) {
   .g-postDate {
     font-size: .9rem;
+  }
+}
+// pc
+@media screen and (min-width: 1120px) {
+  .g-postDate {
+    font-size: 1rem;
   }
 }
 .g-postDate {
