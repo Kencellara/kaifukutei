@@ -1,6 +1,6 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<header class="entry-header">
+	<header class="entry-header p-entryHeader">
 
 		<div class="p-postTitleArea">
 			<div class="a-postTitleBefore">
@@ -18,7 +18,7 @@
 		<?php endif; ?>
 	</header>
 
-	<div class="entry-content">
+	<div class="entry-content p-entryContent">
 		<?php the_content(); ?>
 	</div><!-- .entry-content -->
 
