@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div id="primary" class="content-area l-postContentArea">
+<div id="primary" class="content-area l-postContentArea l-singularContentArea">
 	<main id="main" class="site-main l-siteMain">
 
 	<?php while ( have_posts() ) : the_post(); ?>

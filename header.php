@@ -38,21 +38,6 @@
 				</div><!-- .drawer-navigation -->
 			</div><!-- .main-header -->
 
-			<?php if (is_front_page() && get_theme_mod('businesspress_enable_home_header')) : ?>
-				<?php get_template_part('template-parts/content', 'home-header'); ?>
-			<?php elseif (is_page() && !get_post_meta(get_the_ID(), 'businesspress_hide_page_title', true)) : ?>
-				<div class="jumbotron" <?php businesspress_post_background(); ?>>
-					<div class="jumbotron-overlay">
-						<div class="jumbotron-content">
-							<?php if (!get_theme_mod('businesspress_hide_subheader')) : ?>
-								<div class="subheader"><?php echo esc_attr(str_replace('-', ' ', get_post_field('post_name', get_the_ID()))); ?></div>
-							<?php endif; ?>
-							<h2 class="jumbotron-title"><?php the_title(); ?></h2>
-						</div><!-- .jumbotron-content -->
-					</div><!-- .jumbotron-overlay -->
-				</div><!-- .jumbotron -->
-			<?php endif; ?>
-
 			<div class="l-globalMenuArea">
 				<nav class="p-globalMenu">
 					<ul>

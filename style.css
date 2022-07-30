@@ -517,7 +517,7 @@ body {
 }
 .sidebar-area {
 	padding-bottom: 1rem;
-	padding-top: 6rem;
+	/* padding-top: 6rem; */
 }
 .page-header {
 	margin-bottom: 5rem;
