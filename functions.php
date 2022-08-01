@@ -310,7 +310,7 @@ function fetchCategories(array $slugList): array
 }
 
 /* the_archive_title の余計な文字を削除 */
-function removePrefixOfArchiveTitle(): string
+function removePrefixOfArchiveTitle(): ?string
 {
 	if (is_category()) {
 		$title = single_cat_title('', false);
@@ -327,16 +327,29 @@ function removePrefixOfArchiveTitle(): string
 	// } elseif (is_404()) {
 	// 	$title = '「404」ページが見つかりません';
 	} else {
+		$title = '';
 	}
 	return $title;
 }
 add_filter( 'get_the_archive_title', 'removePrefixOfArchiveTitle' );
+
+// ファビコン設定
+function faviconUrl(): ?string
+{
+	return wp_upload_dir()['baseurl'] . '/favicon/favicon.png';
+}
+add_filter( 'get_site_icon_url', 'faviconUrl' );
 
 
 /**
  * Custom template tags for this theme.
  */
 require get_theme_file_path( '/inc/template-tags.php' );
+
+/**
+ * Custom template tags for this theme.
+ */
+require get_theme_file_path('/inc/shortcodes.php');
 
 /**
  * Custom widgets for this theme.
@@ -348,6 +361,15 @@ require get_theme_file_path( '/inc/widgets.php' );
  */
 require get_theme_file_path( '/inc/extras.php' );
 
+/**
+ * Customizer additions.
+ */
+require get_theme_file_path('/inc/customizer.php');
+
+/**
+ * Set CSS for Customizer options.
+ */
+require get_theme_file_path('/inc/customizer-css.php');
 /**
  * Load Jetpack compatibility file.
  */
