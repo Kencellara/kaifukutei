@@ -293,7 +293,8 @@ function fetchRelatedPosts(int $postCount): array
 	$relatedPosts = get_posts([
 		'posts_per_page' => $postCount,
 		'category' => $catId,
-		'orderby' => 'rand'
+		'orderby' => 'rand',
+		'exclude' => $post->ID
 	]);
 
 	return $relatedPosts;

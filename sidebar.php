@@ -61,7 +61,7 @@ $twURL = 'https://twitter.com/Joemaru_fishing';
 			</div>
 		</div>
 
-		<?php if (is_single() && true) : ?>
+		<?php if (is_single() && false) : ?>
 
 			<div class="p-sidebarCategory c-sidebarElement">
 				<div class="p-categoryHeader c-sidebarHeader"><i class="fa-solid fa-cube"></i>カテゴリー</div>
