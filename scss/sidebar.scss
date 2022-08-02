@@ -179,6 +179,12 @@
       align-items: center;
       padding: .5rem;
 
+      .a-sidebarRecomPostImg {
+        flex-shrink: 0;
+        width: 130px;
+        height: 118px;
+      }
+
       .p-sidebarRecomPostText {
         padding-left: .5rem;
 

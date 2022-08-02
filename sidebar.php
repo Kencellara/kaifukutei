@@ -61,7 +61,7 @@ $twURL = 'https://twitter.com/Joemaru_fishing';
 			</div>
 		</div>
 
-		<?php if (is_single() && false) : ?>
+		<?php if (is_single() && true) : ?>
 
 			<div class="p-sidebarCategory c-sidebarElement">
 				<div class="p-categoryHeader c-sidebarHeader"><i class="fa-solid fa-cube"></i>カテゴリー</div>
@@ -98,7 +98,7 @@ $twURL = 'https://twitter.com/Joemaru_fishing';
 							<?php $post = get_page_by_path($recom, OBJECT, 'post') ?>
 							<li class="p-recommendListItem">
 								<div class="a-sidebarRecomPostImg">
-									<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('businesspress-post-thumbnail-eyecatch'); ?></a>
+									<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('businesspress-post-thumbnail-list'); ?></a>
 								</div>
 								<div class="p-sidebarRecomPostText">
 									<div class="a-sidebarRecomPostTitle g-postTitle">

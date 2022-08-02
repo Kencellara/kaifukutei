@@ -22,7 +22,10 @@ function businesspress_setup() {
 	add_image_size( 'businesspress-post-thumbnail-medium', 482, 318, true );
 	add_image_size( 'businesspress-post-thumbnail-list', 482, 361, true );
 	add_image_size( 'businesspress-post-thumbnail-small', 80, 60, true );
+	
+	// FIXME: 効かない？
 	add_image_size( 'businesspress-post-thumbnail-eyecatch', 1200, 800, true );
+	add_image_size( 'businesspress-post-thumbnail-square', 260, 236, true );
 
 	// Set the default content width.
 	$GLOBALS['content_width'] = 720;
