@@ -8,17 +8,24 @@
 }
 
 
-.main-header {
+.l-mainHeader {
   background-color: $main-color;
   h1.blogTitle {
     color: #fff;
     margin: 1rem 0;
   }
   .main-header-content {
+    padding: 0;
+    justify-content: center;
+
     .site-branding {
       padding: 0;
+
+      .p-siteHeaderImg {
+        height: 100%;
+        width: 100%;
+      }
     }
-    justify-content: center;
   }
 }
 
