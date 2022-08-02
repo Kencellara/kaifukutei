@@ -216,7 +216,7 @@ function kence_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
-	wp_enqueue_script( 'businesspress-functions', get_theme_file_uri( '/js/functions.js' ), array( 'jquery' ), '20180907', true );
+	wp_enqueue_script( 'businesspress-functions', get_theme_file_uri( '/js/functions.js' ), array( 'jquery' ), '1.0.0', true );
 	wp_enqueue_script( 'businesspress-navigation', get_theme_file_uri( '/js/navigation.js' ), array( 'jquery' ), '1.0.0', true );
 		$businesspress_l10n = array();
 		$businesspress_l10n['expand']         = __( 'Expand child menu', 'businesspress' );

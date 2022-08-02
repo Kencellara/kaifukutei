@@ -65,4 +65,9 @@
 	// Set Fitvids
 	$('.entry-content').fitVids();
 
+	// カテゴリーリストの開閉
+	$('.js-catParent').on('click', function () {
+		$(this).siblings('.p-catChildrenList').toggleClass('open');
+	});
+
 } )( jQuery );

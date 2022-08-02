@@ -1583,6 +1583,9 @@ a.home-header-button-sub:hover {
 	color: #202124;
 	text-decoration: none;
 }
+.entry-title a:hover {
+	color: #202124;
+}
 
 /* Entry Meta */
 .entry-meta {

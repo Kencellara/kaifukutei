@@ -61,18 +61,57 @@ $twURL = 'https://twitter.com/Joemaru_fishing';
 			</div>
 		</div>
 
-		<?php if (false): ?>
+		<?php if (is_single() && false) : ?>
+
 			<div class="p-sidebarCategory c-sidebarElement">
 				<div class="p-categoryHeader c-sidebarHeader"><i class="fa-solid fa-cube"></i>カテゴリー</div>
+
 				<div class="p-categoryContent c-sidebarContent">
-					<ul class="a-categoryList c-sidebarList">
-						<?php $catsArr = fetchCategories(['fish_kind', 'cuisine', 'seasoning', 'cookware']) ?>
+					<ul class="p-categoryList c-sidebarList">
+
+						<?php $catsArr = fetchCategories(['fish', 'dish', 'seasoning', 'cookware']) ?>
 						<?php foreach ($catsArr as $cat) : ?>
-							<li><a href="<?= get_term_link($cat) ?>"><?= $cat->name ?></a></li>
+							<li>
+								<div class="js-catParent a-catParentName"><?= $cat->name ?></div>
+								<ul class="p-catChildrenList">
+									<?php $catChildren = get_term_children($cat->term_id, 'category') ?>
+									<?php foreach ($catChildren as $catChildId) : ?>
+										<?php $catChild = get_category($catChildId) ?>
+										<li><a href="<?= get_term_link($catChild) ?>"><?= $catChild->name ?></a></li>
+									<?php endforeach ?>
+								</ul>
+							</li>
 						<?php endforeach ?>
+
 					</ul>
 				</div>
 			</div>
+
+			<div class="p-sidebarRecommend c-sidebarElement">
+				<div class="p-recommendHeader c-sidebarHeader"><i class="fa-solid fa-star"></i>おすすめ記事</div>
+
+				<div class="p-recommendContent c-sidebarContent">
+					<ul class="p-recommendList c-sidebarList">
+
+						<?php $recomList = ['tidoriya', 'osayan', 'yakitori_tomo', 'kuranoya'] ?>
+						<?php foreach ($recomList as $recom) : ?>
+							<?php $post = get_page_by_path($recom, OBJECT, 'post') ?>
+							<li class="p-recommendListItem">
+								<div class="a-sidebarRecomPostImg">
+									<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('businesspress-post-thumbnail-eyecatch'); ?></a>
+								</div>
+								<div class="p-sidebarRecomPostText">
+									<div class="a-sidebarRecomPostTitle g-postTitle">
+										<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
+									</div>
+								</div>
+							</li>
+						<?php endforeach ?>
+
+					</ul>
+				</div>
+			</div>
+
 		<?php endif ?>
 
 	</div><!-- .normal-sidebar -->

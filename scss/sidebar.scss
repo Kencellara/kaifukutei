@@ -132,7 +132,7 @@
   .p-categoryContent {
     padding: 25px;
 
-    .a-categoryList {
+    .p-categoryList {
       list-style-type: disclosure-closed;
       margin-left: 1.5rem;
 
@@ -148,6 +148,44 @@
 
     a {
       color: $paragraph-black;
+    }
+  }
+
+  .a-catParentName {
+    cursor: pointer;
+  }
+
+  .p-catChildrenList {
+    height: 0;
+    opacity: 0;
+    transition: all .5s ease;
+    padding: .2rem 0 0;
+    list-style-type: disc;
+
+    &.open {
+      opacity: 1;
+      height: 100%;
+      display: block;
+    }
+  }
+
+  // おすすめ記事
+  .p-recommendList {
+    list-style-type: none;
+    padding: .5rem 0;
+
+    .p-recommendListItem {
+      display: flex;
+      align-items: center;
+      padding: .5rem;
+
+      .p-sidebarRecomPostText {
+        padding-left: .5rem;
+
+        .a-sidebarRecomPostTitle {
+          font-size: 1rem;
+        }
+      }
     }
   }
 }
