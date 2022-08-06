@@ -2,6 +2,50 @@
 
 // sp
 @media screen and (max-width: 1120px) {
+  .l-aboveSection {
+    margin: 20px 5px 40px;
+
+    .p-mostRecomPost {
+      box-shadow: none;
+      border-radius: 0;
+      margin-bottom: 1rem;
+
+      img {
+        border-radius: 0;
+      }
+
+      .l-mostRecomText {
+        padding: 1rem .7rem;
+
+        .p-mostRecomTitle {
+          text-align: left;
+        }
+
+        .p-toMostRecomPost a {
+          width: 50%;
+        }
+      }
+    }
+
+    .p-subRecomPosts {
+      justify-content: space-between;
+
+      .a-subRecomPost {
+        width: calc(50% - .2rem);
+
+        &:last-child {
+          display: none;
+        }
+
+        .p-subRecomTitle {
+          margin-top: .2rem;
+          font-size: .9rem;
+          line-height: 1.75;
+        }
+      }
+    }
+  }
+
   .l-mainSection {
     margin-bottom: 4rem;
   }

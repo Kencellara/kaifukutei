@@ -7,16 +7,11 @@ body {
   display: none;
 }
 
-// 10記事で解放
-.l-globalMenuArea {
-  display: none;
-}
-
 // layout
 // sp
 @media screen and (max-width: 1120px) {
   .l-siteContent {
-    max-width: 500px; 
+    max-width: 500px;
   }
 }
 // pc
@@ -26,6 +21,7 @@ body {
     margin-right: 43px;
   }
 }
+
 .l-siteContent {
   padding: 0;
 }

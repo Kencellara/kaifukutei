@@ -70,4 +70,10 @@
 		$(this).siblings('.p-catChildrenList').toggleClass('open');
 	});
 
+	// グローバルメニュー・ハンバーガーメニューの開閉
+	$('.js-globalMenuOpen').on('click', function () {
+		$(this).siblings('ul').slideToggle('fast');
+		$(this).toggleClass('open');
+	});
+
 } )( jQuery );

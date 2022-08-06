@@ -813,9 +813,11 @@ body {
 	/* display: block; */
 	display: none;
 
+	position: absolute;
+	left: 0;
+	margin-left: .2rem;
 	background-color: transparent;
 	box-sizing: content-box;
-	margin-right: -5px;
 	outline: 0;
 	padding: 12px 5px;
 	transition: all .6s cubic-bezier(0.190, 1.000, 0.220, 1.000);
@@ -834,8 +836,8 @@ body {
 .drawer-hamburger-icon,
 .drawer-hamburger-icon:before,
 .drawer-hamburger-icon:after {
-	background-color: #111;
-	height: 2px;
+	background-color: #fff;
+	height: 2.5px;
 	transition: all .6s cubic-bezier(0.190, 1.000, 0.220, 1.000);
 	width: 100%;
 }
@@ -887,7 +889,7 @@ body {
 	z-index: 100;
 }
 .drawer-navigation {
-	background: #fff;
+	background: #FDF6E1;
 	height: 100vh;
 	overflow-y: auto;
 	position: fixed;
@@ -903,7 +905,7 @@ body {
 	box-sizing: border-box;
 	height: 100%;
 	overflow-y: auto;
-	padding: 60px 75px 60px 40px;
+	padding: 1rem 0.5rem;
 	width: 100%;
 }
 .drawer-opened .drawer-overlay {
@@ -933,25 +935,32 @@ body {
 /* Drawer Content */
 .drawer-navigation ul {
 	list-style: none;
-	margin-bottom: 45px;
-	margin-left: 0;
+	margin: 0;
+	font-weight: bold;
+	color: #202124;
 }
 .drawer-navigation ul li {
-	padding-bottom: 12px;
-	padding-top: 14px;
 	position: relative;
 }
 .drawer-navigation ul ul {
-	margin-bottom: 0;
-	margin-left: 1em;
-	margin-top: 12px;
+	margin: 0;
+	display: none;
 }
 .drawer-navigation ul li li {
-	padding-bottom: 10px;
-	padding-top: 12px;
+	background: #fff;
+	width: 70%;
+	padding: 0;
+	margin-left: auto;
+	border-bottom: 1px solid #aaa;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+	margin-bottom: 3px;
 }
 .drawer-navigation ul li li:last-child {
-	padding-bottom: 0;
+	margin-bottom: 5px;
+}
+.drawer-navigation ul li li a {
+	display: block;
+	padding: .2rem 0 .2rem 1rem;
 }
 .drawer-navigation a {
 	color: inherit;

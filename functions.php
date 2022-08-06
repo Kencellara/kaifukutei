@@ -313,6 +313,18 @@ function fetchCategories(array $slugList): array
 	return $catsArr;
 }
 
+// 子カテゴリー取得
+function fetchCategoryChildren(string $parentSlug): array
+{
+	$catParent = get_category_by_slug($parentSlug);
+
+	$catChildren = get_categories([
+		'parent' => $catParent->term_id
+	]);
+
+	return $catChildren;
+}
+
 /* the_archive_title の余計な文字を削除 */
 function removePrefixOfArchiveTitle(): ?string
 {

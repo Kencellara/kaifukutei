@@ -54,7 +54,44 @@
 				<div class="drawer-overlay"></div>
 				<div class="drawer-navigation">
 					<div class="drawer-navigation-content">
-						<?php businesspress_main_navigation(); ?>
+						<ul>
+							<?php $catChildren = fetchCategoryChildren('fish') ?>
+							<li>
+								<div class="a-hamburgerInnerHeader js-globalMenuOpen">魚種</div>
+								<ul>
+									<?php foreach ($catChildren as $catChild) : ?>
+										<li><a href="<?= get_category_link($catChild->term_id) ?>"><?= $catChild->name ?></a></li>
+									<?php endforeach ?>
+								</ul>
+							</li>
+
+							<?php $catChildren = fetchCategoryChildren('dish') ?>
+							<li>
+								<div class="a-hamburgerInnerHeader js-globalMenuOpen">料理</div>
+								<ul>
+									<?php foreach ($catChildren as $catChild) : ?>
+										<li><a href="<?= get_category_link($catChild->term_id) ?>"><?= $catChild->name ?></a></li>
+									<?php endforeach ?>
+								</ul>
+							</li>
+
+							<?php $catChildren = fetchCategoryChildren('seasoning') ?>
+							<li>
+								<div class="a-hamburgerInnerHeader js-globalMenuOpen">味付け</div>
+								<ul>
+									<?php foreach ($catChildren as $catChild) : ?>
+										<li><a href="<?= get_category_link($catChild->term_id) ?>"><?= $catChild->name ?></a></li>
+									<?php endforeach ?>
+								</ul>
+							</li>
+
+							<li>
+								<div class="a-hamburgerInnerHeader none">味付け</div>
+							</li>
+							<li>
+								<div class="a-hamburgerInnerHeader none">このブログの説明</div>
+							</li>
+						</ul>
 					</div><!-- .drawer-navigation-content -->
 				</div><!-- .drawer-navigation -->
 			</div><!-- .main-header -->
@@ -62,11 +99,43 @@
 			<div class="l-globalMenuArea">
 				<nav class="p-globalMenu">
 					<ul>
-						<li>魚種</li>
-						<li>料理</li>
-						<li>味付</li>
-						<li>調理器具</li>
-						<li>このブログの説明</li>
+						<?php $catChildren = fetchCategoryChildren('fish') ?>
+						<li>
+							<div class="a-globalMenuInnerHeader js-globalMenuOpen">魚種</div>
+							<ul>
+								<?php foreach ($catChildren as $catChild) : ?>
+									<li><a href="<?= get_category_link($catChild->term_id) ?>"><?= $catChild->name ?></a></li>
+								<?php endforeach ?>
+							</ul>
+						</li>
+
+						<?php $catChildren = fetchCategoryChildren('dish') ?>
+						<li>
+							<div class="a-globalMenuInnerHeader js-globalMenuOpen">料理</div>
+							<ul>
+								<?php foreach ($catChildren as $catChild) : ?>
+									<li><a href="<?= get_category_link($catChild->term_id) ?>"><?= $catChild->name ?></a></li>
+								<?php endforeach ?>
+							</ul>
+						</li>
+
+						<?php $catChildren = fetchCategoryChildren('seasoning') ?>
+						<li>
+							<div class="a-globalMenuInnerHeader js-globalMenuOpen">味付</div>
+							<ul>
+								<?php foreach ($catChildren as $catChild) : ?>
+									<li><a href="<?= get_category_link($catChild->term_id) ?>"><?= $catChild->name ?></a></li>
+								<?php endforeach ?>
+							</ul>
+						</li>
+
+						<li>
+							<div class="a-globalMenuInnerHeader">調理器具</div>
+						</li>
+
+						<li>
+							<div class="a-globalMenuInnerHeader">このブログの説明</div>
+						</li>
 					</ul>
 				</nav>
 			</div>

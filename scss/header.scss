@@ -5,6 +5,33 @@
   .l-mainHeader {
     box-shadow: 0 1px 3px 1px $main-color;
   }
+
+  .l-globalMenuArea {
+    display: none;
+  }
+
+  .a-hamburgerInnerHeader {
+    background: #fff;
+    padding: .2rem 0 .2rem 2rem;
+    border-bottom: 1px solid #aaa;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 5px;
+
+    &::after {
+      font-family: 'Font Awesome 6 Free';
+      content: '\2b';
+      position: absolute;
+      right: 1rem;
+    }
+
+    &.open::after {
+      content: '\f068';
+    }
+
+    &.none::after {
+      display: none;
+    }
+  }
 }
 
 
@@ -30,6 +57,8 @@
 }
 
 .l-globalMenuArea {
+  display: none;
+
   .p-globalMenu {
     background: #fff;
     max-width: 1120px;
@@ -37,25 +66,53 @@
     text-align: center;
     font-weight: bold;
 
-    ul {
+    > ul {
       margin: 0;
       display: flex;
       list-style: none;
       border-bottom: 1px solid;
 
-      li {
+      > li {
+        position: relative;
         width: 20%;
         border-right: 1px solid;
         font-size: 20px;
-        padding: 10.2px 0;
         color: #094C93;
-
-        &:hover {
-          cursor: pointer;
-        }
 
         &:last-child {
           border: none;
+        }
+        
+        .a-globalMenuInnerHeader {
+          padding: 10.2px 0;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        > ul {
+          display: none;
+          position: absolute;
+          width: 100%;
+          margin: 1px 0 0;
+          background: #fff;
+          list-style-type: none;
+
+          > li {
+            width: 100%;
+            padding: 0;
+            border: none;
+
+            &:hover {
+              opacity: .8;
+            }
+
+            a {
+              display: block;
+              color: $main-color;
+            }
+          }
         }
       }
     }
