@@ -1576,9 +1576,6 @@ a.home-header-button-sub:hover {
 .entry-header {
 	margin-bottom: 4rem;
 }
-.no-sidebar .entry-header {
-	text-align: center;
-}
 .entry-title {
 	letter-spacing: -0.03em;
 	margin-bottom: 0;

@@ -358,8 +358,9 @@ add_filter( 'get_site_icon_url', 'faviconUrl' );
 
 
 /* 記事内関連記事カード */
-function createRelatedPostCard($atts) {
-	extract(shortcode_atts(array('slug'=>''), $atts));
+function createRelatedPostCard($atts): string
+{
+	extract(shortcode_atts(array('slug' => ''), $atts));
 	$post = get_posts([
 		'name'           => $slug,
 		'post_type'      => 'post',
@@ -367,10 +368,11 @@ function createRelatedPostCard($atts) {
 		'posts_per_page' => 1
 	])[0];
 	$postEyecatch = get_the_post_thumbnail($post->ID, 'full');
+	$postlink = get_post_permalink($post->ID);
 
 	$relatedPostCard = <<<HTML
 		<div class="p-relatedPostCard">
-			<a class="p-relatedPostLink" href="{ $post->guid }" target="_self" rel="next">
+			<a class="p-relatedPostLink" href={$postlink} target="_self" rel="next">
 				<div class="a-relatedPostThumbnail">
 					$postEyecatch
 				</div>
