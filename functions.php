@@ -357,6 +357,39 @@ function faviconUrl(): ?string
 add_filter( 'get_site_icon_url', 'faviconUrl' );
 
 
+/* 記事内関連記事カード */
+function createRelatedPostCard($atts) {
+	extract(shortcode_atts(array('slug'=>''), $atts));
+	$post = get_posts([
+		'name'           => $slug,
+		'post_type'      => 'post',
+		'post_status'    => 'publish',
+		'posts_per_page' => 1
+	])[0];
+	$postEyecatch = get_the_post_thumbnail($post->ID, 'full');
+
+	$relatedPostCard = <<<HTML
+		<div class="p-relatedPostCard">
+			<a class="p-relatedPostLink" href="{ $post->guid }" target="_self" rel="next">
+				<div class="a-relatedPostThumbnail">
+					$postEyecatch
+				</div>
+				<div class="p-relatedPostText">
+					<div class="a-relatedPostTitle">
+						$post->post_title
+					</div>
+				</div>
+			</a>
+		</div>
+		HTML;
+
+	return $relatedPostCard;
+}
+
+// 使い方
+// [related_post slug='']
+add_shortcode("related_post", "createRelatedPostCard");
+
 /**
  * Custom template tags for this theme.
  */

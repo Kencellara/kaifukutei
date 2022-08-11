@@ -86,7 +86,7 @@
 							</li>
 
 							<li>
-								<div class="a-hamburgerInnerHeader none">味付け</div>
+								<div class="a-hamburgerInnerHeader none">調理器具</div>
 							</li>
 							<li>
 								<div class="a-hamburgerInnerHeader none">このブログの説明</div>

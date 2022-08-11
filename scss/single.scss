@@ -68,6 +68,40 @@
     }
   }
 
+  // 記事内関連記事カード
+  .p-relatedPostCard {
+    border: 3px solid $main-color;
+    margin: 15px 0;
+    
+    &::after {
+      padding: .1rem .3rem;
+      font-size: .8rem;
+    }
+
+    a.p-relatedPostLink {
+      display: block;
+    }
+    
+    .a-relatedPostThumbnail {
+      margin-top: 2rem;
+      text-align: center;
+
+      img {
+        height: 160px;
+        width: 240px;
+      }
+    }
+
+    .p-relatedPostText {
+      padding: 0.2rem 0.5rem;
+      margin-top: 0.2rem;
+
+      .a-relatedPostTitle {
+        font-size: .9rem;
+      }
+    }
+  }
+
   .p-relatedPostsHeader {
     font-size: 19rem/16;
     margin-top: 100px;
@@ -175,6 +209,40 @@
     margin-top: 70px;
   }
 
+  // 記事内関連記事カード
+  .p-relatedPostCard {
+    border: 5px solid $main-color;
+    height: 188px;
+    margin: 20px 0;
+
+    &::after {
+      padding: .2rem .6rem;
+      font-size: 1rem;
+    }
+
+    a.p-relatedPostLink {
+      display: flex;
+    }
+
+    .a-relatedPostThumbnail {
+      padding: 8px;
+      width: 264px;
+      flex-shrink: 0;
+
+      img {
+        height: 165px;
+      }
+    }
+
+    .p-relatedPostText {
+      padding: .7rem .3rem .5rem;
+
+      .a-relatedPostTitle {
+        margin-top: 2rem;
+      }
+    }
+  }
+
   .l-relatedPostsArea {
     display: flex;
     flex-wrap: wrap;
@@ -205,10 +273,6 @@
       border-radius: 10px;
     }
   }
-}
-
-article {
-  padding: 30px 17px;
 }
 
 .p-postTitleArea {
@@ -287,6 +351,33 @@ div#toc_container {
 
   img {
     width: 100%;
+  }
+}
+
+// 記事内関連記事カード
+.p-relatedPostCard {
+  box-sizing: border-box;
+  position: relative;
+
+  &::after {
+    content: '関連記事';
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    background: $main-color;
+    font-weight: bold;
+  }
+
+  a.p-relatedPostLink {
+    height: 100%;
+
+    .p-relatedPostText {
+      .a-relatedPostTitle {
+        color: $title-black;
+        font-weight: bold;
+      }
+    }
   }
 }
 
