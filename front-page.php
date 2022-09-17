@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
-<div id="primary" class="content-area l-mainSection">
-  <main id="main" class="site-main l-mainContent two-column">
+<div id="primary" class="content-area">
+  <main id="main" class="site-main">
   </main>
 </div>
 
