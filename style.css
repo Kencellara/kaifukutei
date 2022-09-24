@@ -14,5 +14,6 @@ html {
 
 /* body */
 body {
+	margin: 0;
 	font-family: "Noto Sans JP", "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
 }

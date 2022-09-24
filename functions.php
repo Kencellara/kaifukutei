@@ -5,15 +5,13 @@ function kence_setup(): void
 	// titleタグを自動生成（ headに書かなくてもいい ）
 	add_theme_support( 'title-tag' );
 
-	// Enable support for Post Thumbnails on posts and pages.
+	// アイキャッチ画像を有効にする
+	// thumbnail: 150, 150
+	// medium: 300, 300
+	// large: 1024, 1024
+	// full: 元サイズ
 	add_theme_support( 'post-thumbnails' );
-	set_post_thumbnail_size( 840, 0, false );
-	add_image_size( 'businesspress-post-thumbnail-large', 1280, 540, true );
-	add_image_size( 'businesspress-post-thumbnail-medium', 482, 318, true );
-	add_image_size( 'businesspress-post-thumbnail-list', 482, 361, true );
-	add_image_size( 'businesspress-post-thumbnail-small', 80, 60, true );
-	add_image_size( 'businesspress-post-thumbnail-eyecatch', 1200, 800, true );
-	add_image_size( 'businesspress-post-thumbnail-square', 260, 236, true );
+
 
 	// 全て HTML5 にする
 	add_theme_support(
@@ -43,41 +41,37 @@ add_action( 'after_setup_theme', 'kence_setup' );
  */
 function kence_scripts(): void
 {
-	wp_enqueue_style( 'fontawesome', get_theme_file_uri( '/inc/font-awesome_6/css/all.min.css' ), [], '6.1.1' );
-	// wp_enqueue_style( 'normalize', get_theme_file_uri( '/css/normalize.css' ),  [], '8.0.0' );
-	wp_enqueue_style( 'businesspress-style', get_stylesheet_uri(), [], '1.0.0' );
+	wp_enqueue_style( 'fontawesome', get_theme_file_uri( '/lib/font-awesome_6/css/all.min.css' ), [], '6.1.1' );
 
-	// Additional styles for kence_theme
-	// wp_enqueue_style('base-style', get_theme_file_uri('/css/base.css'), [], '1.0.0');
-	// wp_enqueue_style('header-style', get_theme_file_uri('/css/header.css'), [], '1.0.0');
-	// wp_enqueue_style('footer-style', get_theme_file_uri('/css/footer.css'), [], '1.0.0');
-	// wp_enqueue_style('sidebar-style', get_theme_file_uri('/css/sidebar.css'), [], '1.0.0');
+	// style.cssはテーマ直下に置かないと効かない
+	wp_enqueue_style( 'kence-style', get_stylesheet_uri(), [], '1.0.0' );
+
+	// 共通
+	wp_enqueue_style('common-style', get_theme_file_uri('/assets/css/common.css'), [], '1.0.0');
+	wp_enqueue_style('header-style', get_theme_file_uri('/assets/css/header.css'), [], '1.0.0');
+
 	if ( is_home() ) {
-		wp_enqueue_style('front-page-style', get_theme_file_uri('/css/front-page.css'), [], '1.0.0');
-		wp_enqueue_script( 'slick', get_theme_file_uri( '/js/slick.js' ), array( 'jquery' ), '1.9.0', true );
-		wp_enqueue_style( 'slick-style', get_theme_file_uri( '/css/slick.css' ), [], '1.9.0' );
+		wp_enqueue_style('front-page-style', get_theme_file_uri('/assets/css/front-page.css'), [], '1.0.0');
+		wp_enqueue_style( 'slick-style', get_theme_file_uri('/lib/slick/slick.css'), [], '1.9.0' );
+		wp_enqueue_script( 'slick', get_theme_file_uri('/lib/slick/slick.js'), ['jquery'], '1.9.0', /* footer: */ true );
+		wp_enqueue_script( 'my-slick', get_theme_file_uri('/assets/js/slick.js'), [], '1.0.0', /* footer: */ true );
 	}
 	if ( is_single() ) {
 		// wp_enqueue_style('single-style', get_theme_file_uri('/css/single.css'), [], '1.0.0');
 	}
+	if (is_page()) {
+		// 
+	}
 	if ( is_archive() ) {
 		// wp_enqueue_style('archive-style', get_theme_file_uri('/css/archive.css'), [], '1.0.0');
 	}
-
-	// wp_enqueue_script( 'businesspress-functions', get_theme_file_uri( '/js/functions.js' ), array( 'jquery' ), '1.0.0', true );
-	// wp_enqueue_script( 'businesspress-navigation', get_theme_file_uri( '/js/navigation.js' ), array( 'jquery' ), '1.0.0', true );
-	// $businesspress_l10n = [];
-	// $businesspress_l10n['expand']         = __( 'Expand child menu', 'businesspress' );
-	// $businesspress_l10n['collapse']       = __( 'Collapse child menu', 'businesspress' );
-	// wp_localize_script( 'businesspress-navigation', 'businesspressScreenReaderText', $businesspress_l10n );
-	// wp_enqueue_script( 'businesspress-skip-link-focus-fix', get_theme_file_uri( '/js/skip-link-focus-fix.js' ), [], '20160525', true );
 }
 add_action( 'wp_enqueue_scripts', 'kence_scripts' );
 
 // ファビコン設定
 function faviconUrl(): string
 {
-	return get_template_directory_uri() . '/assets/favicon.png';
+	return get_template_directory_uri('/assets/favicon.png');
 }
 add_filter( 'get_site_icon_url', 'faviconUrl' );
 
@@ -95,7 +89,7 @@ require get_theme_file_path('/inc/shortcodes.php');
 /**
  * Custom widgets for this theme.
  */
-require get_theme_file_path( '/inc/widgets.php' );
+// require get_theme_file_path( '/inc/widgets.php' );
 
 /**
  * Custom functions that act independently of the theme templates.
@@ -105,12 +99,12 @@ require get_theme_file_path( '/inc/extras.php' );
 /**
  * Customizer additions.
  */
-require get_theme_file_path('/inc/customizer.php');
+// require get_theme_file_path('/inc/customizer.php');
 
 /**
  * Set CSS for Customizer options.
  */
-require get_theme_file_path('/inc/customizer-css.php');
+// require get_theme_file_path('/inc/customizer-css.php');
 /**
  * Load Jetpack compatibility file.
  */
