@@ -141,3 +141,25 @@ h2 {
     }
   }
 }
+
+.p-menu {
+  background-image: url('../images/background-brown.png');
+  color: #fff;
+  padding: 20px 0;
+
+  .p-menuZone {
+    margin: 25px 0;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .p-toAllMenu {
+    border-color: #fff;
+
+    a {
+      color: #fff;
+    }
+  }
+}

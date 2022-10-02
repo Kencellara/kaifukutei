@@ -61,6 +61,24 @@
       </div>
     </div>
   </div>
+
+  <div class="p-menu">
+    <h2>メニュー</h2>
+
+    <div class="p-menuZone">
+      <figure>
+        <img src="<?= get_theme_file_uri('/assets/images/menu-1.jpg') ?>">
+        <figcaption>
+          仕込みや在庫の状況によってご提供できない場合がございます。<br>
+          ご予約の際に、ご希望のメニューまでお伝えいただけると確実です。
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="p-toAllMenu p-toDetail">
+      <a href="#">メニュー一覧<i class="fa-solid fa-play"></i></a>
+    </div>
+  </div>
 </main>
 
 <?php get_footer(); ?>
