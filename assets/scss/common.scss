@@ -1,8 +1,92 @@
 @font-face {
   font-family: 'Kaisei Opti';
-  src: url('../../lib/fonts/Kaisei_Opti/KaiseiOpti-Regular.ttf') format("truetype");
+  src: url('../../lib/fonts/KaiseiOpti/KaiseiOpti-Regular.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'Noto Sans JP';
+  src: url('../../lib/fonts/NotoSansJP/NotoSansJP-Regular.otf') format("opentype");
+}
+
+@keyframes figcaptionFadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes figcaptionFadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+html {
+  font-size: 16px;
 }
 
 body {
-  font-family: 'Kaisei Opti';
+  font-family: 'Noto Sans JP';
+}
+
+figure {
+  margin: 0;
+  text-align: center;
+  position: relative;
+  line-height: 0;
+  
+  img {
+    width: 100%;
+  }
+
+  figcaption {
+    opacity: 0;
+    font-size: 13rem/16;
+    position: absolute;
+    left: 0;
+    bottom: 0.3rem;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    animation-name: figcaptionFadeOut;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    line-height: inherit;
+    line-height: 1.5;
+  }
+
+  &:hover,
+  &:active {
+    figcaption {
+      animation-name: figcaptionFadeIn;
+      animation-duration: .5s;
+      animation-fill-mode: forwards;
+    }
+  }
+}
+
+.p-topImgSlide {
+  display: none;
+}
+
+.p-topImgSlide.slick-initialized {
+  display: block;
+}
+
+.c-f19 {
+  font-size: 19rem/16;
+}
+
+.c-f17 {
+  font-size: 17rem/16;
+}
+
+.c-f16 {
+  font-size: 1rem;
 }

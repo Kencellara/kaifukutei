@@ -1,37 +1,64 @@
 @import 'settings/colors';
 
-.c-mainContent {
-  ul.c-topImgSlide {
-    margin: 0;
-    padding: 0;
+h2 {
+  font-family: 'Kaisei Opti';
+  font-size: 24rem/16;
+  text-align: center;
+  margin: 0;
+  line-height: 2.5;
 
-    img {
-      width: 100%;
+  &::after {
+    content: '';
+    display: block;
+    width: 40px;
+    border-bottom: 4px double;
+    margin: auto;
+  }
+}
+
+.l-wrapper {
+  margin: 0 auto;
+  width: 300px;
+}
+
+.p-toDetail {
+  width: 170px;
+  margin: 10px auto;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 30rem/16;
+  border: $main-black 1px solid;
+
+  a {
+    display: block;
+    text-decoration: none;
+    color: $main-black;
+
+    i {
+      margin-left: 1rem;
     }
   }
 }
 
-.c-newsArea {
-  padding: 30px 0;
-  background-image: url('../images/background-gray.png');
-
-  h2 {
+.p-topSlideArea {
+  ul.p-topImgSlide {
     margin: 0;
-    text-align: center;
-    line-height: 2;
-    font-size: 24rem/16;
-    font-family: 'Kaisei Opti';
+    padding: 0;
+    line-height: 0;
 
-    &::after {
-      content: '';
-      display: block;
-      width: 40px;
-      border-bottom: 4px double;
-      margin: auto;
+    img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 202/135;
     }
   }
+}
 
-  ul.c-newsList {
+.p-newsArea {
+  padding: 15px 0 30px;
+  background-image: url('../images/background-gray.png');
+
+  ul.p-newsList {
     list-style-type: none;
     margin: 25px auto;
     padding: 0;
@@ -47,32 +74,70 @@
       .p-newsDate {
         color: $date-gray;
       }
+
       h3.p-newsTitle {
         font-size: 17px;
         margin: 5px 0;
       }
+
       p {
         margin: 5px 0;
       }
     }
   }
+}
 
-  .p-toAllNews {
-    width: 170px;
-    margin: 10px auto;
-    text-align: center;
-    font-size: 1rem;
-    line-height: 30rem/16;
-    border: $main-black 1px solid;
+.p-kodawariHistory {
+  .l-wrapper {
+    width: 315px;
+  }
+
+  background-image: url('../images/background-green.png');
+  color: #fff;
+  padding: 10px 0 30px;
+
+  .p-kodawariZone {
+    margin: 25px 0;
+
+    p, figure {
+      margin: .3rem 0 .5rem;
+    }
+
+    p {
+      font-weight: bold;
+      font-size: 14rem/16;
+
+      &.c-indent {
+        margin-left: 2rem;
+      }
+
+      &.c-beforeDash {
+        margin-left: -2.5rem;
+      }
+
+      &.c-beforeDash::before {
+        content: '──';
+        margin-right: .5rem;
+      }
+
+      &.c-afterDash::after {
+        content: '──';
+        margin-left: .5rem;
+      }
+    }
+
+    figure {
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .p-toAllKodawariHistory {
+    border-color: #fff;
 
     a {
-      display: block;
-      text-decoration: none;
-      color: $main-black;
-
-      i {
-        margin-left: 1rem;
-      }
+      color: #fff;
     }
   }
 }
