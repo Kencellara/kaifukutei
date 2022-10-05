@@ -79,6 +79,30 @@
       <a href="#">メニュー一覧<i class="fa-solid fa-play"></i></a>
     </div>
   </div>
+
+  <div class="p-salesInfo">
+    <h2>営業情報</h2>
+
+    <div class="p-calenderArea">
+      <iframe src="https://calendar.google.com/calendar/embed?src=kenpum4a1business%40gmail.com&ctz=Asia%2FTokyo" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <div class="p-textArea">
+      <h3>営業時間</h3>
+      <ul>
+        <li>11:00~14:00</li>
+        <li>17:00~20:30</li>
+      </ul>
+      <h3>定休日</h3>
+      <p>不定休</p>
+      <div class="c-businessHoursAnnounce">
+        営業時間は変更となることがあります。
+        ご予約がない場合には閉店している場合も
+        ございますので，ご来店前に店舗まで
+        お問い合わせください。
+      </div>
+    </div>
+  </div>
 </main>
 
 <?php get_footer(); ?>

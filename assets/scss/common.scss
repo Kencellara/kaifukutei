@@ -1,3 +1,5 @@
+@import 'settings/colors';
+
 @font-face {
   font-family: 'Kaisei Opti';
   src: url('../../lib/fonts/KaiseiOpti/KaiseiOpti-Regular.ttf') format("truetype");
@@ -34,6 +36,7 @@ html {
 
 body {
   font-family: 'Noto Sans JP';
+  color: $main-black;
 }
 
 figure {

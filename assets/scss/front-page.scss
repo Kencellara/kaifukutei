@@ -145,7 +145,7 @@ h2 {
 .p-menu {
   background-image: url('../images/background-brown.png');
   color: #fff;
-  padding: 20px 0;
+  padding: 20px 0 42px;
 
   .p-menuZone {
     margin: 25px 0;
@@ -160,6 +160,49 @@ h2 {
 
     a {
       color: #fff;
+    }
+  }
+}
+
+.p-salesInfo {
+  background-image: url('../images/background-gray.png');
+  padding: 30px 0;
+
+  .p-calenderArea {
+    margin: 25px 0;
+  }
+
+  iframe {
+    width: 100%;
+  }
+
+  .p-textArea {
+    width: 315px;
+    margin: auto;
+
+    h3 {
+      font-size: 17rem/16;
+      margin: 10em/17 0 5em/17;
+    }
+
+    p {
+      font-weight: bold;
+      font-size: 15rem/16;
+      margin: 5em/16 1.5em;
+    }
+
+    ul {
+      font-size: 15rem/16;
+      margin: 5em/16 0;
+      font-weight: bold;
+    }
+
+    .c-businessHoursAnnounce {
+      font-size: 13rem/16;
+      background-color: $bg-gray;
+      border-radius: 10em/13;
+      border: .5px solid $border-gray-2;
+      opacity: .2;
     }
   }
 }
