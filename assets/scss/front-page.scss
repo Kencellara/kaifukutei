@@ -18,7 +18,7 @@ h2 {
 
 .l-wrapper {
   margin: 0 auto;
-  width: 300px;
+  width: 315px;
 }
 
 .p-toDetail {
@@ -62,7 +62,6 @@ h2 {
     list-style-type: none;
     margin: 25px auto;
     padding: 0;
-    width: 300px;
 
     li {
       margin-bottom: 15px;
@@ -88,10 +87,6 @@ h2 {
 }
 
 .p-kodawariHistory {
-  .l-wrapper {
-    width: 315px;
-  }
-
   background-image: url('../images/background-green.png');
   color: #fff;
   padding: 10px 0 30px;
@@ -170,10 +165,12 @@ h2 {
 
   .p-calenderArea {
     margin: 25px 0;
-  }
+    text-align: center;
 
-  iframe {
-    width: 100%;
+    iframe {
+      width: 375px;
+      height: 400px;
+    }
   }
 
   .p-textArea {
