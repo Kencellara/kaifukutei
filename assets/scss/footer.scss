@@ -1,0 +1,51 @@
+footer {
+  background-image: url('../images/background-green.png');
+  color: #fff;
+  text-align: center;
+  padding: 30px 20px;
+
+  .c-footerPhoneNumber {
+    width: 270px;
+    margin: 10px auto;
+    font-size: 30rem/16;
+    border: 2px solid #fff;
+
+    i {
+      margin-right: .2em;
+    }
+
+    a {
+      color: #fff;
+    }
+  }
+
+  .c-telGuide, .c-address {
+    font-size: 17rem/16;
+    margin: 1em 0;
+  }
+
+  .c-telGuide::before {
+    content: '──';
+    margin-left: .5rem;
+  }
+
+  .c-address {
+    margin: .2em 0 1em;
+  }
+
+  ul.c-footerLinkList {
+    font-size: 14rem/16;
+    list-style-type: none;
+    padding: 0;
+    margin: .1em 0;
+
+    a {
+      color: #fff;
+    }
+  }
+
+  .c-allRightsReserved {
+    font-size: 14rem/16;
+    margin: .1em 0;
+  }
+}

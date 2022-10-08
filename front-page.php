@@ -3,9 +3,9 @@
 <main id="main" class="p-mainContent">
   <div class="p-topSlideArea">
     <ul id="slide" class="p-topImgSlide">
-      <li><img src="<?= get_theme_file_uri('/assets/images/slide-1.jpg') ?>" alt="画像１" height="270px" width="404px"></li>
-      <li><img src="<?= get_theme_file_uri('/assets/images/slide-2.jpg') ?>" alt="画像２" height="270px" width="404px"></li>
-      <li><img src="<?= get_theme_file_uri('/assets/images/slide-3.jpg') ?>" alt="画像３" height="270px" width="404px"></li>
+      <li><img src="<?= get_theme_file_uri('/assets/images/slide-1.jpg') ?>" alt="メイン画像１" height="270px" width="404px"></li>
+      <li><img src="<?= get_theme_file_uri('/assets/images/slide-2.jpg') ?>" alt="メイン画像２" height="270px" width="404px"></li>
+      <li><img src="<?= get_theme_file_uri('/assets/images/slide-3.jpg') ?>" alt="メイン画像３" height="270px" width="404px"></li>
     </ul>
   </div>
 
@@ -67,7 +67,7 @@
 
     <div class="p-menuZone">
       <figure>
-        <img src="<?= get_theme_file_uri('/assets/images/menu-1.jpg') ?>">
+        <img src="<?= get_theme_file_uri('/assets/images/menu-1.jpg') ?>" alt="開福亭メニュー画像">
         <figcaption>
           仕込みや在庫の状況によってご提供できない場合がございます。<br>
           ご予約の際に、ご希望のメニューまでお伝えいただけると確実です。
@@ -95,12 +95,12 @@
       </ul>
       <h3>定休日</h3>
       <p>不定休</p>
-      <div class="c-businessHoursAnnounce">
+      <!-- <div class="c-businessHoursAnnounce">
         営業時間は変更となることがあります。
         ご予約がない場合には閉店している場合も
         ございますので，ご来店前に店舗まで
         お問い合わせください。
-      </div>
+      </div> -->
     </div>
   </div>
 </main>
