@@ -7,7 +7,11 @@
 
   <ul>
     <li><img src="<?= get_theme_file_uri('/assets/images/instagram-logo.png') ?>" alt="Instagram"></li>
-    <li><img src="<?= get_theme_file_uri('/assets/images/TEL-logo.png') ?>" alt="TEL"></li>
+    <li>
+      <a href="tel:0596-28-2952">
+        <img src="<?= get_theme_file_uri('/assets/images/TEL-logo.png') ?>" alt="TEL">
+      </a>
+    </li>
     <li><img src="<?= get_theme_file_uri('/assets/images/hamburger-menu-logo.png') ?>" alt="ハンバーガーメニュー"></li>
   </ul>
 </header>

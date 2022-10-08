@@ -1,6 +1,8 @@
 <footer class="l-siteFooter">
   <div class="c-footerPhoneNumber">
-    <a href="tel:0596-28-2952"><i class="fa-solid fa-phone"></i>0596-28-2952</a>
+    <a href="tel:0596-28-2952">
+      <i class="fa-solid fa-phone"></i>0596-28-2952
+    </a>
   </div>
 
   <p class="c-telGuide">
