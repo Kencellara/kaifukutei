@@ -28,4 +28,6 @@
   <p class="c-allRightsReserved">
     © 2022 kaifukutei.com All rights reserved.
   </p>
+
+  <div id="js-scrollToTop" class="c-scrollToTop"></div>
 </footer>
