@@ -3,9 +3,9 @@
 <main id="main" class="p-mainContent">
   <div class="p-topSlideArea">
     <ul id="slide" class="p-topImgSlide">
-      <li><img src="<?= get_theme_file_uri('/assets/images/slide-1.jpg') ?>" alt="メイン画像１" height="270px" width="404px"></li>
-      <li><img src="<?= get_theme_file_uri('/assets/images/slide-2.jpg') ?>" alt="メイン画像２" height="270px" width="404px"></li>
-      <li><img src="<?= get_theme_file_uri('/assets/images/slide-3.jpg') ?>" alt="メイン画像３" height="270px" width="404px"></li>
+      <li><img src="<?= get_theme_file_uri('/assets/images/main-slide-1.jpg') ?>" alt="メイン画像１" height="270px" width="404px"></li>
+      <li><img src="<?= get_theme_file_uri('/assets/images/main-slide-2.jpg') ?>" alt="メイン画像２" height="270px" width="404px"></li>
+      <li><img src="<?= get_theme_file_uri('/assets/images/main-slide-3.jpg') ?>" alt="メイン画像３" height="270px" width="404px"></li>
     </ul>
   </div>
 
@@ -67,7 +67,7 @@
 
     <div class="p-menuZone">
       <figure>
-        <img src="<?= get_theme_file_uri('/assets/images/menu-1.jpg') ?>" alt="開福亭メニュー画像">
+        <img src="<?= get_theme_file_uri('/assets/images/menu.jpg') ?>" alt="開福亭メニュー画像">
         <figcaption>
           仕込みや在庫の状況によってご提供できない場合がございます。<br>
           ご予約の際に、ご希望のメニューまでお伝えいただけると確実です。
