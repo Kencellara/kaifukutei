@@ -1,4 +1,5 @@
 @import 'settings/colors';
+@import 'settings/sizes';
 
 @font-face {
   font-family: 'Kaisei Opti';
@@ -28,6 +29,10 @@
   to {
     opacity: 0;
   }
+}
+
+.site-content {
+  padding-top: $header-height;
 }
 
 html {

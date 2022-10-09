@@ -1,15 +1,24 @@
 // 参考：https://baigie.me/engineerblog/?p=234
 
-// メニュー展開時に背景を固定
-const backgroundFix = (bool) => {
-  const scrollingElement = () => {
-    const browser = window.navigator.userAgent.toLowerCase();
-    if ("scrollingElement" in document) return document.scrollingElement;
-    return document.documentElement;
-  };
+// 変数定義
+const CLASS = "-active";
+let isOpen = false;
 
-  const scrollY = bool
-    ? scrollingElement().scrollTop
+let hamburger = document.getElementById("js-hamburger");
+let hamburgerInnerOpen = document.getElementById("js-hamburgerInnerOpen");
+let hamburgerInnerClose = document.getElementById("js-hamburgerInnerClose");
+let hamburgerCloseBtn = document.getElementById("js-hamburgerClose");
+let focusTrap = document.getElementById("js-focus-trap");
+let menu = document.querySelector(".js-nav-area");
+
+// メニュー展開時に背景を固定
+const backgroundFix = (willFix) => {
+  const scrollingElement = "scrollingElement" in document
+    ? document.scrollingElement
+    : document.documentElement;
+
+  const scrollY = willFix
+    ? scrollingElement.scrollTop
     : parseInt(document.body.style.top || "0");
 
   const fixedStyles = {
@@ -21,48 +30,34 @@ const backgroundFix = (bool) => {
   };
 
   Object.keys(fixedStyles).forEach((key) => {
-    document.body.style[key] = bool ? fixedStyles[key] : "";
+    document.body.style[key] = willFix ? fixedStyles[key] : "";
   });
 
-  if (!bool) {
+  if (!willFix) {
     window.scrollTo(0, scrollY * -1);
   }
 };
 
-// 変数定義
-const CLASS = "-active";
-let flg = false;
-let accordionFlg = false;
-
-let hamburger = document.getElementById("js-hamburger");
-let hamburgerInnerOpen = document.getElementById("js-hamburgerInnerOpen");
-let hamburgerInnerClose = document.getElementById("js-hamburgerInnerClose");
-let hamburgerCloseBtn = document.getElementById("js-hamburgerClose");
-let focusTrap = document.getElementById("js-focus-trap");
-let menu = document.querySelector(".js-nav-area");
-let accordionTrigger = document.querySelectorAll(".js-sp-accordion-trigger");
-let accordion = document.querySelectorAll(".js-sp-accordion");
-
 // メニュー開閉制御
-hamburger.addEventListener("click", (e) => { //ハンバーガーボタンが選択されたら
+hamburger.addEventListener("click", (e) => {
   e.currentTarget.classList.toggle(CLASS);
   menu.classList.toggle(CLASS);
 
-  if (flg) {
+  if (isOpen) {
     // OPEN -> CLOSED
     backgroundFix(false);
     hamburger.setAttribute("aria-expanded", "false");
     hamburgerInnerClose.style.display = 'none';
     hamburgerInnerOpen.style.display = 'inherit';
     hamburger.focus();
-    flg = false;
+    isOpen = false;
   } else {
     // CLOSED -> OPEN
     backgroundFix(true);
     hamburger.setAttribute("aria-expanded", "true");
     hamburgerInnerOpen.style.display = 'none';
     hamburgerInnerClose.style.display = 'inherit';
-    flg = true;
+    isOpen = true;
   }
 });
 
@@ -77,7 +72,7 @@ hamburgerCloseBtn.addEventListener("click", (e) => {
   flg = false;
 });
 
-window.addEventListener("keydown", (e) => { //escキー押下でメニューを閉じられるように
+window.addEventListener("keydown", (e) => {
   if (e.key === "Escape") {
     hamburger.classList.remove(CLASS);
     menu.classList.remove(CLASS);
@@ -87,22 +82,6 @@ window.addEventListener("keydown", (e) => { //escキー押下でメニューを�
     hamburger.setAttribute("aria-expanded", "false");
     flg = false;
   }
-});
-
-// メニュー内アコーディオン制御
-accordionTrigger.forEach((item) => {
-  item.addEventListener("click", (e) => {
-    e.currentTarget.classList.toggle(CLASS);
-    e.currentTarget.nextElementSibling.classList.toggle(CLASS);
-    if (accordionFlg) {
-      e.currentTarget.setAttribute("aria-expanded", "false");
-      accordionFlg = false;
-    } else {
-      e.currentTarget.setAttribute("aria-expanded", "true");
-      accordionFlg = true;
-    }
-  });
-
 });
 
 // フォーカストラップ制御

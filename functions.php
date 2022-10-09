@@ -53,6 +53,7 @@ function kence_scripts(): void
 
 	// 共通js
 	wp_enqueue_script('hamburger-menu', get_theme_file_uri('/assets/js/hamburger-menu.js'), [], '1.0.0', /* footer= */ true);
+	wp_enqueue_script('fix-header', get_theme_file_uri('/assets/js/fix-header.js'), ['jquery'], '1.0.0');
 
 	if (is_home()) {
 		wp_enqueue_style('front-page-style', get_theme_file_uri('/assets/css/front-page.css'), [], '1.0.0');

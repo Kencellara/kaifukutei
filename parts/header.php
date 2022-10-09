@@ -1,4 +1,4 @@
-<header>
+<header id="js-fixHeader">
   <h1>
     <a href="<?= home_url() ?>" target="_self">
       <img src="<?= get_theme_file_uri('/assets/images/logo-green.png') ?>" alt="開福亭ロゴ緑">

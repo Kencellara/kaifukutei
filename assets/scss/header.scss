@@ -1,10 +1,47 @@
 @import 'parts/hamburger-menu';
 @import 'settings/sizes';
 
+@keyframes disappear {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 header {
+  // 固定
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: #fff;
+
+  &.disappear {
+    animation: disappear 0.5s forwards;
+  }
+
+  &.appear {
+    animation: appear 0.5s forwards;
+  }
+
   display: flex;
   justify-content: center;
-  position: relative;
   height: $header-height;
   z-index: 10;
 
