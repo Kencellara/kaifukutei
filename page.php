@@ -1,8 +1,10 @@
 <?php get_header(); ?>
 
-<div id="primary" class="content-area l-pageContentArea l-singularContentArea">
-	<main id="main" class="site-main l-siteMain">
-
+<div class="l-pageContentArea l-singularContentArea">
+	<main id="main" class="l-siteMain">
+		<?php if (is_page('menu')): ?>
+			<?php get_template_part('pages/menu') ?>
+		<?php endif ?>
 	</main>
 </div>
 

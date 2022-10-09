@@ -62,12 +62,15 @@ function kence_scripts(): void
 		wp_enqueue_script('slick', get_theme_file_uri('/lib/slick/slick.js'), ['jquery'], '1.9.0');
 		wp_enqueue_script('my-slick', get_theme_file_uri('/assets/js/slick.js'), [], '1.0.0', /* footer= */ true);
 	}
+
 	if (is_single()) {
 		// wp_enqueue_style('single-style', get_theme_file_uri('/css/single.css'), [], '1.0.0');
 	}
-	if (is_page()) {
-		// 
+
+	if (is_page('menu')) {
+		wp_enqueue_style('menu-style', get_theme_file_uri('/assets/css/menu.css'), [], '1.0.0');
 	}
+
 	if (is_archive()) {
 		// wp_enqueue_style('archive-style', get_theme_file_uri('/css/archive.css'), [], '1.0.0');
 	}
@@ -95,7 +98,7 @@ require get_theme_file_path('/inc/shortcodes.php');
 /**
  * Custom widgets for this theme.
  */
-// require get_theme_file_path( '/inc/widgets.php' );
+require get_theme_file_path( '/inc/widgets.php' );
 
 /**
  * Custom functions that act independently of the theme templates.
@@ -105,13 +108,13 @@ require get_theme_file_path( '/inc/extras.php' );
 /**
  * Customizer additions.
  */
-// require get_theme_file_path('/inc/customizer.php');
+require get_theme_file_path('/inc/customizer.php');
 
 /**
  * Set CSS for Customizer options.
  */
-// require get_theme_file_path('/inc/customizer-css.php');
+require get_theme_file_path('/inc/customizer-css.php');
 /**
  * Load Jetpack compatibility file.
  */
-// require get_theme_file_path( '/inc/jetpack.php' );
+require get_theme_file_path( '/inc/jetpack.php' );
