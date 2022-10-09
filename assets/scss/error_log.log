@@ -1,18 +1,0 @@
-09/19/22 3:26:23: front-page.scss - parse error: failed at `@use 'colors' as color;` C:\Users\barbe\Local Sites\kencetheme\app\public\wp-content\themes\kaifukutei\assets\scss\front-page.scss on line 1, at column 0
-09/19/22 3:26:48: front-page.scss - parse error: failed at `@use 'colors' as color;` C:\Users\barbe\Local Sites\kencetheme\app\public\wp-content\themes\kaifukutei\assets\scss\front-page.scss on line 1, at column 0
-09/19/22 3:26:56: front-page.scss - parse error: failed at `@use 'colors' as color;` C:\Users\barbe\Local Sites\kencetheme\app\public\wp-content\themes\kaifukutei\assets\scss\front-page.scss on line 1, at column 0
-09/19/22 3:28:04: front-page.scss - parse error: failed at `@use 'colors' as color;` C:\Users\barbe\Local Sites\kencetheme\app\public\wp-content\themes\kaifukutei\assets\scss\front-page.scss on line 1, at column 0
-09/19/22 3:28:10: front-page.scss - parse error: failed at `@use 'colors' as color;` C:\Users\barbe\Local Sites\kencetheme\app\public\wp-content\themes\kaifukutei\assets\scss\front-page.scss on line 1, at column 0
-09/19/22 3:28:19: front-page.scss - parse error: failed at `@use 'colors' as color;` C:\Users\barbe\Local Sites\kencetheme\app\public\wp-content\themes\kaifukutei\assets\scss\front-page.scss on line 1, at column 0
-09/19/22 3:29:25: front-page.scss - parse error: failed at `@use 'colors' as color;` C:\Users\barbe\Local Sites\kencetheme\app\public\wp-content\themes\kaifukutei\assets\scss\front-page.scss on line 1, at column 0
-09/19/22 3:29:30: front-page.scss - parse error: failed at `@use 'colors' as color;` C:\Users\barbe\Local Sites\kencetheme\app\public\wp-content\themes\kaifukutei\assets\scss\front-page.scss on line 1, at column 0
-09/19/22 3:30:26: front-page.scss - `colors` file not found for @import: front-page.scss on line 1, at column 0
-09/19/22 3:30:31: front-page.scss - `colors` file not found for @import: front-page.scss on line 1, at column 0
-09/19/22 3:31:22: front-page.scss - parse error: failed at `@use 'settings/colors' as color;` C:\Users\barbe\Local Sites\kencetheme\app\public\wp-content\themes\kaifukutei\assets\scss\front-page.scss on line 1, at column 0
-09/24/22 2:45:02: common.scss - parse error: failed at `font-family: ;` C:\Users\barbe\Local Sites\kencetheme\app\public\wp-content\themes\kaifukutei\assets\scss\common.scss on line 2, at column 3
-09/24/22 2:45:06: common.scss - parse error: failed at `font-family: ;` C:\Users\barbe\Local Sites\kencetheme\app\public\wp-content\themes\kaifukutei\assets\scss\common.scss on line 2, at column 3
-09/24/22 2:45:12: common.scss - parse error: failed at `font-family: ;` C:\Users\barbe\Local Sites\kencetheme\app\public\wp-content\themes\kaifukutei\assets\scss\common.scss on line 2, at column 3
-09/24/22 2:45:17: common.scss - parse error: failed at `font-family: ;` C:\Users\barbe\Local Sites\kencetheme\app\public\wp-content\themes\kaifukutei\assets\scss\common.scss on line 2, at column 3
-09/24/22 2:45:21: common.scss - parse error: failed at `font-family: ;` C:\Users\barbe\Local Sites\kencetheme\app\public\wp-content\themes\kaifukutei\assets\scss\common.scss on line 2, at column 3
-09/24/22 2:45:25: common.scss - parse error: failed at `font-family: ;` C:\Users\barbe\Local Sites\kencetheme\app\public\wp-content\themes\kaifukutei\assets\scss\common.scss on line 2, at column 3
-09/24/22 2:45:30: common.scss - parse error: failed at `font-family: ;` C:\Users\barbe\Local Sites\kencetheme\app\public\wp-content\themes\kaifukutei\assets\scss\common.scss on line 2, at column 3

@@ -1,8 +1,12 @@
+@import 'parts/hamburger-menu';
+@import 'settings/sizes';
+
 header {
   display: flex;
   justify-content: center;
   position: relative;
-  height: 90px;
+  height: $header-height;
+  z-index: 10;
 
   h1 {
     margin: 0;
@@ -12,8 +16,8 @@ header {
     }
   }
 
-  ul {
-    height: 90px;
+  ul.p-headerIconList {
+    height: $header-height;
     display: flex;
     position: absolute;
     right: 0;
@@ -23,6 +27,16 @@ header {
 
     li {
       margin-right: 5px;
+
+      a {
+        display: block;
+      }
+
+      button.c-hamburger {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+      }
     }
 
     img {

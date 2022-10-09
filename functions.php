@@ -41,15 +41,18 @@ add_action( 'after_setup_theme', 'kence_setup' );
  */
 function kence_scripts(): void
 {
-	wp_enqueue_style( 'fontawesome', get_theme_file_uri( '/lib/font-awesome_6/css/all.min.css' ), [], '6.1.1' );
+	wp_enqueue_style('fontawesome', get_theme_file_uri('/lib/font-awesome_6/css/all.min.css'), [], '6.1.1');
 
 	// style.cssはテーマ直下に置かないと効かない
-	wp_enqueue_style( 'kence-style', get_stylesheet_uri(), [], '1.0.0' );
+	wp_enqueue_style('kence-style', get_stylesheet_uri(), [], '1.0.0');
 
-	// 共通
+	// 共通css
 	wp_enqueue_style('common-style', get_theme_file_uri('/assets/css/common.css'), [], '1.0.0');
 	wp_enqueue_style('header-style', get_theme_file_uri('/assets/css/header.css'), [], '1.0.0');
 	wp_enqueue_style('footer-style', get_theme_file_uri('/assets/css/footer.css'), [], '1.0.0');
+
+	// 共通js
+	wp_enqueue_script('hamburger-menu', get_theme_file_uri('/assets/js/hamburger-menu.js'), [], '1.0.0', /* footer= */ true);
 
 	if (is_home()) {
 		wp_enqueue_style('front-page-style', get_theme_file_uri('/assets/css/front-page.css'), [], '1.0.0');
