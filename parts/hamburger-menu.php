@@ -28,7 +28,7 @@
       </li>
       <li>
         <a href="#" class="global-navigation__link">
-          アクセス・駐車場
+          店舗案内
         </a>
       </li>
     </ul>
