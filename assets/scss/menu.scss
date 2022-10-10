@@ -1,5 +1,84 @@
 @import 'settings/imgs';
+@import 'settings/colors';
 
-.l-menuPageWrapper {
+.l-siteMain {
   background-image: $bg-img-brown;
+  color: #fff;
+
+  .l-menuPageWrapper {
+    margin: 0 30px;
+  }
+
+  .p-allMenu {
+    padding: 20px 0;
+
+    .p-menuArea:not(:first-child) {
+      margin-top: 3rem;
+    }
+
+    .c-menuHeader {
+      position: relative;
+      margin-top: .7em;
+      padding: .5em .3em .4em;
+      // IE用
+      -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+      font-size: 17rem/16;
+      border: 1px solid #fff;
+      letter-spacing: .25em;
+      
+      &.u-floatLeft {
+        float: left;
+      }
+
+      &.u-floatRight {
+        float: right;
+      }
+      
+      &::after {
+        content: '──';
+        position: absolute;
+        letter-spacing: 0;
+        font-size: 1rem;
+      }
+    }
+
+    img {
+      display: block;
+      width: 80%;
+      height: auto;
+
+      &.u-leftMarginAuto {
+        margin-left: auto;
+      }
+
+      &.u-rightMarginAuto {
+        margin-right: auto;
+      }
+    }
+
+    ul.c-menuList {
+      padding: .5em 1em .5em 2em;
+      background: rgba(165, 165, 165, 0.2);
+      border: .5px solid $border-gray-2;
+      border-radius: 10rem/16;
+
+      li {
+        margin-bottom: .3em;
+        font-size: 1rem;
+      }
+    }
+
+    .p-otherMenu {
+      .c-otherMenuHeader {
+        text-align: center;
+      }
+
+      ul.c-otherMenuList {
+        border: inherit;
+        border-radius: inherit;
+        background: inherit;
+      }
+    }
+  }
 }

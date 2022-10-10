@@ -17,7 +17,7 @@
         </a>
       </li>
       <li>
-        <a href="#" class="global-navigation__link">
+        <a href="<?= home_url('menu') ?>" class="global-navigation__link">
           メニュー
         </a>
       </li>

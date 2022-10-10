@@ -44,13 +44,13 @@
         <p class="c-beforeDash"><span class="c-f17">お料理</span>を通じた</p>
         <p class="c-indent"><span class="c-f17">お客様</span>との<span class="c-f17">ご縁</span>を<span class="c-f17">大切</span>にしています。</p>
         <figure>
-          <img src="<?= get_theme_file_uri('/assets/images/kodawari-1.jpg') ?>">
+          <img src="<?= get_theme_file_uri('/assets/images/kodawari-1.jpg') ?>" height="270px" width="404px">
           <figcaption>調理や接客を1人で行っているので、<br>提供や対応に時間がかかる場合がございます。</figcaption>
         </figure>
         <p class="c-beforeDash"><span class="c-f16">2週間</span>じっくりと火入れした<span class="c-f16">デミグラスソース</span></p>
         <p class="c-afterDash c-indent"><span class="c-f16">脂</span>の<span class="c-f16">質</span>にこだわって仕入れた<span class="c-f16">お肉</span></p>
         <figure>
-          <img src="<?= get_theme_file_uri('/assets/images/kodawari-2.jpg') ?>">
+          <img src="<?= get_theme_file_uri('/assets/images/kodawari-2.jpg') ?>" height="270px" width="404px">
           <figcaption>調理や接客を1人で行っているので、<br>提供や対応に時間がかかる場合がございます。</figcaption>
         </figure>
         <p class="c-beforeDash"><span class="c-f17">受</span>け<span class="c-f17">継</span>がれてきた<span class="c-f17">伝統</span>の<span class="c-f17">味</span>を<span class="c-f17">ご賞味</span>ください。</p>
@@ -67,7 +67,7 @@
 
     <div class="p-menuZone">
       <figure>
-        <img src="<?= get_theme_file_uri('/assets/images/menu.jpg') ?>" alt="開福亭メニュー画像">
+        <img src="<?= get_theme_file_uri('/assets/images/menu.jpg') ?>" alt="開福亭メニュー画像" height="270px" width="404px">
         <figcaption>
           仕込みや在庫の状況によってご提供できない場合がございます。<br>
           ご予約の際に、ご希望のメニューまでお伝えいただけると確実です。
@@ -76,7 +76,7 @@
     </div>
 
     <div class="p-toAllMenu p-toDetail">
-      <a href="#">メニュー一覧<i class="fa-solid fa-play"></i></a>
+      <a href="<?= home_url('menu') ?>" target="_self">メニュー一覧<i class="fa-solid fa-play"></i></a>
     </div>
   </div>
 
