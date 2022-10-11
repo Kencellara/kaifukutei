@@ -78,11 +78,11 @@ function kence_scripts(): void
 add_action( 'wp_enqueue_scripts', 'kence_scripts' );
 
 // ファビコン設定
-function faviconUrl(): string
+function faviconUrl(): ?string
 {
-	return get_template_directory_uri('/assets/favicon.png');
+	return get_theme_file_uri('/assets/images/favicon/favicon.ico');
 }
-add_filter( 'get_site_icon_url', 'faviconUrl' );
+add_filter('get_site_icon_url', 'faviconUrl');
 
 
 /**
