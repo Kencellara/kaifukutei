@@ -5,10 +5,6 @@
   background-image: $bg-img-brown;
   color: #fff;
 
-  .l-menuPageWrapper {
-    margin: 0 30px;
-  }
-
   .p-allMenu {
     padding: 20px 0;
 
@@ -16,9 +12,9 @@
       margin-top: 3rem;
     }
 
-    .c-menuHeader {
+    h2.c-menuHeader {
       position: relative;
-      margin-top: .7em;
+      margin: .7em 0 0;
       padding: .5em .3em .4em;
       // IE用
       -ms-writing-mode: tb-rl;
@@ -59,7 +55,7 @@
 
     ul.c-menuList {
       padding: .5em 1em .5em 2em;
-      background: rgba(165, 165, 165, 0.2);
+      background: $bg-gray;
       border: .5px solid $border-gray-2;
       border-radius: 10rem/16;
 

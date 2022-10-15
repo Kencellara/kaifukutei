@@ -2,7 +2,7 @@
   <nav id="js-global-navigation" class="global-navigation">
     <ul class="global-navigation__list">
       <li>
-        <a href="<?= home_url() ?>" class="global-navigation__link">
+        <a href="<?= home_url() ?>" class="global-navigation__link" target="_self">
           ホーム
         </a>
       </li>
@@ -17,17 +17,12 @@
         </a>
       </li>
       <li>
-        <a href="<?= home_url('menu') ?>" class="global-navigation__link">
+        <a href="<?= home_url('menu') ?>" class="global-navigation__link" target="_self">
           メニュー
         </a>
       </li>
       <li>
-        <a href="#" class="global-navigation__link">
-          営業情報
-        </a>
-      </li>
-      <li>
-        <a href="#" class="global-navigation__link">
+        <a href="<?= home_url('shop-info') ?>" class="global-navigation__link" target="_self">
           店舗案内
         </a>
       </li>

@@ -1,9 +1,13 @@
 <header id="js-fixHeader">
-  <h1>
-    <a href="<?= home_url() ?>" target="_self">
+  <?php if (is_home()) : ?>
+    <h1 class="c-topLogoHeader">
+      <img src="<?= get_theme_file_uri('/assets/images/logo-green.png') ?>" alt="開福亭ロゴ緑">
+    </h1>
+  <?php else : ?>
+    <a class="c-pageLogoHeader" href="<?= home_url() ?>" target="_self">
       <img src="<?= get_theme_file_uri('/assets/images/logo-green.png') ?>" alt="開福亭ロゴ緑">
     </a>
-  </h1>
+  <?php endif ?>
 
   <ul class="p-headerIconList">
     <li><img src="<?= get_theme_file_uri('/assets/images/instagram-logo.png') ?>" alt="Instagram"></li>

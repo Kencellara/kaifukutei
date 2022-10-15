@@ -11,7 +11,7 @@
 
   <div class="p-newsArea">
     <div class="l-wrapper">
-      <h2>ニュース</h2>
+      <h2 class="c-mainHeader">ニュース</h2>
 
       <ul class="p-newsList">
         <?php query_posts('posts_per_page=2'); ?>
@@ -37,7 +37,7 @@
 
   <div class="p-kodawariHistory">
     <div class="l-wrapper">
-      <h2>こだわりと歴史</h2>
+      <h2 class="c-mainHeader">こだわりと歴史</h2>
 
       <div class="p-kodawariZone">
         <p class="c-afterDash"><span class="c-f19">1914年</span>（大正3年）創業</p>
@@ -63,7 +63,7 @@
   </div>
 
   <div class="p-menu">
-    <h2>メニュー</h2>
+    <h2 class="c-mainHeader">メニュー</h2>
 
     <div class="p-menuZone">
       <figure>
@@ -81,19 +81,19 @@
   </div>
 
   <div class="p-salesInfo">
-    <h2>営業情報</h2>
+    <h2 class="c-mainHeader">営業情報</h2>
 
     <div class="p-calenderArea">
       <iframe src="https://calendar.google.com/calendar/embed?src=kenpum4a1business%40gmail.com&ctz=Asia%2FTokyo" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
     </div>
 
-    <div class="p-textArea">
-      <h3>営業時間</h3>
+    <div class="p-infoTextArea">
+      <h3 class="c-infoHeader">営業時間</h3>
       <ul>
         <li>11:00~14:00</li>
         <li>17:00~20:30</li>
       </ul>
-      <h3>定休日</h3>
+      <h3 class="c-infoHeader">定休日</h3>
       <p>不定休</p>
       <!-- <div class="c-businessHoursAnnounce">
         営業時間は変更となることがあります。

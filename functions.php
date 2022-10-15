@@ -63,12 +63,20 @@ function kence_scripts(): void
 		wp_enqueue_script('my-slick', get_theme_file_uri('/assets/js/slick.js'), [], '1.0.0', /* footer= */ true);
 	}
 
+	if (is_singular()) {
+		wp_enqueue_style('singular-style', get_theme_file_uri('/assets/css/singular.css'), [], '1.0.0');
+	}
+
 	if (is_single()) {
 		// wp_enqueue_style('single-style', get_theme_file_uri('/css/single.css'), [], '1.0.0');
 	}
 
 	if (is_page('menu')) {
 		wp_enqueue_style('menu-style', get_theme_file_uri('/assets/css/menu.css'), [], '1.0.0');
+	}
+	
+	if (is_page('shop-info')) {
+		wp_enqueue_style('shop-info-style', get_theme_file_uri('/assets/css/shop-info.css'), [], '1.0.0');
 	}
 
 	if (is_archive()) {
@@ -114,6 +122,7 @@ require get_theme_file_path('/inc/customizer.php');
  * Set CSS for Customizer options.
  */
 require get_theme_file_path('/inc/customizer-css.php');
+
 /**
  * Load Jetpack compatibility file.
  */

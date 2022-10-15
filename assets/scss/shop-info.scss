@@ -1,0 +1,97 @@
+@import 'settings/imgs';
+@import 'settings/colors';
+
+.l-siteMain {
+  background-image: $bg-img-gray;
+}
+
+.l-contentWrapper {
+  padding: 1rem 0 3rem;
+}
+
+section:not(:last-child) {
+  margin-bottom: 5rem;
+}
+
+.p-accessInfoArea {
+  .p-addressArea {
+    width: 300px;
+    margin: 1em auto;
+    font-size: 17rem/16;
+    font-weight: bold;
+  
+    p {
+      margin: 0;
+    }
+  }
+  
+  ul.p-accessList {
+    font-size: 14rem/16;
+    font-weight: bold;
+    border-left: 1px solid $main-black;
+    padding-left: 1.7rem;
+    list-style-type: circle;
+    width: 250px;
+    margin: 1em auto;
+  }
+  
+  .p-shopLocationMap {
+    width: 100%;
+    max-width: 450px;
+    margin: 2rem auto;
+  
+    iframe {
+      width: 100%;
+      height: 100%;
+      aspect-ratio: 1;
+    }
+  }
+}
+
+.p-parkingInfoSection {
+  .c-parkingImg {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 450px;
+    margin: 1rem auto;
+  }
+
+  p {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .c-parkingNotes {
+    font-size: 13rem/16;
+    font-weight: bold;
+    text-align: center;
+    
+    span {
+      display: inline-block;
+      padding: .1em .5em;
+      border-radius: 10px;
+      border: .5px solid $border-gray-2;
+      background: $bg-gray;
+    }
+  }
+}
+
+.p-insideInfoSection {
+  figure {
+    margin: 1rem auto;
+    max-width: 450px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  figcaption {
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+  }
+}
