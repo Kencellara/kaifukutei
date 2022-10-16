@@ -9,7 +9,7 @@
     </ul>
   </div>
 
-  <div class="p-newsArea">
+  <section class="p-newsSection">
     <div class="l-wrapper">
       <h2 class="c-mainHeader">ニュース</h2>
 
@@ -33,9 +33,9 @@
         <a href="#">ニュース一覧<i class="fa-solid fa-play"></i></a>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="p-kodawariHistory">
+  <section class="p-kodawariHistorySection">
     <div class="l-wrapper">
       <h2 class="c-mainHeader">こだわりと歴史</h2>
 
@@ -44,13 +44,13 @@
         <p class="c-beforeDash"><span class="c-f17">お料理</span>を通じた</p>
         <p class="c-indent"><span class="c-f17">お客様</span>との<span class="c-f17">ご縁</span>を<span class="c-f17">大切</span>にしています。</p>
         <figure>
-          <img src="<?= get_theme_file_uri('/assets/images/kodawari-1.jpg') ?>" height="270px" width="404px">
+          <img src="<?= get_theme_file_uri('/assets/images/top/kodawari-1.jpg') ?>" height="270px" width="404px">
           <figcaption>調理や接客を1人で行っているので、<br>提供や対応に時間がかかる場合がございます。</figcaption>
         </figure>
         <p class="c-beforeDash"><span class="c-f16">2週間</span>じっくりと火入れした<span class="c-f16">デミグラスソース</span></p>
         <p class="c-afterDash c-indent"><span class="c-f16">脂</span>の<span class="c-f16">質</span>にこだわって仕入れた<span class="c-f16">お肉</span></p>
         <figure>
-          <img src="<?= get_theme_file_uri('/assets/images/kodawari-2.jpg') ?>" height="270px" width="404px">
+          <img src="<?= get_theme_file_uri('/assets/images/top/kodawari-2.jpg') ?>" height="270px" width="404px">
           <figcaption>調理や接客を1人で行っているので、<br>提供や対応に時間がかかる場合がございます。</figcaption>
         </figure>
         <p class="c-beforeDash"><span class="c-f17">受</span>け<span class="c-f17">継</span>がれてきた<span class="c-f17">伝統</span>の<span class="c-f17">味</span>を<span class="c-f17">ご賞味</span>ください。</p>
@@ -60,9 +60,9 @@
         <a href="#">もっと詳しく<i class="fa-solid fa-play"></i></a>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="p-menu">
+  <section class="p-menuSection">
     <h2 class="c-mainHeader">メニュー</h2>
 
     <div class="p-menuZone">
@@ -78,9 +78,9 @@
     <div class="p-toAllMenu p-toDetail">
       <a href="<?= home_url('menu') ?>" target="_self">メニュー一覧<i class="fa-solid fa-play"></i></a>
     </div>
-  </div>
+  </section>
 
-  <div class="p-salesInfo">
+  <section class="p-salesInfoSection">
     <h2 class="c-mainHeader">営業情報</h2>
 
     <div class="p-calenderArea">
@@ -102,7 +102,7 @@
         お問い合わせください。
       </div> -->
     </div>
-  </div>
+  </section>
 </main>
 
 <?php get_footer(); ?>

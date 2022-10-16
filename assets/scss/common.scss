@@ -1,5 +1,6 @@
 @import 'settings/colors';
 @import 'settings/sizes';
+@import 'settings/fonts';
 
 @font-face {
   font-family: 'Kaisei Opti';
@@ -40,16 +41,17 @@ html {
 }
 
 body {
-  font-family: 'Noto Sans JP';
+  font-family: $normal-font;
   color: $main-black;
 }
 
 .c-mainHeader {
-  font-family: 'Kaisei Opti';
+  font-family: $header-font;
   font-size: 24rem/16;
   text-align: center;
   margin: 0;
-  line-height: 2.5;
+  padding: .5rem 0;
+  line-height: 2.2;
 
   &::after {
     content: '';
@@ -57,6 +59,19 @@ body {
     width: 40px;
     border-bottom: 4px double;
     margin: auto;
+  }
+}
+
+.c-subHeader {
+  font-family: $header-font;
+  color: $main-brown;
+  display: inline-block;
+  
+  &::after {
+    content: '';
+    color: $main-black;
+    display: block;
+    border-bottom: 4px double;
   }
 }
 

@@ -79,6 +79,10 @@ function kence_scripts(): void
 		wp_enqueue_style('shop-info-style', get_theme_file_uri('/assets/css/shop-info.css'), [], '1.0.0');
 	}
 
+	if (is_page('history')) {
+		wp_enqueue_style('history-style', get_theme_file_uri('/assets/css/history.css'), [], '1.0.0');
+	}
+
 	if (is_archive()) {
 		// wp_enqueue_style('archive-style', get_theme_file_uri('/css/archive.css'), [], '1.0.0');
 	}
@@ -111,7 +115,7 @@ require get_theme_file_path( '/inc/widgets.php' );
 /**
  * Custom functions that act independently of the theme templates.
  */
-require get_theme_file_path( '/inc/extras.php' );
+// require get_theme_file_path( '/inc/extras.php' );
 
 /**
  * Customizer additions.

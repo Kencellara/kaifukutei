@@ -12,7 +12,7 @@
         </a>
       </li>
       <li>
-        <a href="#" class="global-navigation__link">
+        <a href="<?= home_url('history') ?>" class="global-navigation__link">
           こだわりと歴史
         </a>
       </li>

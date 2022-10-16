@@ -1,0 +1,45 @@
+@import 'settings/imgs';
+@import 'settings/colors';
+@import 'settings/fonts';
+
+h1 {
+  background-image: $bg-img-white;
+}
+
+section:nth-child(odd) {
+  background-image: $bg-img-gray;
+}
+
+section:nth-child(even) {
+  background-image: $bg-img-white;
+}
+
+section {
+  padding: 1.6rem 0;
+  
+  img {
+    margin: auto;
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }
+  
+  h2 {
+    margin: .5em 0 0;
+    font-size: 20rem/16;
+  }
+
+  p {
+    margin: .8em 0;
+    line-height: 1.6;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 490px) {
+  .l-contentWrapper {
+    width: 450px;
+    margin: auto;
+  }
+}
