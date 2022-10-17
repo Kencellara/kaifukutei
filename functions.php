@@ -68,7 +68,7 @@ function kence_scripts(): void
 	}
 
 	if (is_single()) {
-		// wp_enqueue_style('single-style', get_theme_file_uri('/css/single.css'), [], '1.0.0');
+		wp_enqueue_style('news-style', get_theme_file_uri('/assets/css/news.css'), [], '1.0.0');
 	}
 
 	if (is_page('menu')) {
