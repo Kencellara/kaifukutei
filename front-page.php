@@ -19,11 +19,9 @@
           <?php the_post() ?>
           <li>
             <article>
-              <div class="p-newsDate">
-                <?= get_the_date('Y.m.d') ?>
-              </div>
+              <time class="p-newsDate"><?= get_the_date('Y.m.d') ?></time>
               <?php the_title('<h3 class="p-newsTitle">', '</h3>') ?>
-              <?php the_content() ?>
+              <?php the_excerpt() ?>
             </article>
           </li>
         <?php endwhile ?>
