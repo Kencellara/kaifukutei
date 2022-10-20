@@ -7,12 +7,12 @@
         </a>
       </li>
       <li>
-        <a href="#" class="global-navigation__link">
+        <a href="<?= home_url('news-archives') ?>" class="global-navigation__link" target="_self">
           ニュース
         </a>
       </li>
       <li>
-        <a href="<?= home_url('history') ?>" class="global-navigation__link">
+        <a href="<?= home_url('history') ?>" class="global-navigation__link" target="_self">
           こだわりと歴史
         </a>
       </li>

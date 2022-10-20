@@ -19,8 +19,8 @@
           <?php the_post() ?>
           <li>
             <article>
-              <time class="p-newsDate"><?= get_the_date('Y.m.d') ?></time>
-              <?php the_title('<h3 class="p-newsTitle">', '</h3>') ?>
+              <time class="c-newsPublishedDate" datetime="<?= get_the_date('Y.m.d') ?>" itemprop="datepublished"><?= get_the_date('Y.m.d') ?></time>
+              <?php the_title('<h3 class="c-newsTitle">', '</h3>') ?>
               <?php the_excerpt() ?>
             </article>
           </li>

@@ -56,11 +56,7 @@
       article {
         border-bottom: $border-gray 1px solid;
 
-        .p-newsDate {
-          color: $date-gray;
-        }
-
-        h3.p-newsTitle {
+        h3.c-newsTitle {
           font-size: 17px;
           margin: 5px 0;
         }

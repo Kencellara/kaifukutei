@@ -45,6 +45,10 @@ body {
   color: $main-black;
 }
 
+.l-contentWrapper {
+  margin: 0 20px;
+}
+
 .c-mainHeader {
   font-family: $header-font;
   font-size: 24rem/16;
@@ -77,6 +81,42 @@ body {
 
 a {
   text-decoration: none;
+}
+
+time {
+  color: $date-gray;
+}
+
+// WP組み込みページネーション
+.posts-navigation {
+  margin-top: .8rem;
+
+  .nav-links {
+    display: flex;
+    // 前と次がわかりづらいため反転
+    flex-flow: row-reverse;
+    justify-content: space-between;
+  
+    a {
+      display: inline-block;
+      padding: 1.2rem 0;
+      color: $main-black;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    i {
+      vertical-align: middle;
+    }
+
+    i.fa-angle-left {
+      margin-right: .5em;
+    }
+
+    i.fa-angle-right {
+      margin-left: .5em;
+    }
+  }
 }
 
 .p-topImgSlide {

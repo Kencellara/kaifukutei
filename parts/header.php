@@ -1,5 +1,5 @@
 <header id="js-fixHeader">
-  <?php if (is_home()) : ?>
+  <?php if (is_front_page()) : ?>
     <h1 class="c-topLogoHeader">
       <img src="<?= get_theme_file_uri('/assets/images/logo-green.png') ?>" alt="開福亭ロゴ緑">
     </h1>
