@@ -87,6 +87,17 @@ time {
   color: $date-gray;
 }
 
+ul.u-listStyleNone {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li::before {
+    content: "\200B";
+    position: absolute;
+  }
+}
+
 // WP組み込みページネーション
 .posts-navigation {
   margin-top: .8rem;

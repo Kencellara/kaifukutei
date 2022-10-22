@@ -9,7 +9,28 @@
     </a>
   <?php endif ?>
 
-  <ul class="p-headerIconList">
+  <nav class="p-pc-headerNavigation">
+    <ul class="u-listStyleNone">
+      <li>
+        <a href="<?= home_url('history') ?>" class="c-navLink" target="_self">
+          こだわりと歴史
+        </a>
+      </li>
+      <li>
+        <a href="<?= home_url('menu') ?>" class="c-navLink" target="_self">
+          メニュー
+        </a>
+      </li>
+      <li>
+        <a href="<?= home_url('shop-info') ?>" class="c-navLink" target="_self">
+          店舗案内
+        </a>
+      </li>
+      <li><img src="<?= get_theme_file_uri('/assets/images/instagram-logo.png') ?>" alt="Instagram"></li>
+    </ul>
+  </nav>
+
+  <ul class="p-sp-headerIconList u-listStyleNone">
     <li><img src="<?= get_theme_file_uri('/assets/images/instagram-logo.png') ?>" alt="Instagram"></li>
     <li>
       <a href="tel:0596-28-2952">
