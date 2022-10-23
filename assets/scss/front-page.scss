@@ -1,10 +1,191 @@
 @import 'settings/colors';
 @import 'settings/imgs';
+@import 'settings/fonts';
+@import 'settings/break-points';
+
+// pc
+@media screen and (min-width: $pc-min-width) {
+  .p-newsSection {
+    ul.p-newsList {
+      margin: 25px auto 40px;
+    }
+  }
+
+  .p-kodawariHistorySection {
+    .p-kodawariBox {
+      margin-bottom: 3em;
+  
+      &:not(.u-block) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        &:nth-child(odd) {
+          .p-kodawariParagraphBox {
+            padding-right: 1em;
+          }
+        }
+
+        &:nth-child(even) {
+          flex-flow: row-reverse;
+  
+          .p-kodawariParagraphBox {
+            padding-left: 2em;
+          }
+        }
+  
+        .p-kodawariParagraphBox {
+          width: 40%;
+          box-sizing: border-box;
+        }
+    
+        figure {
+          width: 60%;
+        }
+      }
+  
+      &.u-block {
+        display: block;
+      }
+  
+      p {
+        margin: 1rem 0;
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .p-menuSection {
+    .p-sp-menuZone {
+      display: none;
+    }
+  
+    .p-pc-menuZone {
+      margin: 1em;
+  
+      .p-menuRowBox {
+        display: flex;
+        column-gap: 1em;
+        margin-bottom: 1em;
+  
+        figure {
+          figcaption {
+            font-size: 1.5rem;
+            font-family: $header-font;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  .p-salesInfoSection {
+    .p-infoContents {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .p-infoTextArea {
+        padding: 0 1em;
+        border-left: 1px solid #aaa;
+        margin-left: 2em;
+
+        h3 {
+          font-size: 1.4rem;
+          margin: .7em 0;
+        }
+      
+        p {
+          font-size: 1.2rem;
+          margin: .8em 0;
+          padding-left: 1em;
+        }
+      
+        ul {
+          font-size: 1.2rem;
+          margin: 1em 0;
+        }
+      }
+    }
+  }
+}
+
+// sp, tablet
+@media screen and (max-width: $pc-min-width) {
+  .p-newsSection {
+    ul.p-newsList {
+      margin: 25px auto;
+    }
+  }
+
+  .p-kodawariHistorySection {
+    .p-kodawariZone {
+      p {
+        font-size: 14rem/16;
+  
+        &.c-indent {
+          margin-left: 2rem;
+        }
+    
+        &.c-beforeDash {
+          margin-left: -2.5rem;
+        }
+    
+        &.c-beforeDash::before {
+          content: '──';
+          margin-right: .5rem;
+        }
+    
+        &.c-afterDash::after {
+          content: '──';
+          margin-left: .5rem;
+        }
+      }
+    }
+  }
+
+  .p-menuSection {
+    .p-sp-menuZone {
+      margin: 25px 0;
+  
+      img {
+        width: 100%;
+      }
+    }
+  
+    .p-pc-menuZone {
+      display: none;
+    }
+  }
+
+  .p-salesInfoSection {
+    .p-infoTextArea {
+      width: 315px;
+      margin: auto;
+
+      h3 {
+        font-size: 17rem/16;
+        margin: 10em/17 0 5em/17;
+      }
+    
+      p {
+        font-size: 15rem/16;
+        margin: 5em/16 1.5em;
+      }
+    
+      ul {
+        font-size: 15rem/16;
+        margin: 5em/16 0;
+      }
+    }
+  }
+}
 
 .p-mainContent {
   .l-wrapper {
     margin: 0 auto;
-    width: 315px;
+    width: clamp(375px, 70%, 1000px);
   }
 
   img {
@@ -15,7 +196,7 @@
 
   .p-toDetail {
     width: 170px;
-    margin: 10px auto;
+    margin: 2.5em auto 0;
     text-align: center;
     font-size: 1rem;
     line-height: 30rem/16;
@@ -46,7 +227,6 @@
 
     ul.p-newsList {
       list-style-type: none;
-      margin: 25px auto;
       padding: 0;
 
       li {
@@ -82,25 +262,6 @@
 
       p {
         font-weight: bold;
-        font-size: 14rem/16;
-
-        &.c-indent {
-          margin-left: 2rem;
-        }
-
-        &.c-beforeDash {
-          margin-left: -2.5rem;
-        }
-
-        &.c-beforeDash::before {
-          content: '──';
-          margin-right: .5rem;
-        }
-
-        &.c-afterDash::after {
-          content: '──';
-          margin-left: .5rem;
-        }
       }
 
       figure {
@@ -123,14 +284,6 @@
     background-image: $bg-img-brown;
     color: #fff;
     padding: 20px 0 42px;
-
-    .p-menuZone {
-      margin: 25px 0;
-
-      img {
-        width: 100%;
-      }
-    }
 
     .p-toAllMenu {
       border-color: #fff;
@@ -156,23 +309,11 @@
     }
 
     .p-infoTextArea {
-      width: 315px;
-      margin: auto;
-
-      h3 {
-        font-size: 17rem/16;
-        margin: 10em/17 0 5em/17;
-      }
-
       p {
         font-weight: bold;
-        font-size: 15rem/16;
-        margin: 5em/16 1.5em;
       }
 
       ul {
-        font-size: 15rem/16;
-        margin: 5em/16 0;
         font-weight: bold;
       }
     }
@@ -188,48 +329,52 @@
       width: 100%;
     }
 
+    &.u-withNotice {
+      &::after {
+        content: '?';
+        position: absolute;
+        right: 0;
+        font-size: 1.1rem;
+        background-color: #0C5600;
+        width: 28px;
+        height: 28px;
+        display: block;
+        bottom: 0;
+        line-height: 1.5;
+        border-radius: 50%;
+        margin: 0.2rem;
+        opacity: .8;
+      }
+
+      figcaption {
+        animation-name: figcaptionFadeOut;
+        animation-duration: .5s;
+        animation-fill-mode: forwards;
+      }
+
+      &:hover,
+      &:active {
+        figcaption {
+          opacity: 0;
+          animation-name: figcaptionFadeIn;
+          animation-duration: .5s;
+          animation-fill-mode: forwards;
+        }
+
+        &::after {
+          opacity: 0;
+        }
+      }
+    }
+
     figcaption {
-      opacity: 0;
       font-size: 13rem/16;
       position: absolute;
       left: 0;
       bottom: 0.3rem;
       width: 100%;
       backdrop-filter: blur(10px);
-      animation-name: figcaptionFadeOut;
-      animation-duration: .5s;
-      animation-fill-mode: forwards;
-      line-height: inherit;
       line-height: 1.5;
-    }
-
-    &::after {
-      content: '?';
-      position: absolute;
-      right: 0;
-      font-size: 1.1rem;
-      background-color: #0C5600;
-      width: 28px;
-      height: 28px;
-      display: block;
-      bottom: 0;
-      line-height: 1.5;
-      border-radius: 50%;
-      margin: 0.2rem;
-      opacity: .8;
-    }
-
-    &:hover,
-    &:active {
-      figcaption {
-        animation-name: figcaptionFadeIn;
-        animation-duration: .5s;
-        animation-fill-mode: forwards;
-      }
-
-      &::after {
-        opacity: 0;
-      }
     }
   }
 }

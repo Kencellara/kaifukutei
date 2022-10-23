@@ -2,6 +2,7 @@
 @import '../settings/sizes';
 @import '../settings/break-points';
 
+// pc
 @media screen and (min-width: $pc-min-width) {
   .p-navigationArea {
     display: none;

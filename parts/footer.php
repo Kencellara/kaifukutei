@@ -19,11 +19,11 @@
     〒516-0071 三重県伊勢市一之木2丁目5-15
   </div>
 
-  <ul class="c-footerLinkList">
+  <!-- <ul class="c-footerLinkList">
     <li>
       <a href="#">プライバシーポリシー</a>
     </li>
-  </ul>
+  </ul> -->
 
   <p class="c-allRightsReserved">
     © 2022 kaifukutei.com All rights reserved.

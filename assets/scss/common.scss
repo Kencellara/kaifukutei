@@ -1,6 +1,7 @@
 @import 'settings/colors';
 @import 'settings/sizes';
 @import 'settings/fonts';
+@import 'settings/break-points';
 
 @font-face {
   font-family: 'Kaisei Opti';
@@ -32,6 +33,24 @@
   }
 }
 
+// pc
+@media screen and (min-width: $pc-min-width) {
+  .c-mainHeader {
+    font-size: 1.8rem;
+  }
+
+  .u-pc-textAlignRight {
+    text-align: right;
+  }
+}
+
+// sp, tablet
+@media screen and (max-width: $pc-min-width) {
+  .c-mainHeader {
+    font-size: 1.5rem;
+  }
+}
+
 .site-content {
   padding-top: $header-height;
 }
@@ -51,7 +70,6 @@ body {
 
 .c-mainHeader {
   font-family: $header-font;
-  font-size: 24rem/16;
   text-align: center;
   margin: 0;
   padding: .5rem 0;
@@ -81,6 +99,11 @@ body {
 
 a {
   text-decoration: none;
+
+  &.p-singleNewsLink {
+    display: block;
+    color: $main-black;
+  }
 }
 
 time {
@@ -138,14 +161,14 @@ ul.u-listStyleNone {
   display: block;
 }
 
-.c-f19 {
-  font-size: 19rem/16;
+.u-1-2em {
+  font-size: 1.2em;
 }
 
-.c-f17 {
-  font-size: 17rem/16;
+.u-1-1em {
+  font-size: 1.1em;
 }
 
-.c-f16 {
-  font-size: 1rem;
+.u-1em {
+  font-size: 1em;
 }
