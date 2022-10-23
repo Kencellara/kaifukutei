@@ -1,6 +1,7 @@
 @import 'settings/imgs';
 @import 'settings/colors';
 @import 'settings/fonts';
+@import 'settings/break-points';
 
 h1 {
   background-image: $bg-img-white;
@@ -15,31 +16,80 @@ section:nth-child(even) {
 }
 
 section {
-  padding: 1.6rem 0;
-  
   img {
     margin: auto;
     display: block;
-    width: 100%;
     height: auto;
     border-radius: 15px;
   }
   
   h2 {
     margin: .8em 0 0;
-    font-size: 20rem/16;
   }
 
   p {
     margin: .8em 0;
     line-height: 1.6;
-    font-size: 1rem;
   }
 }
 
-@media screen and (min-width: 490px) {
-  .l-contentWrapper {
-    width: 450px;
+
+// pc
+@media screen and (min-width: $pc-min-width) {
+  section {
+    padding: 2rem 0;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  .p-historyContentBox {
+    display: flex;
+    width: min(100%, 1200px);
     margin: auto;
+    gap: 2em;
+
+    .p-historyTextContent {
+      width: 55%;
+    }
+
+    img {
+      width: 45%;
+    }
+  }
+  
+  section:nth-child(even) {
+    .p-historyContentBox {
+      flex-flow: row-reverse;
+    }
+  }
+}
+
+// sp, tablet
+@media screen and (max-width: $pc-min-width) {
+  section {
+    padding: 1.6rem 0;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .p-historyContentBox {
+    width: clamp(335px, 100%, 450px);
+    margin: auto;
+
+    img {
+      width: 100%;
+    }
   }
 }

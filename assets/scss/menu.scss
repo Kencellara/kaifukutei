@@ -2,6 +2,70 @@
 @import 'settings/colors';
 @import 'settings/break-points';
 
+.l-siteMain {
+  background-image: $bg-img-brown;
+  color: #fff;
+
+  .p-allMenu {
+    padding: 20px 0;
+
+    .p-menuArea:not(:first-child) {
+      margin-top: 3rem;
+    }
+
+    h2.c-menuHeader {
+      position: relative;
+      margin: .7em 0 0;
+      padding: .5em .3em .4em;
+      // IE用
+      -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+      border: 1px solid #fff;
+      letter-spacing: .25em;
+      
+      &::after {
+        content: '──';
+        position: absolute;
+        letter-spacing: 0;
+        font-size: 1em;
+      }
+    }
+
+    img {
+      display: block;
+      width: 80%;
+      height: auto;
+    }
+
+    .c-menuList {
+      background: rgba(165, 165, 165, 0.2);
+      border: .5px solid $border-gray-2;
+      border-radius: 10rem/16;
+
+      li {
+        margin-bottom: .3em;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .p-otherMenu {
+      .c-otherMenuHeader {
+        text-align: center;
+      }
+
+      ul.c-otherMenuList {
+        border: inherit;
+        border-radius: inherit;
+        background: inherit;
+      }
+    }
+  }
+}
+
+
 // pc
 @media screen and (min-width: $pc-min-width) {
   .p-allMenu {
@@ -76,69 +140,6 @@
 
     li {
       font-size: 1rem;
-    }
-  }
-}
-
-.l-siteMain {
-  background-image: $bg-img-brown;
-  color: #fff;
-
-  .p-allMenu {
-    padding: 20px 0;
-
-    .p-menuArea:not(:first-child) {
-      margin-top: 3rem;
-    }
-
-    h2.c-menuHeader {
-      position: relative;
-      margin: .7em 0 0;
-      padding: .5em .3em .4em;
-      // IE用
-      -ms-writing-mode: tb-rl;
-      writing-mode: vertical-rl;
-      border: 1px solid #fff;
-      letter-spacing: .25em;
-      
-      &::after {
-        content: '──';
-        position: absolute;
-        letter-spacing: 0;
-        font-size: 1em;
-      }
-    }
-
-    img {
-      display: block;
-      width: 80%;
-      height: auto;
-    }
-
-    .c-menuList {
-      background: rgba(165, 165, 165, 0.2);
-      border: .5px solid $border-gray-2;
-      border-radius: 10rem/16;
-
-      li {
-        margin-bottom: .3em;
-
-        &:last-child {
-          margin-bottom: 0;
-        }
-      }
-    }
-
-    .p-otherMenu {
-      .c-otherMenuHeader {
-        text-align: center;
-      }
-
-      ul.c-otherMenuList {
-        border: inherit;
-        border-radius: inherit;
-        background: inherit;
-      }
     }
   }
 }
