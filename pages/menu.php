@@ -3,12 +3,12 @@
 
   <div class="p-allMenu">
     <div id="beaf" class="p-beafMenu p-menuArea">
-      <div>
+      <div class="p-menuHeaderAndImg">
         <h2 class="c-menuHeader u-floatLeft">牛肉料理</h2>
         <img class="u-leftMarginAuto" src="<?= get_theme_file_uri('/assets/images/menu/beaf.jpg') ?>" alt="タンシチュー" height="270px" width="404px">
       </div>
 
-      <div class="p-beafMenuListArea">
+      <div class="p-menuListArea">
         <ul class="c-menuList">
           <li>ビフテキ 4,100~6,100円</li>
           <li>ビーフカツ 2,400円</li>
@@ -21,12 +21,12 @@
     </div>
 
     <div id="poak" class="p-poakMenu p-menuArea">
-      <div>
+      <div class="p-menuHeaderAndImg">
         <h2 class="c-menuHeader u-floatRight">豚肉料理</h2>
         <img class="u-rightMarginAuto" src="<?= get_theme_file_uri('/assets/images/menu/poak.jpg') ?>" alt="トンカツ" height="270px" width="404px">
       </div>
 
-      <div class="p-poakMenuListArea">
+      <div class="p-menuListArea">
         <ul class="c-menuList">
           <li>ポークソテー 1,150円</li>
           <li>ポークパルメザン焼 1,350円</li>
@@ -37,12 +37,12 @@
     </div>
 
     <div id="chiken" class="p-chikenMenu p-menuArea">
-      <div>
+      <div class="p-menuHeaderAndImg">
         <h2 class="c-menuHeader u-floatLeft">鶏肉料理</h2>
         <img class="u-leftMarginAuto" src="<?= get_theme_file_uri('/assets/images/menu/beaf-2.jpg') ?>" alt="ヒレステーキ" height="270px" width="404px">
       </div>
 
-      <div class="p-chikenMenuListArea">
+      <div class="p-menuListArea">
         <ul class="c-menuList">
           <li>チキンカツ 1,050円</li>
           <li>チキンチーズ焼 1,150円</li>
@@ -53,12 +53,12 @@
     </div>
 
     <div id="fish" class="p-fishMenu p-menuArea">
-      <div>
+      <div class="p-menuHeaderAndImg">
         <h2 class="c-menuHeader u-floatRight">鮮魚料理</h2>
         <img class="u-rightMarginAuto" src="<?= get_theme_file_uri('/assets/images/menu/fish.jpg') ?>" alt="エビフライ" height="270px" width="404px">
       </div>
 
-      <div class="p-fishMenuListArea">
+      <div class="p-menuListArea">
         <ul class="c-menuList">
           <li>エビフライ 時価</li>
           <li>カキフライ(11~2月) 時価</li>
@@ -68,12 +68,12 @@
     </div>
 
     <div id="salad" class="p-saladMenu p-menuArea">
-      <div>
+      <div class="p-menuHeaderAndImg">
         <h2 class="c-menuHeader u-floatLeft">サラダ</h2>
         <img class="u-leftMarginAuto" src="<?= get_theme_file_uri('/assets/images/menu/salad.jpg') ?>" alt="サラダ" height="270px" width="404px">
       </div>
 
-      <div class="p-saladMenuListArea">
+      <div class="p-menuListArea">
         <ul class="c-menuList">
           <li>ポテトサラダ 700円</li>
           <li>メキシコサラダ 800円</li>
@@ -83,12 +83,12 @@
     </div>
 
     <div id="rice" class="p-riceMenu p-menuArea">
-      <div>
+      <div class="p-menuHeaderAndImg">
         <h2 class="c-menuHeader u-floatRight">米飯料理</h2>
         <img class="u-rightMarginAuto" src="<?= get_theme_file_uri('/assets/images/menu/rice-1.jpg') ?>" alt="オムライス" height="270px" width="404px">
       </div>
 
-      <div class="p-riceMenuListArea">
+      <div class="p-menuListArea">
         <ul class="c-menuList">
           <li>カレーライス 900円</li>
           <li>カツカレー 1,300円</li>
@@ -103,10 +103,12 @@
     <div class="p-otherMenu p-menuArea">
       <h2 class="c-otherMenuHeader">その他</h2>
 
-      <ul class="c-otherMenuList c-menuList">
-        <li>ポタージュスープ 550円</li>
-        <li>オムレツ 550円</li>
-      </ul>
+      <div class="p-menuListArea">
+        <ul class="c-otherMenuList c-menuList">
+          <li>ポタージュスープ 550円</li>
+          <li>オムレツ 550円</li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>

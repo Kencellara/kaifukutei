@@ -1,5 +1,84 @@
 @import 'settings/imgs';
 @import 'settings/colors';
+@import 'settings/break-points';
+
+// pc
+@media screen and (min-width: $pc-min-width) {
+  .p-allMenu {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .p-menuArea {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+
+    &:nth-child(even) {
+      flex-flow: row-reverse;
+
+      .p-menuHeaderAndImg {
+        flex-flow: row-reverse;
+      }
+    }
+
+    .p-menuHeaderAndImg {
+      width: 70%;
+      display: flex;
+      gap: 2em;
+
+      .c-menuHeader {
+        height: fit-content;
+        font-size: 1.5rem;
+
+        &.u-floatRight,
+        &.u-floatLeft {
+          float: inherit;
+        }
+      }
+
+      img {
+        flex-grow: 1;
+
+        &.u-leftMarginAuto,
+        &.u-rightMarginAuto {
+          margin: 0;
+        }
+      }
+    }
+
+    .p-menuListArea {
+      width: 30%;
+
+      .c-menuList {
+        padding: 0.5em 1em 0.5em 2.5em;
+
+        li {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    &.p-otherMenu {
+      justify-content: center;
+    }
+  }
+}
+
+// sp, tablet
+@media screen and (max-width: $pc-min-width) {
+  .c-menuHeader {
+    font-size: 17rem/16;
+  }
+
+  .c-menuList {
+    padding: .5em 1em .5em 2em;
+
+    li {
+      font-size: 1rem;
+    }
+  }
+}
 
 .l-siteMain {
   background-image: $bg-img-brown;
@@ -19,23 +98,14 @@
       // IE用
       -ms-writing-mode: tb-rl;
       writing-mode: vertical-rl;
-      font-size: 17rem/16;
       border: 1px solid #fff;
       letter-spacing: .25em;
-      
-      &.u-floatLeft {
-        float: left;
-      }
-
-      &.u-floatRight {
-        float: right;
-      }
       
       &::after {
         content: '──';
         position: absolute;
         letter-spacing: 0;
-        font-size: 1rem;
+        font-size: 1em;
       }
     }
 
@@ -43,25 +113,19 @@
       display: block;
       width: 80%;
       height: auto;
-
-      &.u-leftMarginAuto {
-        margin-left: auto;
-      }
-
-      &.u-rightMarginAuto {
-        margin-right: auto;
-      }
     }
 
-    ul.c-menuList {
-      padding: .5em 1em .5em 2em;
+    .c-menuList {
       background: rgba(165, 165, 165, 0.2);
       border: .5px solid $border-gray-2;
       border-radius: 10rem/16;
 
       li {
         margin-bottom: .3em;
-        font-size: 1rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
       }
     }
 
