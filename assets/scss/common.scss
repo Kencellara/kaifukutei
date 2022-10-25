@@ -33,24 +33,6 @@
   }
 }
 
-// pc
-@media screen and (min-width: $pc-min-width) {
-  .c-mainHeader {
-    font-size: 1.8rem;
-  }
-
-  .u-pc-textAlignRight {
-    text-align: right;
-  }
-}
-
-// sp, tablet
-@media screen and (max-width: $pc-min-width) {
-  .c-mainHeader {
-    font-size: 1.5rem;
-  }
-}
-
 .site-content {
   padding-top: $header-height;
 }
@@ -62,10 +44,12 @@ html {
 body {
   font-family: $normal-font;
   color: $main-black;
+  min-width: 335px;
 }
 
 .l-contentWrapper {
-  margin: 0 20px;
+  width: clamp(335px, 85%, 1000px);
+  margin: auto;
 }
 
 .c-mainHeader {
@@ -187,4 +171,58 @@ ul.u-listStyleNone {
 
 .u-rightMarginAuto {
   margin-right: auto;
+}
+
+.u-textAlignCenter {
+  text-align: center;
+}
+
+// pc
+@media screen and (min-width: $pc-min-width) {
+  .c-mainHeader {
+    font-size: 1.8rem;
+  }
+
+  .u-pc-textAlignRight {
+    text-align: right;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.32rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  time {
+    font-size: 1.08rem;
+  }
+}
+
+// sp, tablet
+@media screen and (max-width: $pc-min-width) {
+  .c-mainHeader {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  time {
+    font-size: .9rem;
+  }
 }

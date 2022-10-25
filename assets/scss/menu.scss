@@ -2,6 +2,10 @@
 @import 'settings/colors';
 @import 'settings/break-points';
 
+.l-contentWrapper {
+  width: clamp(335px, 90%, 1200px);
+}
+
 .l-siteMain {
   background-image: $bg-img-brown;
   color: #fff;
@@ -17,8 +21,6 @@
       position: relative;
       margin: .7em 0 0;
       padding: .5em .3em .4em;
-      // IE用
-      -ms-writing-mode: tb-rl;
       writing-mode: vertical-rl;
       border: 1px solid #fff;
       letter-spacing: .25em;
@@ -132,7 +134,7 @@
 // sp, tablet
 @media screen and (max-width: $pc-min-width) {
   .c-menuHeader {
-    font-size: 17rem/16;
+    font-size: 1.2rem;
   }
 
   .c-menuList {

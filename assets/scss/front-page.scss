@@ -6,7 +6,7 @@
 .p-mainContent {
   .l-wrapper {
     margin: 0 auto;
-    width: clamp(375px, 70%, 1000px);
+    width: clamp(335px, 85%, 1000px);
   }
 
   img {
@@ -51,19 +51,18 @@
       padding: 0;
 
       li {
-        margin-bottom: 15px;
+        margin-bottom: 1.2rem;
       }
 
       article {
         border-bottom: $border-gray 1px solid;
 
         h3.c-newsTitle {
-          font-size: 17px;
-          margin: 5px 0;
+          margin: .5em 0;
         }
 
         p {
-          margin: 5px 0;
+          margin: .5em 0;
         }
       }
     }
@@ -75,11 +74,7 @@
     padding: 10px 0 30px;
 
     .p-kodawariZone {
-      margin: 25px 0;
-
-      p, figure {
-        margin: .3rem 0 .5rem;
-      }
+      margin: 1.5rem 0;
 
       p {
         font-weight: bold;
@@ -124,8 +119,8 @@
       text-align: center;
 
       iframe {
-        width: 375px;
-        height: 400px;
+        width: min(100%, 400px);
+        height: 450px;
       }
     }
 
@@ -284,6 +279,13 @@
       justify-content: center;
       align-items: center;
 
+      .p-calenderArea {
+        iframe {
+          width: 500px;
+          height: 600px;
+        }
+      }
+
       .p-infoTextArea {
         padding: 0 1em;
         border-left: 1px solid #aaa;
@@ -320,16 +322,8 @@
   .p-kodawariHistorySection {
     .p-kodawariZone {
       p {
-        font-size: 14rem/16;
-  
-        &.c-indent {
-          margin-left: 2rem;
-        }
-    
-        &.c-beforeDash {
-          margin-left: -2.5rem;
-        }
-    
+        margin: .5em 0;
+        
         &.c-beforeDash::before {
           content: '──';
           margin-right: .5rem;
@@ -339,6 +333,10 @@
           content: '──';
           margin-left: .5rem;
         }
+      }
+
+      figure {
+        margin: 1.5rem 0;
       }
     }
   }
@@ -358,22 +356,26 @@
   }
 
   .p-salesInfoSection {
+    .p-calenderArea {
+      iframe {
+        width: min(100%, 400px);
+        height: 450px;
+      }
+    }
+
     .p-infoTextArea {
       width: 315px;
       margin: auto;
 
       h3 {
-        font-size: 17rem/16;
         margin: 10em/17 0 5em/17;
       }
     
       p {
-        font-size: 15rem/16;
         margin: 5em/16 1.5em;
       }
     
       ul {
-        font-size: 15rem/16;
         margin: 5em/16 0;
       }
     }

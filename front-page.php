@@ -44,7 +44,7 @@
           <div class="p-kodawariParagraphBox">
             <p class="c-afterDash"><span class="u-1-2em">1914年</span>（大正3年）創業</p>
             <p class="c-beforeDash"><span class="u-1-1em">お料理</span>を通じた</p>
-            <p class="c-indent"><span class="u-1-1em">お客様</span>との<span class="u-1-1em">ご縁</span>を<span class="u-1-1em">大切</span>にしています。</p>
+            <p class="u-textAlignCenter"><span class="u-1-1em">お客様</span>との<span class="u-1-1em">ご縁</span>を<span class="u-1-1em">大切</span>にしています。</p>
           </div>
           <figure class="u-withNotice">
             <img src="<?= get_theme_file_uri('/assets/images/top/kodawari-1.jpg') ?>" height="270px" width="404px">
@@ -54,7 +54,7 @@
         <div class="p-kodawariBox">
           <div class="p-kodawariParagraphBox">
             <p class="c-beforeDash"><span class="u-1em">2週間</span>じっくりと火入れした<span class="u-1em">デミグラスソース</span></p>
-            <p class="c-afterDash c-indent"><span class="u-1em">脂</span>の<span class="u-1em">質</span>にこだわって仕入れた<span class="u-1em">お肉</span></p>
+            <p class="c-afterDash u-textAlignCenter"><span class="u-1em">脂</span>の<span class="u-1em">質</span>にこだわって仕入れた<span class="u-1em">お肉</span></p>
           </div>
           <figure class="u-withNotice">
             <img src="<?= get_theme_file_uri('/assets/images/top/kodawari-2.jpg') ?>" height="270px" width="404px">

@@ -2,16 +2,15 @@
 @import 'settings/colors';
 @import 'settings/fonts';
 
-@media screen and (min-width: 490px) {
-  .l-contentWrapper {
-    width: 450px;
-    margin: auto;
-  }
-}
 
 .l-siteMain {
   background-image: $bg-img-gray;
   padding-bottom: 2rem;
+}
+
+.l-contentWrapper {
+  width: clamp(335px, 85%, 800px);
+  margin: auto;
 }
 
 article {
