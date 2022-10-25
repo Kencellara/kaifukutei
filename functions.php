@@ -82,6 +82,10 @@ function kence_scripts(): void
 	if (is_home()) {
 		wp_enqueue_style('archive-style', get_theme_file_uri('/assets/css/archive.css'), [], '1.0.0');
 	}
+
+	if (is_404()) {
+		wp_enqueue_style('404-style', get_theme_file_uri('/assets/css/404.css'), [], '1.0.0');
+	}
 }
 add_action( 'wp_enqueue_scripts', 'kence_scripts' );
 

@@ -1,8 +1,12 @@
 <?php get_header(); ?>
 
-<div id="primary" class="content-area">
-	<main id="main" class="site-main">
-		ページが見つかりませんでした。
+<div class="l-contentArea">
+	<main id="main" class="l-siteMain">
+		<div class="l-contentWrapper">
+			<p>
+				ページが見つかりませんでした。
+			</p>
+		</div>
 	</main>
 </div>
 
