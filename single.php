@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div class="content-area l-postContentArea l-singularContentArea">
-	<main id="main" class="site-main l-siteMain">
+	<main id="js-main" class="site-main l-siteMain">
 		<div class="l-contentWrapper">
 			<article class="p-singleNews">
 				<h1 class="c-newsHeader"><?php the_title() ?></h1>

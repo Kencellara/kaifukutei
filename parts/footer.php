@@ -11,7 +11,7 @@
 
   <div class="c-footerLogo">
     <a href="<?= home_url() ?>" target="_self">
-      <img src="<?= get_theme_file_uri('/assets/images/logo-white.png') ?>" alt="開福亭ロゴ白">
+      <img src="<?= get_theme_file_uri('/assets/images/logo-white.png') ?>" alt="開福亭ロゴ白" width="90px" height="62px">
     </a>
   </div>
 

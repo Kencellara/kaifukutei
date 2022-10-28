@@ -16,10 +16,8 @@
   }
 
   .p-toDetail {
-    width: 170px;
     margin: 2.5em auto 0;
     text-align: center;
-    font-size: 1rem;
     line-height: 30rem/16;
     border: $main-black 1px solid;
 
@@ -76,8 +74,8 @@
     .p-kodawariZone {
       margin: 1.5rem 0;
 
-      p {
-        font-weight: bold;
+      .p-kodawariBox {
+        margin-bottom: 3rem;
       }
 
       figure {
@@ -198,6 +196,15 @@
 
 // pc
 @media screen and (min-width: $pc-min-width) {
+  .p-toDetail {
+    width: 180px;
+    font-size: 1.2rem;
+
+    a {
+      padding: 0.2em 0.8em;
+    }
+  }
+
   .p-newsSection {
     ul.p-newsList {
       margin: 25px auto 40px;
@@ -216,7 +223,7 @@
 
         &:nth-child(odd) {
           .p-kodawariParagraphBox {
-            padding-right: 1em;
+            padding-left: 1.5em;
           }
         }
 
@@ -224,7 +231,7 @@
           flex-flow: row-reverse;
   
           .p-kodawariParagraphBox {
-            padding-left: 2em;
+            padding-right: 1.5em;
           }
         }
   
@@ -319,24 +326,15 @@
     }
   }
 
+  .p-toDetail {
+    width: 170px;
+    font-size: 1rem;
+  }
+
   .p-kodawariHistorySection {
     .p-kodawariZone {
       p {
         margin: .5em 0;
-        
-        &.c-beforeDash::before {
-          content: '──';
-          margin-right: .5rem;
-        }
-    
-        &.c-afterDash::after {
-          content: '──';
-          margin-left: .5rem;
-        }
-      }
-
-      figure {
-        margin: 1.5rem 0;
       }
     }
   }

@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
-<section class="content-area l-contentArea">
-	<main id="main" class="site-main l-siteMain">
+<section class="l-contentArea">
+	<main id="js-main" class="l-siteMain">
 		<div class="l-contentWrapper">
 			<h1 class="c-mainHeader">ニュース一覧</h1>
 			<ol class="p-allNewsList">

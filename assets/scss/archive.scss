@@ -4,12 +4,17 @@
 
 .l-siteMain {
   background-image: $bg-img-gray;
+  padding-bottom: 1rem;
 }
 
 .p-allNewsList {
   list-style: none;
   margin: 0;
   padding: 0;
+
+  li {
+    margin-bottom: 1em;
+  }
 
   li::before {
     content: "\200B";

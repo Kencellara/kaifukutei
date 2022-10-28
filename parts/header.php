@@ -1,11 +1,11 @@
 <header id="js-fixHeader">
   <?php if (is_front_page()) : ?>
     <h1 class="c-topLogoHeader">
-      <img src="<?= get_theme_file_uri('/assets/images/logo-green.png') ?>" alt="開福亭ロゴ緑">
+      <img src="<?= get_theme_file_uri('/assets/images/logo-green.png') ?>" alt="開福亭ロゴ緑" width="90px" height="62px" style="margin:14px 0;">
     </h1>
   <?php else : ?>
     <a class="c-pageLogoHeader" href="<?= home_url() ?>" target="_self">
-      <img src="<?= get_theme_file_uri('/assets/images/logo-green.png') ?>" alt="開福亭ロゴ緑">
+      <img src="<?= get_theme_file_uri('/assets/images/logo-green.png') ?>" alt="開福亭ロゴ緑" width="90px" height="62px" style="margin:14px 0;">
     </a>
   <?php endif ?>
 

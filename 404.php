@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div class="l-contentArea">
-	<main id="main" class="l-siteMain">
+	<main id="js-main" class="l-siteMain">
 		<div class="l-contentWrapper">
 			<p>
 				ページが見つかりませんでした。

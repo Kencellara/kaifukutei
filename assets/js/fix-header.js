@@ -3,7 +3,7 @@
 let beforePos = 0;
 
 const scrollBehavior = () => {
-  const mainTop = jQuery('#main').offset().top;
+  const mainTop = jQuery('#js-main').offset().top;
   const scroll = jQuery(window).scrollTop();
 
   if (scroll < mainTop || scroll < beforePos) {

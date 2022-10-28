@@ -1,11 +1,11 @@
 <?php get_header(); ?>
 
-<main id="main" class="p-mainContent">
+<main id="js-main" class="p-mainContent">
   <div class="p-topSlideArea">
     <ul id="slide" class="p-topImgSlide">
-      <li><img src="<?= get_theme_file_uri('/assets/images/main-slide-1.jpg') ?>" alt="メイン画像１" height="270px" width="404px"></li>
-      <li><img src="<?= get_theme_file_uri('/assets/images/main-slide-2.jpg') ?>" alt="メイン画像２" height="270px" width="404px"></li>
-      <li><img src="<?= get_theme_file_uri('/assets/images/main-slide-3.jpg') ?>" alt="メイン画像３" height="270px" width="404px"></li>
+      <li><img src="<?= get_theme_file_uri('/assets/images/main-slide-1.jpg') ?>" alt="開福亭の名物ステーキ" height="270px" width="404px"></li>
+      <li><img src="<?= get_theme_file_uri('/assets/images/main-slide-2.jpg') ?>" alt="開福亭料理長の調理風景" height="270px" width="404px"></li>
+      <li><img src="<?= get_theme_file_uri('/assets/images/main-slide-3.jpg') ?>" alt="伊勢市にある開福亭の看板" height="270px" width="404px"></li>
     </ul>
   </div>
 
@@ -41,29 +41,23 @@
 
       <div class="p-kodawariZone">
         <div class="p-kodawariBox">
-          <div class="p-kodawariParagraphBox">
-            <p class="c-afterDash"><span class="u-1-2em">1914年</span>（大正3年）創業</p>
-            <p class="c-beforeDash"><span class="u-1-1em">お料理</span>を通じた</p>
-            <p class="u-textAlignCenter"><span class="u-1-1em">お客様</span>との<span class="u-1-1em">ご縁</span>を<span class="u-1-1em">大切</span>にしています。</p>
-          </div>
           <figure class="u-withNotice">
-            <img src="<?= get_theme_file_uri('/assets/images/top/kodawari-1.jpg') ?>" height="270px" width="404px">
+            <img src="<?= get_theme_file_uri('/assets/images/top/kodawari-1.jpg') ?>" alt="1914年創業の老舗洋食店" height="270px" width="404px">
             <figcaption>調理や接客を1人で行っているので、<br>提供や対応に時間がかかる場合がございます。</figcaption>
           </figure>
+          <div class="p-kodawariParagraphBox">
+            <h3>1914年創業の老舗洋食店</h3>
+            <p>伊勢市で創業１０８年を迎える老舗洋食店として、現在は４代目”下村忠”が店主を務め、家族代々その伝統の味を受け継いでいます。お客様に本当に美味しい洋食を食べてもらえるように、日々真剣に料理と向き合っています。</p>
+          </div>
         </div>
         <div class="p-kodawariBox">
-          <div class="p-kodawariParagraphBox">
-            <p class="c-beforeDash"><span class="u-1em">2週間</span>じっくりと火入れした<span class="u-1em">デミグラスソース</span></p>
-            <p class="c-afterDash u-textAlignCenter"><span class="u-1em">脂</span>の<span class="u-1em">質</span>にこだわって仕入れた<span class="u-1em">お肉</span></p>
-          </div>
           <figure class="u-withNotice">
-            <img src="<?= get_theme_file_uri('/assets/images/top/kodawari-2.jpg') ?>" height="270px" width="404px">
+            <img src="<?= get_theme_file_uri('/assets/images/top/kodawari-2.jpg') ?>" alt="秘伝のデミグラスソースとこだわりのお肉" height="270px" width="404px">
             <figcaption>調理や接客を1人で行っているので、<br>提供や対応に時間がかかる場合がございます。</figcaption>
           </figure>
-        </div>
-        <div class="p-kodawariBox u-block">
           <div class="p-kodawariParagraphBox">
-            <p class="c-beforeDash u-pc-textAlignRight"><span class="u-1-1em">受</span>け<span class="u-1-1em">継</span>がれてきた<span class="u-1-1em">伝統</span>の<span class="u-1-1em">味</span>を<span class="u-1-1em">ご賞味</span>ください。</p>
+            <h3>秘伝のデミグラスソースとこだわりのお肉</h3>
+            <p>創業当初から愛され続ける秘伝のデミグラスソースは、2週間かけて仕込みを行っています。手間暇を惜しまず、先祖代々受け継がれる濃厚なソースを再現。お肉は人気のタンだけでなく、ステーキなど口の中で溶けるような味をご堪能いただけます。</p>
           </div>
         </div>
       </div>
@@ -79,7 +73,7 @@
 
     <div class="p-sp-menuZone">
       <figure class="u-withNotice">
-        <img src="<?= get_theme_file_uri('/assets/images/menu.jpg') ?>" alt="開福亭メニュー画像" height="270px" width="404px">
+        <img src="<?= get_theme_file_uri('/assets/images/menu.jpg') ?>" alt="机いっぱいに並んだ開福亭の料理" height="270px" width="404px">
         <figcaption>
           仕込みや在庫の状況によってご提供できない場合がございます。<br>
           ご予約の際に、ご希望のメニューまでお伝えいただけると確実です。
@@ -91,7 +85,7 @@
       <div class="p-menuRowBox">
         <a href="<?= esc_url(home_url('menu') . '#beaf') ?>" target="_self">
           <figure>
-            <img src="<?= get_theme_file_uri('/assets/images/menu/beaf.jpg') ?>" alt="タンシチュー" height="270px" width="404px">
+            <img src="<?= get_theme_file_uri('/assets/images/menu/beaf.jpg') ?>" alt="タンシチューの写真" height="270px" width="404px">
             <figcaption>
               牛肉料理
             </figcaption>
@@ -99,7 +93,7 @@
         </a>
         <a href="<?= esc_url(home_url('menu') . '#poak') ?>" target="_self">
           <figure>
-            <img src="<?= get_theme_file_uri('/assets/images/menu/poak.jpg') ?>" alt="トンカツ" height="270px" width="404px">
+            <img src="<?= get_theme_file_uri('/assets/images/menu/poak.jpg') ?>" alt="トンカツの写真" height="270px" width="404px">
             <figcaption>
               豚肉料理
             </figcaption>
@@ -107,7 +101,7 @@
         </a>
         <a href="<?= esc_url(home_url('menu') . '#chiken') ?>" target="_self">
           <figure>
-            <img src="<?= get_theme_file_uri('/assets/images/menu/beaf-2.jpg') ?>" alt="ヒレステーキ" height="270px" width="404px">
+            <img src="<?= get_theme_file_uri('/assets/images/menu/beaf-2.jpg') ?>" alt="ヒレステーキの写真" height="270px" width="404px">
             <figcaption>
               鶏肉料理
             </figcaption>
@@ -117,7 +111,7 @@
       <div class="p-menuRowBox">
         <a href="<?= esc_url(home_url('menu') . '#fish') ?>" target="_self">
           <figure>
-            <img src="<?= get_theme_file_uri('/assets/images/menu/fish.jpg') ?>" alt="エビフライ" height="270px" width="404px">
+            <img src="<?= get_theme_file_uri('/assets/images/menu/fish.jpg') ?>" alt="エビフライの写真" height="270px" width="404px">
             <figcaption>
               鮮魚料理
             </figcaption>
@@ -125,7 +119,7 @@
         </a>
         <a href="<?= esc_url(home_url('menu') . '#salad') ?>" target="_self">
           <figure>
-            <img src="<?= get_theme_file_uri('/assets/images/menu/salad.jpg') ?>" alt="サラダ" height="270px" width="404px">
+            <img src="<?= get_theme_file_uri('/assets/images/menu/salad.jpg') ?>" alt="サラダの写真" height="270px" width="404px">
             <figcaption>
               サラダ
             </figcaption>
@@ -133,7 +127,7 @@
         </a>
         <a href="<?= esc_url(home_url('menu') . '#rice') ?>" target="_self">
           <figure>
-            <img src="<?= get_theme_file_uri('/assets/images/menu/rice-1.jpg') ?>" alt="オムライス" height="270px" width="404px">
+            <img src="<?= get_theme_file_uri('/assets/images/menu/rice-1.jpg') ?>" alt="オムライスの写真" height="270px" width="404px">
             <figcaption>
               米飯料理
             </figcaption>
