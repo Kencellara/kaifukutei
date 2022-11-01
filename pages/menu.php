@@ -10,12 +10,12 @@
 
       <div class="p-menuListArea">
         <ul class="c-menuList">
-          <li>ビフテキ 4,100~6,100円</li>
-          <li>ビーフカツ 2,400円</li>
+          <li>ビフテキ 4,000円～</li>
+          <li>ビーフカツ 1,500円～</li>
           <li>国産肉ハンバーグ 1,250円</li>
           <li>メンチボール 1,400円</li>
-          <li>ビーフシチュー 2,050円</li>
-          <li>タンシチュー 2,350円</li>
+          <li>ビーフシチュー 2,200円</li>
+          <li>タンシチュー 2,800円</li>
         </ul>
       </div>
     </div>
@@ -28,10 +28,10 @@
 
       <div class="p-menuListArea">
         <ul class="c-menuList">
-          <li>ポークソテー 1,150円</li>
-          <li>ポークパルメザン焼 1,350円</li>
+          <li>ポークソテー 1,300円</li>
+          <li>ポークパルメザン焼 1,400円</li>
           <li>ポークカツ 1,050円</li>
-          <li>ポークヒレカツ 1,350円</li>
+          <li>ポークヒレカツ 1,400円</li>
         </ul>
       </div>
     </div>
@@ -45,9 +45,9 @@
       <div class="p-menuListArea">
         <ul class="c-menuList">
           <li>チキンカツ 1,050円</li>
-          <li>チキンチーズ焼 1,150円</li>
-          <li>チキンカレー煮 1,250円</li>
-          <li>チキンチャップ 1,250円</li>
+          <li>チキンチーズ焼 1,250円</li>
+          <li>チキンカレー煮 1,300円</li>
+          <li>チキンチャップ 1,400円</li>
         </ul>
       </div>
     </div>
@@ -76,8 +76,8 @@
       <div class="p-menuListArea">
         <ul class="c-menuList">
           <li>ポテトサラダ 700円</li>
-          <li>メキシコサラダ 800円</li>
-          <li>ロースハムサラダ 950円</li>
+          <li>メキシコサラダ 900円</li>
+          <li>ロースハムサラダ 1,000円</li>
         </ul>
       </div>
     </div>
@@ -91,7 +91,7 @@
       <div class="p-menuListArea">
         <ul class="c-menuList">
           <li>カレーライス 900円</li>
-          <li>カツカレー 1,300円</li>
+          <li>カツカレー 1,400円</li>
           <li>オムライス 900円</li>
           <li>チャーハン 800円</li>
           <li>ハヤシライス 1,200円</li>
