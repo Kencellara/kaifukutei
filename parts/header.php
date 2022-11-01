@@ -26,21 +26,25 @@
           店舗案内
         </a>
       </li>
-      <li><img src="<?= get_theme_file_uri('/assets/images/instagram-logo.png') ?>" alt="Instagram"></li>
+      <li>
+        <img src="<?= get_theme_file_uri('/assets/images/instagram-logo.png') ?>" alt="Instagram" width="30px" height="30px">
+      </li>
     </ul>
   </nav>
 
   <ul class="p-sp-headerIconList u-listStyleNone">
-    <li><img src="<?= get_theme_file_uri('/assets/images/instagram-logo.png') ?>" alt="Instagram"></li>
+    <li>
+      <img src="<?= get_theme_file_uri('/assets/images/instagram-logo.png') ?>" alt="Instagram" width="30px" height="30px">
+    </li>
     <li>
       <a href="tel:0596-28-2952">
-        <img src="<?= get_theme_file_uri('/assets/images/TEL-logo.png') ?>" alt="TEL">
+        <img src="<?= get_theme_file_uri('/assets/images/TEL-logo.png') ?>" alt="TEL" width="30px" height="30px">
       </a>
     </li>
     <li>
       <button id="js-hamburger" type="button" class="c-hamburger" aria-controls="navigation" aria-expanded="false">
-        <img id="js-hamburgerInnerOpen" src="<?= get_theme_file_uri('/assets/images/hamburger-menu-open.png') ?>" alt="ハンバーガーメニュー開く">
-        <img id="js-hamburgerInnerClose" style="display:none;" src="<?= get_theme_file_uri('/assets/images/hamburger-menu-close.png') ?>" alt="ハンバーガーメニュー閉じる">
+        <img id="js-hamburgerInnerOpen" src="<?= get_theme_file_uri('/assets/images/hamburger-menu-open.png') ?>" alt="ハンバーガーメニュー開く" width="30px" height="30px">
+        <img id="js-hamburgerInnerClose" style="display:none;" src="<?= get_theme_file_uri('/assets/images/hamburger-menu-close.png') ?>" alt="ハンバーガーメニュー閉じる" width="30px" height="30px">
       </button>
     </li>
   </ul>
