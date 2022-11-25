@@ -6,7 +6,8 @@
   </div>
 
   <p class="c-telGuide">
-    ご予約はお電話にて承っております。
+    ご予約はお電話にて承っております。<br>
+    留守電の場合は一言お願い致します。
   </p>
 
   <div class="c-footerLogo">

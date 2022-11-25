@@ -151,18 +151,21 @@
 
       <div class="p-infoTextArea">
         <h3 class="c-infoHeader">営業時間</h3>
-        <ul>
+        <ul class="p-businessHoursList">
           <li>11:00~14:00</li>
           <li>17:00~20:30</li>
         </ul>
         <h3 class="c-infoHeader">定休日</h3>
         <p>不定休</p>
-        <!-- <div class="c-businessHoursAnnounce">
-          営業時間は変更となることがあります。
-          ご予約がない場合には閉店している場合も
-          ございますので，ご来店前に店舗まで
-          お問い合わせください。
-        </div> -->
+        <p class="c-businessHoursAnnounce">
+          ※ご予約がない場合は閉店する場合もございます。
+        </p>
+        <h3>注意事項</h3>
+        <ul class="p-noticeList">
+          <li>予約可能</li>
+          <li>ご要望の料理がある場合は、事前の予約が推奨されます。</li>
+          <li>提供には多少のお時間を頂く場合がございます。</li>
+        </ul>
       </div>
     </div>
   </section>
