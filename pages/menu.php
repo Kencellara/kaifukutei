@@ -5,7 +5,7 @@
     <div id="beaf" class="p-beafMenu p-menuArea">
       <div class="p-menuHeaderAndImg">
         <h2 class="c-menuHeader u-floatLeft">牛肉料理</h2>
-        <img class="u-leftMarginAuto" src="<?= get_theme_file_uri('/assets/images/menu/beaf-2.jpg') ?>" alt="牛ヒレステーキ|開腹亭メニュー" height="270px" width="404px">
+        <img class="u-leftMarginAuto" src="<?= get_theme_file_uri('/assets/images/menu/beaf-w.jpg') ?>" alt="牛ヒレステーキ|開腹亭メニュー" height="270px" width="404px">
       </div>
 
       <div class="p-menuListArea">
@@ -24,7 +24,7 @@
     <div id="poak" class="p-poakMenu p-menuArea">
       <div class="p-menuHeaderAndImg">
         <h2 class="c-menuHeader u-floatRight">豚肉料理</h2>
-        <img class="u-rightMarginAuto" src="<?= get_theme_file_uri('/assets/images/menu/poak.jpg') ?>" alt="ポークカツ|開腹亭メニュー" height="270px" width="404px">
+        <img class="u-rightMarginAuto" src="<?= get_theme_file_uri('/assets/images/menu/poak-w.jpg') ?>" alt="ポークカツ|開腹亭メニュー" height="270px" width="404px">
       </div>
 
       <div class="p-menuListArea">

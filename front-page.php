@@ -85,7 +85,7 @@
       <div class="p-menuRowBox">
         <a href="<?= esc_url(home_url('menu') . '#beaf') ?>" target="_self">
           <figure>
-            <img src="<?= get_theme_file_uri('/assets/images/menu/beaf-2.jpg') ?>" alt="牛ヒレステーキの写真|開腹亭メニュー" height="270px" width="404px">
+            <img src="<?= get_theme_file_uri('/assets/images/menu/beaf-w.jpg') ?>" alt="牛ヒレステーキの写真|開腹亭メニュー" height="270px" width="404px">
             <figcaption>
               牛肉料理
             </figcaption>
@@ -93,7 +93,7 @@
         </a>
         <a href="<?= esc_url(home_url('menu') . '#poak') ?>" target="_self">
           <figure>
-            <img src="<?= get_theme_file_uri('/assets/images/menu/poak.jpg') ?>" alt="ポークカツの写真|開腹亭メニュー" height="270px" width="404px">
+            <img src="<?= get_theme_file_uri('/assets/images/menu/poak-w.jpg') ?>" alt="ポークカツの写真|開腹亭メニュー" height="270px" width="404px">
             <figcaption>
               豚肉料理
             </figcaption>
