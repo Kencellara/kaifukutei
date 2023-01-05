@@ -35,3 +35,10 @@
     </div>
   </div>
 </section>
+
+<section>
+  <div class="l-contentWrapper">
+    <h2 class="c-subHeader">紹介されたメディア</h2>
+    <p>日本テレビ・名古屋テレビ・BSフジ・東海ウォーカー・あまから手帖・ケンチェ飯</p>
+  </div>
+</section>

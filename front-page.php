@@ -85,7 +85,7 @@
       <div class="p-menuRowBox">
         <a href="<?= esc_url(home_url('menu') . '#beaf') ?>" target="_self">
           <figure>
-            <img src="<?= get_theme_file_uri('/assets/images/menu/beaf.jpg') ?>" alt="タンシチューの写真" height="270px" width="404px">
+            <img src="<?= get_theme_file_uri('/assets/images/menu/beaf-2.jpg') ?>" alt="牛ヒレステーキの写真|開腹亭メニュー" height="270px" width="404px">
             <figcaption>
               牛肉料理
             </figcaption>
@@ -93,7 +93,7 @@
         </a>
         <a href="<?= esc_url(home_url('menu') . '#poak') ?>" target="_self">
           <figure>
-            <img src="<?= get_theme_file_uri('/assets/images/menu/poak.jpg') ?>" alt="トンカツの写真" height="270px" width="404px">
+            <img src="<?= get_theme_file_uri('/assets/images/menu/poak.jpg') ?>" alt="ポークカツの写真|開腹亭メニュー" height="270px" width="404px">
             <figcaption>
               豚肉料理
             </figcaption>
@@ -101,7 +101,7 @@
         </a>
         <a href="<?= esc_url(home_url('menu') . '#chiken') ?>" target="_self">
           <figure>
-            <img src="<?= get_theme_file_uri('/assets/images/menu/beaf-2.jpg') ?>" alt="ヒレステーキの写真" height="270px" width="404px">
+            <img src="<?= get_theme_file_uri('/assets/images/menu/chicken.jpg') ?>" alt="チキンカレー煮の写真|開腹亭メニュー" height="270px" width="404px">
             <figcaption>
               鶏肉料理
             </figcaption>
@@ -111,7 +111,7 @@
       <div class="p-menuRowBox">
         <a href="<?= esc_url(home_url('menu') . '#fish') ?>" target="_self">
           <figure>
-            <img src="<?= get_theme_file_uri('/assets/images/menu/fish.jpg') ?>" alt="エビフライの写真" height="270px" width="404px">
+            <img src="<?= get_theme_file_uri('/assets/images/menu/fish.jpg') ?>" alt="エビフライの写真|開腹亭メニュー" height="270px" width="404px">
             <figcaption>
               鮮魚料理
             </figcaption>
@@ -119,7 +119,7 @@
         </a>
         <a href="<?= esc_url(home_url('menu') . '#salad') ?>" target="_self">
           <figure>
-            <img src="<?= get_theme_file_uri('/assets/images/menu/salad.jpg') ?>" alt="サラダの写真" height="270px" width="404px">
+            <img src="<?= get_theme_file_uri('/assets/images/menu/salad.jpg') ?>" alt="ポテトサラダの写真|開腹亭メニュー" height="270px" width="404px">
             <figcaption>
               サラダ
             </figcaption>
@@ -127,7 +127,7 @@
         </a>
         <a href="<?= esc_url(home_url('menu') . '#rice') ?>" target="_self">
           <figure>
-            <img src="<?= get_theme_file_uri('/assets/images/menu/rice-1.jpg') ?>" alt="オムライスの写真" height="270px" width="404px">
+            <img src="<?= get_theme_file_uri('/assets/images/menu/rice-1.jpg') ?>" alt="オムライスの写真|開腹亭メニュー" height="270px" width="404px">
             <figcaption>
               米飯料理
             </figcaption>
@@ -164,6 +164,7 @@
         <ul class="p-noticeList">
           <li>予約可能</li>
           <li>ご要望の料理がある場合は、事前の予約が推奨されます。</li>
+          <li>ご予約・お問い合わせ等はお電話のみ承りとなります。</li>
           <li>提供には多少のお時間を頂く場合がございます。</li>
         </ul>
       </div>

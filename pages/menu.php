@@ -5,7 +5,7 @@
     <div id="beaf" class="p-beafMenu p-menuArea">
       <div class="p-menuHeaderAndImg">
         <h2 class="c-menuHeader u-floatLeft">牛肉料理</h2>
-        <img class="u-leftMarginAuto" src="<?= get_theme_file_uri('/assets/images/menu/beaf.jpg') ?>" alt="タンシチュー" height="270px" width="404px">
+        <img class="u-leftMarginAuto" src="<?= get_theme_file_uri('/assets/images/menu/beaf-2.jpg') ?>" alt="牛ヒレステーキ|開腹亭メニュー" height="270px" width="404px">
       </div>
 
       <div class="p-menuListArea">
@@ -24,7 +24,7 @@
     <div id="poak" class="p-poakMenu p-menuArea">
       <div class="p-menuHeaderAndImg">
         <h2 class="c-menuHeader u-floatRight">豚肉料理</h2>
-        <img class="u-rightMarginAuto" src="<?= get_theme_file_uri('/assets/images/menu/poak.jpg') ?>" alt="トンカツ" height="270px" width="404px">
+        <img class="u-rightMarginAuto" src="<?= get_theme_file_uri('/assets/images/menu/poak.jpg') ?>" alt="ポークカツ|開腹亭メニュー" height="270px" width="404px">
       </div>
 
       <div class="p-menuListArea">
@@ -40,7 +40,7 @@
     <div id="chiken" class="p-chikenMenu p-menuArea">
       <div class="p-menuHeaderAndImg">
         <h2 class="c-menuHeader u-floatLeft">鶏肉料理</h2>
-        <img class="u-leftMarginAuto" src="<?= get_theme_file_uri('/assets/images/menu/beaf-2.jpg') ?>" alt="ヒレステーキ" height="270px" width="404px">
+        <img class="u-leftMarginAuto" src="<?= get_theme_file_uri('/assets/images/menu/chicken.jpg') ?>" alt="チキンカレー煮|開腹亭メニュー" height="270px" width="404px">
       </div>
 
       <div class="p-menuListArea">
@@ -56,7 +56,7 @@
     <div id="fish" class="p-fishMenu p-menuArea">
       <div class="p-menuHeaderAndImg">
         <h2 class="c-menuHeader u-floatRight">鮮魚料理</h2>
-        <img class="u-rightMarginAuto" src="<?= get_theme_file_uri('/assets/images/menu/fish.jpg') ?>" alt="エビフライ" height="270px" width="404px">
+        <img class="u-rightMarginAuto" src="<?= get_theme_file_uri('/assets/images/menu/fish.jpg') ?>" alt="エビフライ|開腹亭メニュー" height="270px" width="404px">
       </div>
 
       <div class="p-menuListArea">
@@ -71,7 +71,7 @@
     <div id="salad" class="p-saladMenu p-menuArea">
       <div class="p-menuHeaderAndImg">
         <h2 class="c-menuHeader u-floatLeft">サラダ</h2>
-        <img class="u-leftMarginAuto" src="<?= get_theme_file_uri('/assets/images/menu/salad.jpg') ?>" alt="サラダ" height="270px" width="404px">
+        <img class="u-leftMarginAuto" src="<?= get_theme_file_uri('/assets/images/menu/salad.jpg') ?>" alt="ポテトサラダ|開腹亭メニュー" height="270px" width="404px">
       </div>
 
       <div class="p-menuListArea">
@@ -86,7 +86,7 @@
     <div id="rice" class="p-riceMenu p-menuArea">
       <div class="p-menuHeaderAndImg">
         <h2 class="c-menuHeader u-floatRight">米飯料理</h2>
-        <img class="u-rightMarginAuto" src="<?= get_theme_file_uri('/assets/images/menu/rice-1.jpg') ?>" alt="オムライス" height="270px" width="404px">
+        <img class="u-rightMarginAuto" src="<?= get_theme_file_uri('/assets/images/menu/rice-1.jpg') ?>" alt="オムライス|開腹亭メニュー" height="270px" width="404px">
       </div>
 
       <div class="p-menuListArea">
@@ -95,7 +95,7 @@
           <li>カツカレー 1,500円</li>
           <li>オムライス 900円</li>
           <li>チャーハン 800円</li>
-          <li>ハヤシライス 1,300円</li>
+          <li>ハヤシライス 1,500円</li>
           <li>ライス 200円</li>
         </ul>
       </div>
