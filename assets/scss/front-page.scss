@@ -278,6 +278,11 @@
         display: flex;
         column-gap: 1em;
         margin-bottom: 1em;
+
+        a {
+          display: block;
+          width: calc(100% / 3);
+        }
   
         figure {
           figcaption {

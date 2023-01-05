@@ -47,7 +47,7 @@ function kence_scripts(): void
 	wp_enqueue_style('kence-style', get_stylesheet_uri(), [], '1.0.1');
 
 	// 共通css
-	wp_enqueue_style('common-style', get_theme_file_uri('/assets/css/common.css'), [], '1.0.1');
+	wp_enqueue_style('common-style', get_theme_file_uri('/assets/css/common.css'), [], '1.0.2');
 	wp_enqueue_style('header-style', get_theme_file_uri('/assets/css/header.css'), [], '1.0.1');
 	wp_enqueue_style('footer-style', get_theme_file_uri('/assets/css/footer.css'), [], '1.0.1');
 
