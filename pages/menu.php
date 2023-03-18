@@ -107,7 +107,6 @@
       <div class="p-menuListArea">
         <ul class="c-otherMenuList c-menuList">
           <li>ポタージュスープ 600円</li>
-          <li>オムレツ 600円</li>
         </ul>
       </div>
     </div>
